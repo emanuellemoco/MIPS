@@ -5,37 +5,21 @@ USE ieee.numeric_std.ALL;
 ENTITY topLevel IS
   GENERIC (
     DATA_WIDTH : NATURAL := 32;
-    ROM_DATA_WIDTH : NATURAL := 32; ----ARRUMAR
-
+    ROM_DATA_WIDTH : NATURAL := 32;
     ADDR_WIDTH : NATURAL := 32
   );
 
   PORT (
-    -- Input ports
-    dataIN : IN STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0);
-    enable : IN STD_LOGIC;
-    CLOCK_50 : IN STD_LOGIC;
-
-    -- Output ports
-    dataOUT : OUT STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0)
-
+    CLOCK_50 : IN STD_LOGIC
   );
 END ENTITY;
 ARCHITECTURE uwu OF topLevel IS
 
-  -- Declarations (optional):
-  -- signal <name> : std_logic;
-  -- signal <name> : std_logic_vector(<msb_index> downto <lsb_index>);
-  -- constant FUNCT_WIDTH : natural := 6;
-  -- subtype funct_t  is  std_logic_vector(FUNCT_WIDTH-1 downto 0);
-  -- constant functADD   : funct_t := "100000";
-  -- constant functSUB   : funct_t := "100010";
-  -- alias memWRsignal: std_logic is controlWord(0);
-  -- alias ulaOPvalue:  std_logic_vector(1 downto 0) is controlWord(5 downto 4);
+
 
   SIGNAL PC, ADDER : STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
   SIGNAL IR : STD_LOGIC_VECTOR(ROM_DATA_WIDTH - 1 DOWNTO 0);
-  SIGNAL RS, RT, RD : STD_LOGIC_VECTOR(DATA_WIDTH -1 DOWNTO 0);
+  SIGNAL RS, RD, RT : STD_LOGIC_VECTOR(DATA_WIDTH -1 DOWNTO 0);
   SIGNAL selUlA : std_logic;
 
 
@@ -44,7 +28,7 @@ ARCHITECTURE uwu OF topLevel IS
 BEGIN
   --------------------------------------FETCH------------------------------------------
 
-  -----------!!!!!!!!!!!!!!! Qual a diferença entre memoryAddrWidth e addrWidth???
+  -----------!!!!!!!!!!!!!!! Qual a diferença entre memoryAddrWidth e addrWidth???  ---------------------------??
   ROM  : ENTITY work.memoriaROM GENERIC MAP(dataWidth => DATA_WIDTH, addrWidth => ADDR_WIDTH, memoryAddrWidth => 6)
     PORT MAP(clk => CLOCK_50, Endereco => PC, Dado => IR);
 
@@ -58,11 +42,10 @@ BEGIN
     PORT MAP(CLK => CLOCK_50, opCode => IR(31 DOWNTO 26), funct => IR(5 DOWNTO 0), palavraControle => selULA);
 
   BR   : ENTITY work.bancoRegistradores GENERIC MAP(larguraDados => DATA_WIDTH, larguraEndBancoRegs => 5)
-    PORT MAP(clk => CLOCK_50, enderecoA => IR(25 DOWNTO 21), enderecoB => IR(20 DOWNTO 16), enderecoC => IR(15 DOWNTO 11), dadoEscritaC => RD, escreveC => '1', saidaA => RS, saidaB => RT);
+    PORT MAP(clk => CLOCK_50, enderecoA => IR(25 DOWNTO 21), enderecoB => IR(20 DOWNTO 16), enderecoC => IR(15 DOWNTO 11), dadoEscritaC => RD, escreveC => '1', saidaA => open, saidaB => open);
 
   ULA  : ENTITY work.ULA GENERIC MAP(larguraDados => DATA_WIDTH)
   PORT MAP(entradaA => RS , entradaB => RT , seletor => selULA , saida => RD , flagZero => open);
 
-  
 
 END ARCHITECTURE;
