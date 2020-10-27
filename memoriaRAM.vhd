@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity RAMMIPS IS
+entity memoriaRAM IS
    generic (
           dataWidth: natural := 32;
           addrWidth: natural := 32;
@@ -15,7 +15,7 @@ entity RAMMIPS IS
         );
 end entity;
 
-architecture assincrona OF RAMMIPS IS
+architecture assincrona OF memoriaRAM IS
   type blocoMemoria IS ARRAY(0 TO 2**memoryAddrWidth - 1) OF std_logic_vector(dataWidth-1 DOWNTO 0);
 
   signal memRAM: blocoMemoria;

@@ -24,7 +24,7 @@ architecture assincrona OF memoriaROM IS
 -- Utiliza uma quantidade menor de endereços locais:
    signal EnderecoLocal : std_logic_vector(memoryAddrWidth-1 downto 0);
 
-begin                                    --uwu
+begin                              
   EnderecoLocal <= Endereco(memoryAddrWidth +1 downto 2);
   Dado <= memROM (to_integer(unsigned(EnderecoLocal)));
 end architecture;

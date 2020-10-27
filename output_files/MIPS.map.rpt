@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Sun Oct 25 16:46:03 2020
+Tue Oct 27 18:29:11 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -19,15 +19,18 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  11. Parameter Settings for User Entity Instance: registrador:ProgConter
  12. Parameter Settings for User Entity Instance: somador:SOMADOR
  13. Parameter Settings for User Entity Instance: unidadeControle:UC
- 14. Parameter Settings for User Entity Instance: bancoRegistradores:BR
- 15. Parameter Settings for User Entity Instance: ULA:ULA
- 16. Port Connectivity Checks: "ULA:ULA"
- 17. Port Connectivity Checks: "bancoRegistradores:BR"
- 18. Port Connectivity Checks: "registrador:ProgConter"
- 19. Port Connectivity Checks: "memoriaROM:ROM"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+ 14. Parameter Settings for User Entity Instance: mux2x1:muxEndREG3
+ 15. Parameter Settings for User Entity Instance: bancoRegistradores:BR
+ 16. Parameter Settings for User Entity Instance: estendeSinal:EXT
+ 17. Parameter Settings for User Entity Instance: mux2x1:muxULA
+ 18. Parameter Settings for User Entity Instance: ULA:ULA
+ 19. Parameter Settings for User Entity Instance: memoriaRAM:RAM
+ 20. Parameter Settings for User Entity Instance: mux2x1:muxEscREG3
+ 21. Port Connectivity Checks: "ULA:ULA"
+ 22. Port Connectivity Checks: "registrador:ProgConter"
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -53,14 +56,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 25 16:46:03 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 27 18:29:11 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; topLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 66                                          ;
+; Total pins                      ; 1                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -187,36 +190,39 @@ refer to the applicable agreement for further details.
 ; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/bancoRegistradores.vhd ;         ;
 ; ULA.vhd                          ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd                ;         ;
 ; somador.vhd                      ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd            ;         ;
+; mux2x1.vhd                       ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd             ;         ;
 ; topLevel.vhd                     ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd           ;         ;
 ; registrador.vhd                  ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd        ;         ;
+; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd         ;         ;
+; estendeSinal.vhd                 ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd       ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 0         ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 0         ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 0         ;
-;     -- 5 input functions                    ; 0         ;
-;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 0         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 66        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; dataIN[0] ;
-; Maximum fan-out                             ; 1         ;
-; Total fan-out                               ; 66        ;
-; Average fan-out                             ; 0.50      ;
-+---------------------------------------------+-----------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimate of Logic utilization (ALMs needed) ; 0        ;
+;                                             ;          ;
+; Combinational ALUT usage for logic          ; 0        ;
+;     -- 7 input functions                    ; 0        ;
+;     -- 6 input functions                    ; 0        ;
+;     -- 5 input functions                    ; 0        ;
+;     -- 4 input functions                    ; 0        ;
+;     -- <=3 input functions                  ; 0        ;
+;                                             ;          ;
+; Dedicated logic registers                   ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 1        ;
+;                                             ;          ;
+; Total DSP Blocks                            ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; CLOCK_50 ;
+; Maximum fan-out                             ; 1        ;
+; Total fan-out                               ; 1        ;
+; Average fan-out                             ; 0.50     ;
++---------------------------------------------+----------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -224,7 +230,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |topLevel                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 66   ; 0            ; |topLevel           ; topLevel    ; work         ;
+; |topLevel                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 1    ; 0            ; |topLevel           ; topLevel    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -300,6 +306,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxEndREG3 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; larguradados   ; 5     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: bancoRegistradores:BR ;
 +---------------------+-------+--------------------------------------+
@@ -308,6 +324,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; larguradados        ; 32    ; Signed Integer                       ;
 ; larguraendbancoregs ; 5     ; Signed Integer                       ;
 +---------------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: estendeSinal:EXT ;
++--------------------+-------+----------------------------------+
+; Parameter Name     ; Value ; Type                             ;
++--------------------+-------+----------------------------------+
+; larguradadoentrada ; 16    ; Signed Integer                   ;
+; larguradadosaida   ; 32    ; Signed Integer                   ;
++--------------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxULA ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; larguradados   ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -321,6 +358,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaRAM:RAM ;
++-----------------+-------+-----------------------------------+
+; Parameter Name  ; Value ; Type                              ;
++-----------------+-------+-----------------------------------+
+; datawidth       ; 32    ; Signed Integer                    ;
+; addrwidth       ; 32    ; Signed Integer                    ;
+; memoryaddrwidth ; 6     ; Signed Integer                    ;
++-----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxEscREG3 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; larguradados   ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ULA:ULA"                                                                                ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -328,15 +387,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; flagzero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "bancoRegistradores:BR" ;
-+----------+-------+----------+---------------------+
-; Port     ; Type  ; Severity ; Details             ;
-+----------+-------+----------+---------------------+
-; escrevec ; Input ; Info     ; Stuck at VCC        ;
-+----------+-------+----------+---------------------+
 
 
 +----------------------------------------------------+
@@ -349,28 +399,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "memoriaROM:ROM"                                                                            ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; dado[10..6] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-; boundary_port         ; 66                          ;
-;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 1                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -388,7 +426,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 25 16:45:44 2020
+    Info: Processing started: Tue Oct 27 18:28:52 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -407,25 +445,36 @@ Info (12021): Found 2 design units, including 1 entities, in source file ULA.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
     Info (12022): Found design unit 1: somador-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd Line: 16
     Info (12023): Found entity 1: somador File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd Line: 5
-Info (12021): Found 0 design units, including 0 entities, in source file mux2x1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
+    Info (12022): Found design unit 1: mux2x1-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd Line: 14
+    Info (12023): Found entity 1: mux2x1 File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file topLevel.vhd
-    Info (12022): Found design unit 1: topLevel-uwu File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 24
+    Info (12022): Found design unit 1: topLevel-uwu File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 16
     Info (12023): Found entity 1: topLevel File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
     Info (12022): Found design unit 1: registrador-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd Line: 15
     Info (12023): Found entity 1: registrador File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaRAM.vhd
-    Info (12022): Found design unit 1: RAMMIPS-assincrona File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 18
-    Info (12023): Found entity 1: RAMMIPS File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-assincrona File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 18
+    Info (12023): Found entity 1: memoriaRAM File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file estendeSinal.vhd
+    Info (12022): Found design unit 1: estendeSinal-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 19
+    Info (12023): Found entity 1: estendeSinal File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 4
 Info (12127): Elaborating entity "topLevel" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at topLevel.vhd(20): used implicit default value for signal "dataOUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 48
+Warning (10541): VHDL Signal Declaration warning at topLevel.vhd(21): used implicit default value for signal "RS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 21
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 37
 Warning (10541): VHDL Signal Declaration warning at memoriaROM.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd Line: 19
-Info (12128): Elaborating entity "registrador" for hierarchy "registrador:ProgConter" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 51
-Info (12128): Elaborating entity "somador" for hierarchy "somador:SOMADOR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 54
-Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 57
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 60
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 63
+Info (12128): Elaborating entity "registrador" for hierarchy "registrador:ProgConter" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 40
+Info (12128): Elaborating entity "somador" for hierarchy "somador:SOMADOR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 43
+Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 46
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxEndREG3" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 49
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 52
+Info (12128): Elaborating entity "estendeSinal" for hierarchy "estendeSinal:EXT" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 55
+Warning (10540): VHDL Signal Declaration warning at estendeSinal.vhd(22): used explicit default value for signal "right" because signal was never assigned a value File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at estendeSinal.vhd(33): signal "left" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at estendeSinal.vhd(33): signal "right" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 33
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxULA" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 58
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 61
 Info (10041): Inferred latch for "saida[0]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[1]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[2]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
@@ -458,83 +507,18 @@ Info (10041): Inferred latch for "saida[28]" at ULA.vhd(33) File: /home/emanuell
 Info (10041): Inferred latch for "saida[29]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[30]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[31]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "dataOUT[0]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[1]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[2]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[3]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[4]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[5]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[6]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[7]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[8]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[9]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[10]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[11]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[12]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[13]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[14]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[15]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[16]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[17]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[18]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[19]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[20]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[21]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[22]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[23]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[24]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[25]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[26]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[27]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[28]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[29]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[30]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
-    Warning (13410): Pin "dataOUT[31]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 64
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 34 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "dataIN[0]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[1]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[2]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[3]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[4]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[5]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[6]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[7]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[8]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[9]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[10]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[11]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[12]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[13]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[14]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[15]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[16]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[17]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[18]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[19]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[20]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[21]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[22]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[23]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[24]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[25]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[26]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[27]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[28]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[29]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[30]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "dataIN[31]" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "enable" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 16
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 17
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 34 input pins
-    Info (21059): Implemented 32 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
-    Info: Peak virtual memory: 996 megabytes
-    Info: Processing ended: Sun Oct 25 16:46:03 2020
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 13
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 998 megabytes
+    Info: Processing ended: Tue Oct 27 18:29:11 2020
     Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Total CPU time (on all processors): 00:00:50
 
 
