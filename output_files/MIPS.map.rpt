@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Tue Oct 27 18:29:11 2020
+Wed Oct 28 09:05:36 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -17,7 +17,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   9. Parameter Settings for User Entity Instance: Top-level Entity: |topLevel
  10. Parameter Settings for User Entity Instance: memoriaROM:ROM
  11. Parameter Settings for User Entity Instance: registrador:ProgConter
- 12. Parameter Settings for User Entity Instance: somador:SOMADOR
+ 12. Parameter Settings for User Entity Instance: somadorConstante:SOMADOR_C
  13. Parameter Settings for User Entity Instance: unidadeControle:UC
  14. Parameter Settings for User Entity Instance: mux2x1:muxEndREG3
  15. Parameter Settings for User Entity Instance: bancoRegistradores:BR
@@ -26,11 +26,13 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  18. Parameter Settings for User Entity Instance: ULA:ULA
  19. Parameter Settings for User Entity Instance: memoriaRAM:RAM
  20. Parameter Settings for User Entity Instance: mux2x1:muxEscREG3
- 21. Port Connectivity Checks: "ULA:ULA"
- 22. Port Connectivity Checks: "registrador:ProgConter"
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
+ 21. Parameter Settings for User Entity Instance: shifter:SHIFTER
+ 22. Parameter Settings for User Entity Instance: somador:SOMADOR
+ 23. Parameter Settings for User Entity Instance: mux2x1:muxJUMP
+ 24. Port Connectivity Checks: "registrador:ProgConter"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -56,7 +58,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 27 18:29:11 2020       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 28 09:05:36 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; topLevel                                    ;
@@ -195,6 +197,8 @@ refer to the applicable agreement for further details.
 ; registrador.vhd                  ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd        ;         ;
 ; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd         ;         ;
 ; estendeSinal.vhd                 ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd       ;         ;
+; shifter.vhd                      ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd            ;         ;
+; somadorConstante.vhd             ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd   ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
@@ -284,14 +288,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: somador:SOMADOR ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; larguradados   ; 32    ; Signed Integer                      ;
-; constante      ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somadorConstante:SOMADOR_C ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                 ;
+; constante      ; 4     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -380,13 +384,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA:ULA"                                                                                ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; flagzero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shifter:SHIFTER ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; larguradados   ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somador:SOMADOR ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; larguradados   ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxJUMP ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------+
@@ -426,7 +451,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 27 18:28:52 2020
+    Info: Processing started: Wed Oct 28 09:05:20 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -443,8 +468,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file ULA.vhd
     Info (12022): Found design unit 1: ULA-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 19
     Info (12023): Found entity 1: ULA File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
-    Info (12022): Found design unit 1: somador-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd Line: 16
-    Info (12023): Found entity 1: somador File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd Line: 5
+    Info (12022): Found design unit 1: somador-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd Line: 18
+    Info (12023): Found entity 1: somador File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
     Info (12022): Found design unit 1: mux2x1-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd Line: 14
     Info (12023): Found entity 1: mux2x1 File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd Line: 4
@@ -460,21 +485,27 @@ Info (12021): Found 2 design units, including 1 entities, in source file memoria
 Info (12021): Found 2 design units, including 1 entities, in source file estendeSinal.vhd
     Info (12022): Found design unit 1: estendeSinal-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 19
     Info (12023): Found entity 1: estendeSinal File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file shifter.vhd
+    Info (12022): Found design unit 1: shifter-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 15
+    Info (12023): Found entity 1: shifter File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file somadorConstante.vhd
+    Info (12022): Found design unit 1: somadorConstante-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd Line: 16
+    Info (12023): Found entity 1: somadorConstante File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd Line: 5
 Info (12127): Elaborating entity "topLevel" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at topLevel.vhd(21): used implicit default value for signal "RS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 21
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 37
+Warning (10541): VHDL Signal Declaration warning at topLevel.vhd(23): used implicit default value for signal "RS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 23
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 38
 Warning (10541): VHDL Signal Declaration warning at memoriaROM.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd Line: 19
-Info (12128): Elaborating entity "registrador" for hierarchy "registrador:ProgConter" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 40
-Info (12128): Elaborating entity "somador" for hierarchy "somador:SOMADOR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 43
-Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 46
-Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxEndREG3" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 49
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 52
-Info (12128): Elaborating entity "estendeSinal" for hierarchy "estendeSinal:EXT" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 55
+Info (12128): Elaborating entity "registrador" for hierarchy "registrador:ProgConter" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 41
+Info (12128): Elaborating entity "somadorConstante" for hierarchy "somadorConstante:SOMADOR_C" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 44
+Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 47
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxEndREG3" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 50
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 53
+Info (12128): Elaborating entity "estendeSinal" for hierarchy "estendeSinal:EXT" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 56
 Warning (10540): VHDL Signal Declaration warning at estendeSinal.vhd(22): used explicit default value for signal "right" because signal was never assigned a value File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 22
 Warning (10492): VHDL Process Statement warning at estendeSinal.vhd(33): signal "left" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 33
 Warning (10492): VHDL Process Statement warning at estendeSinal.vhd(33): signal "right" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 33
-Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxULA" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 58
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 61
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxULA" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 59
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 62
 Info (10041): Inferred latch for "saida[0]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[1]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[2]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
@@ -507,7 +538,9 @@ Info (10041): Inferred latch for "saida[28]" at ULA.vhd(33) File: /home/emanuell
 Info (10041): Inferred latch for "saida[29]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[30]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[31]" at ULA.vhd(33) File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 33
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 64
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 65
+Info (12128): Elaborating entity "shifter" for hierarchy "shifter:SHIFTER" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 71
+Info (12128): Elaborating entity "somador" for hierarchy "somador:SOMADOR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 74
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
@@ -516,9 +549,9 @@ Info (21057): Implemented 1 device resources after synthesis - the final resourc
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 998 megabytes
-    Info: Processing ended: Tue Oct 27 18:29:11 2020
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:50
+    Info: Peak virtual memory: 995 megabytes
+    Info: Processing ended: Wed Oct 28 09:05:36 2020
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:43
 
 

@@ -15,24 +15,26 @@ entity unidadeControle is
     funct : in std_logic_vector(5 downto 0);
 
     -- Output ports
-    palavraControle : out std_logic_vector(5 downto 0)
+    palavraControle : out std_logic_vector(6 downto 0)
   );
 end entity;
 architecture arch_name of unidadeControle is
 
-  alias selMUXULA : std_logic is  palavraControle(0);
+  alias selMUXULA     : std_logic is palavraControle(0);
   alias selMUXEndReg3 : std_logic is palavraControle(1);
   alias selMUXEscReg3 : std_logic is palavraControle(2);
   alias habEscritaReg : std_logic is palavraControle(3);
   alias habEscritaRAM : std_logic is palavraControle(4);
-  alias selOperacaoULA : std_logic is palavraControle(5);
+  alias selOperacaoULA: std_logic is palavraControle(5);
+  alias BEQ           : std_logic is palavraControle(6);
+
   
   
 
 
 begin
 
-  selMuxUla <= '0' when opcode = "000000" else 
+  selMuxUla     <= '0' when opcode = "000000" else 
     '1'; 
   selMUXEndReg3 <= '1' when opcode = "000000" else 
     '0'; 
@@ -46,7 +48,10 @@ begin
   habEscritaRAM <= '1' when opcode = "101011" else 
     '0';
 
-  selOperacaoULA <= '1' when (opcode = "000000" and funct = "000001") else 
+  selOperacaoULA<= '1' when (opcode = "000000" and funct = "000001") else 
+    '0';
+
+  BEQ           <= '1' when opcode = "000100" else 
     '0';
 
 end architecture;

@@ -12,7 +12,7 @@ entity ULA is
       entradaA, entradaB:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
       seletor:  in STD_LOGIC;
       saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-      flagZero: out std_logic
+      flagZ: out std_logic
     );
 end entity;
 
@@ -33,6 +33,6 @@ architecture comportamento of ULA is
       saida <= soma when (seletor = '0') else
           subtracao when (seletor = '1');
 
-      flagZero <= '1' when unsigned(saida) = unsigned(zero) else '0';
+      flagZ <= '1' when (entradaA = entradaB) else '0';
 
 end architecture;
