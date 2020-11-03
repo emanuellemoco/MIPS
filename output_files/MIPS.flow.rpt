@@ -1,5 +1,5 @@
 Flow report for MIPS
-Wed Oct 28 09:06:27 2020
+Tue Nov  3 16:34:50 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Oct 28 09:06:27 2020       ;
+; Flow Status                     ; Successful - Tue Nov  3 16:34:50 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; topLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1 / 18,480 ( < 1 % )                        ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 1 / 224 ( < 1 % )                           ;
+; Logic utilization (in ALMs)     ; 1,207 / 18,480 ( 7 % )                      ;
+; Total registers                 ; 2190                                        ;
+; Total pins                      ; 98 / 224 ( 44 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/28/2020 09:05:20 ;
+; Start date & time ; 11/03/2020 16:30:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS                ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 88230073434408.160388672012401         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 88230073434408.160443184227707         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -101,12 +101,14 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 995 MB              ; 00:00:43                           ;
-; Fitter               ; 00:00:30     ; 1.0                     ; 2030 MB             ; 00:00:50                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 930 MB              ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 1077 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1096 MB             ; 00:00:02                           ;
-; Total                ; 00:01:00     ; --                      ; --                  ; 00:01:47                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 1000 MB             ; 00:00:52                           ;
+; Fitter               ; 00:02:21     ; 1.2                     ; 2143 MB             ; 00:04:37                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 948 MB              ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:20     ; 2.3                     ; 1165 MB             ; 00:00:40                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 1151 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1104 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1114 MB             ; 00:00:02                           ;
+; Total                ; 00:03:15     ; --                      ; --                  ; 00:06:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,6 +122,8 @@ refer to the applicable agreement for further details.
 ; Assembler            ; manjaro          ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
 ; Timing Analyzer      ; manjaro          ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
 ; EDA Netlist Writer   ; manjaro          ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
+; EDA Netlist Writer   ; manjaro          ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
+; EDA Netlist Writer   ; manjaro          ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
 +----------------------+------------------+---------------+---------------+----------------+
 
 
@@ -131,6 +135,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off MIPS -c MIPS
 quartus_asm --read_settings_files=off --write_settings_files=off MIPS -c MIPS
 quartus_sta MIPS -c MIPS
 quartus_eda --read_settings_files=off --write_settings_files=off MIPS -c MIPS
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=/home/emanuelle/Desktop/INSPER/DesComp/MIPS/Waveform.vwf --testbench_file=/home/emanuelle/Desktop/INSPER/DesComp/MIPS/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/emanuelle/Desktop/INSPER/DesComp/MIPS/simulation/qsim/ MIPS -c MIPS
 
 
 

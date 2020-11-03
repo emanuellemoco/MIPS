@@ -17,11 +17,11 @@ DEPTH=256;
 ADDRESS_RADIX=DEC;
 DATA_RADIX=HEX;
 
-CONTENT BEGIN
---endereco : dado;          opcode	Rs	    Rt  	Rd  	shamt	funct
-    0    :   2324020; --    000000	10001	10010	01000	00000	100000
-    1    :   41;        
-    2    :   4C;        
+CONTENT BEGIN               --I   opcode    Rs      Rt      immediate
+--endereco : dado;                                                                      R     opcode	Rs	    Rt  	Rd  	shamt	funct
+    0    :   3C020002;      --    001111	00000	00010	0000000000000010
+    1    :   3C010002;      --    001111	00000	00001   0000000000000010
+    2    :   104101D4;      --    000100	00010	00001   0000000111010100
     3    :   2F;        
     [4..5] : 20;        
     6    :   22;        
