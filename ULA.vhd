@@ -10,33 +10,42 @@ entity ULA is
     port
     (
       entradaA, entradaB:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-      seletor:  in STD_LOGIC_VECTOR(2 downto 0);
+      inverteA, inverteB: in STD_LOGIC;
+
+      seletor:  in STD_LOGIC_VECTOR(1 downto 0);
       saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
       flagZ: out std_logic
     );
 end entity;
 
 architecture comportamento of ULA is
+  
+
+  SIGNAL saidaA, saidaB, outAdder, outOr, outAnd, saidaMux, outOverflow32 : std_logic_vector(larguraDados -1 downto 0);
+  SIGNAL left : std_logic_vector(larguraDados -2 downto 0);
+  SIGNAL outOverflow : STD_LOGIC;
   constant zero : std_logic_vector(larguraDados-1 downto 0) := (others => '0');
+   
+  begin
+  left <= (others => '0');
+  muxInverteA: entity work.mux2x1 generic map (larguraDados => larguraDados)
+  port map(entradaA_MUX => entradaA, entradaB_MUX => not entradaA, seletor_MUX => inverteA , saida_MUX => saidaA );
+  
+  muxInverteB: entity work.mux2x1 generic map (larguraDados => larguraDados)
+  port map(entradaA_MUX => entradaB, entradaB_MUX => not entradaB, seletor_MUX => inverteB, saida_MUX => saidaB );
+  
+  somador: entity work.somadorULA  generic map (larguraDados => larguraDados)
+  port map(entradaA => saidaA, entradaB => saidaB, C_in => inverteB, overflow => outOverflow, C_out => open, saida => outAdder);
 
-   signal soma   :   STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-   signal subtracao: STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-   signal op_and :   STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-   signal op_or  :   STD_LOGIC_VECTOR((larguraDados-1) downto 0); 
+  outOverflow32 <= left & outOverflow;
 
-    begin
-      soma      <= STD_LOGIC_VECTOR(unsigned(entradaA) + unsigned(entradaB));
-      subtracao <= STD_LOGIC_VECTOR(unsigned(entradaA) - unsigned(entradaB));
-      op_and    <= entradaA and entradaB;
-      op_or     <= entradaA or entradaB;
-      
-      saida <= entradaB when (seletor = "000") else
-          soma when (seletor = "001") else
-          subtracao when (seletor = "010") else
-          op_and when (seletor = "011") else
-          op_or when (seletor = "100") else 
-          entradaB;
+  mux: entity work.mux4x1 generic map (larguraDados => larguraDados)
+  port map(entradaA_MUX => outAnd, entradaB_MUX => outOr, entradaC_MUX => outAdder, entradaD_MUX => outOverflow32, seletor_MUX => seletor , saida_MUX => saidaMux);
 
-      flagZ <= '1' when subtracao = zero else '0';
+  flagZ<= '1' when saidaMux = zero else 
+  '0';      
 
+
+
+ 
 end architecture;

@@ -17,7 +17,7 @@ entity unidadeControle is
     funct : in std_logic_vector(5 downto 0);
 
     -- Output ports
-    palavraControle : out std_logic_vector(9 downto 0)
+    palavraControle : out std_logic_vector(10 downto 0)
   );
 end entity;
 architecture arch_name of unidadeControle is
@@ -27,10 +27,11 @@ architecture arch_name of unidadeControle is
   alias selMUXEscReg3 : std_logic is palavraControle(2);
   alias habEscritaReg : std_logic is palavraControle(3);
   alias habEscritaRAM : std_logic is palavraControle(4);
-  alias selOperacaoULA: std_logic_vector(2 downto 0) is palavraControle(7 downto 5);
-  alias BEQ           : std_logic is palavraControle(8);
-  alias selMUXPC      : std_logic is palavraControle(9);
-
+  alias selOperacaoULA: std_logic_vector(1 downto 0) is palavraControle(6 downto 5);
+  alias BEQ           : std_logic is palavraControle(7);
+  alias selMUXPC      : std_logic is palavraControle(8);
+  alias inverteA      : std_logic is palavraControle(9);
+  alias inverteB      : std_logic is palavraControle(10);
 
 -- TIPO R
 -- instR     000000
@@ -75,11 +76,11 @@ begin
     '0';
 
   -- Instrução R 
-  selOperacaoULA<="001" when (opcode = instR and funct = "000000") else 
-                  "010" when  (opcode = instR and funct = "000001") else
-                  "011" when (opcode = andi) else
-                  "100" when (opcode = ori) else  
-                  "000";  
+  selOperacaoULA<="01" when (opcode = instR and funct = "000000") else 
+                  "10" when  (opcode = instR and funct = "000001") else
+                  "11" when (opcode = andi) else
+                  "00" when (opcode = ori) else  
+                  "00";  
 
   -- Beq
   BEQ           <= '1' when opcode = beqw else 
