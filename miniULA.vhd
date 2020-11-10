@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
+
+entity miniULA is
+    port
+    (
+      -- Inputs
+      entradaA, entradaB, C_in:  in STD_LOGIC;
+      seletor:  in std_logic_vector(1 downto 0);
+    -- OUT
+      C_out : out std_Logic;
+      saida:    out STD_LOGIC
+    );
+end entity;
+
+architecture comportamento of miniULA is
+  
+
+  SIGNAL saidaA, saidaB, outAdder, outOr, outAnd, saidaMux , intermed: std_logic;
+  constant zero : std_logic :=  '0';
+   
+  begin
+    
+    somador: entity work.somadorULA  
+    port map(entradaA => entradaA, entradaB => entradaB, C_in => C_in, C_out => C_out, saida => outAdder);
+  
+    mux: entity work.mux4x1Bit 
+    port map(entradaA_MUX=> entradaA and entradaB, entradaB_MUX => entradaA or entradaB, entradaC_MUX => outAdder, entradaD_MUX => outAdder, seletor_MUX => seletor , saida_MUX => saidaMux);
+     
+    
+    
+    
+
+ 
+end architecture;

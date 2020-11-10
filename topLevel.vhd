@@ -1,7 +1,6 @@
--- C_out e overflow são a mesma coisa?
--- Como passar entrada A ou entrada B sem operacao nessa nova ULA?
-
-
+-- Como a instrucao jr funciona nesse fluxo de dados?
+-- Como avisar pra ula que nao é uma instrucao do tipo R
+--  overflOowv?????
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -23,18 +22,18 @@ ENTITY topLevel IS
     OUT_RT : OUT STD_LOGIC_VECTOR(DATA_WIDTH -1 downto 0);
     ulaOut_a : OUT std_logic_vector(DATA_WIDTH -1 downto 0);
     PC_a : OUT std_logic_vector(ADDR_WIDTH -1 downto 0)
-
-
   );
 END ENTITY;
 ARCHITECTURE uwu OF topLevel IS
 
   SIGNAL selUlA, flagULA         : std_logic;
   SIGNAL endReg3, reg3        : std_logic_vector(4 downto 0);
-  SIGNAL palavraControle: std_logic_vector(10 downto 0);
+  SIGNAL palavraControle: std_logic_vector(6 downto 0);
   SIGNAL IR             : STD_LOGIC_VECTOR(ROM_DATA_WIDTH - 1 DOWNTO 0);
   SIGNAL PC, ADDER, outAdder, outShift, outJUMP, inPC : STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
   SIGNAL RS, saidaULA, IMED, entradaB, escReg3, escReg3Def, saidaA, saidaB, dadoRAM: STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0);
+  SIGNAL seletorULA            : STD_LOGIC_VECTOR(2 DOWNTO 0);
+
   
 
   alias selMUXULA     : std_logic is palavraControle(0);
@@ -42,12 +41,9 @@ ARCHITECTURE uwu OF topLevel IS
   alias selMUXEscReg3 : std_logic is palavraControle(2);
   alias habEscritaReg : std_logic is palavraControle(3);
   alias habEscritaRAM : std_logic is palavraControle(4);
-  alias selOperacaoULA: std_logic_vector(1 downto 0) is palavraControle(6 downto 5);
-  alias BEQ           : std_logic is palavraControle(7);
-  alias selMUXPC      : std_logic is palavraControle(8);
-  alias inverteA      : std_logic is palavraControle(9);
-  alias inverteB      : std_logic is palavraControle(10);
-  
+  alias BEQ           : std_logic is palavraControle(5);
+  alias selMUXPC      : std_logic is palavraControle(6);
+
 
   CONSTANT incremento : NATURAL := 4;
 
@@ -63,7 +59,10 @@ BEGIN
   PORT MAP(entrada => PC, saida => ADDER);
 
   UC: ENTITY work.unidadeControle generic map (DATA_WIDTH => DATA_WIDTH, ADDR_WIDTH => ADDR_WIDTH)
-  PORT MAP(CLK => CLOCK_50, opCode => IR(31 DOWNTO 26), funct => IR(5 DOWNTO 0), palavraControle => palavraControle);
+  PORT MAP(CLK => CLOCK_50, opCode => IR(31 DOWNTO 26), palavraControle => palavraControle);
+
+  UCula: ENTITY work.unidadeControleULA generic map (DATA_WIDTH => DATA_WIDTH, ADDR_WIDTH => ADDR_WIDTH)
+  PORT MAP(CLK => CLOCK_50, funct => IR(5 DOWNTO 0), seletorULA   => seletorULA);
 
   muxEndREG3: entity work.mux2x1 generic map (larguraDados => 5)
   port map(entradaA_MUX => IR(20 downto 16), entradaB_MUX => IR(15 downto 11), seletor_MUX => selMUXEndReg3, saida_MUX => reg3 );
@@ -81,8 +80,8 @@ BEGIN
   muxULA: entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)
   port map(entradaA_MUX => saidaB, entradaB_MUX => IMED, seletor_MUX => selMUXULA, saida_MUX => entradaB);
     
-  ULA: ENTITY work.ULA generic map (larguraDados => DATA_WIDTH)
-  PORT MAP(entradaA => saidaA , entradaB => entradaB, inverteA => inverteB, inverteB=> inverteB , seletor => selOperacaoULA, saida => saidaULA , flagZ => flagULA);
+  ULAa: ENTITY work.ULA generic map (larguraDados => DATA_WIDTH)
+  PORT MAP(entradaA => saidaA , entradaB => entradaB, seletor => seletorULA, saida => saidaULA , flagZ => flagULA);
 
   RAM: entity work.memoriaRAM generic map (dataWidth => DATA_WIDTH, addrWidth => ADDR_WIDTH, memoryAddrWidth => 6)
   port map(clk => CLOCK_50, Endereco => saidaULA, Dado_in => saidaB , Dado_out => dadoRAM, we => habEscritaRAM);
@@ -103,7 +102,7 @@ BEGIN
   OUT_RT <= saidaB;
   ulaOut_a <= saidaULA;
   PC_a <= PC;
-
+  
   muxPC : entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)
   port map(entradaA_MUX => outJUMP, entradaB_MUX => ADDER(31 downto 28) & IR(25 downto 0) & "00", seletor_MUX => selMUXPC, saida_MUX => inPC );
 

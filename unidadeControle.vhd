@@ -7,17 +7,16 @@ use work.constantes.all;
 entity unidadeControle is
   generic (
     DATA_WIDTH : natural := 8;
-    ADDR_WIDTH : natural := 8
+    ADDR_WIDTH : natural := 8 
   );
 
   port (
     -- Input ports
     CLK   : in std_logic;
     opcode: in std_logic_vector(5 downto 0);
-    funct : in std_logic_vector(5 downto 0);
 
     -- Output ports
-    palavraControle : out std_logic_vector(10 downto 0)
+    palavraControle : out std_logic_vector(6 downto 0)
   );
 end entity;
 architecture arch_name of unidadeControle is
@@ -27,11 +26,9 @@ architecture arch_name of unidadeControle is
   alias selMUXEscReg3 : std_logic is palavraControle(2);
   alias habEscritaReg : std_logic is palavraControle(3);
   alias habEscritaRAM : std_logic is palavraControle(4);
-  alias selOperacaoULA: std_logic_vector(1 downto 0) is palavraControle(6 downto 5);
-  alias BEQ           : std_logic is palavraControle(7);
-  alias selMUXPC      : std_logic is palavraControle(8);
-  alias inverteA      : std_logic is palavraControle(9);
-  alias inverteB      : std_logic is palavraControle(10);
+  alias BEQ           : std_logic is palavraControle(5);
+  alias selMUXPC      : std_logic is palavraControle(6);
+
 
 -- TIPO R
 -- instR     000000
@@ -75,12 +72,6 @@ begin
   habEscritaRAM <= '1' when opcode = sw else 
     '0';
 
-  -- Instrução R 
-  selOperacaoULA<="01" when (opcode = instR and funct = "000000") else 
-                  "10" when  (opcode = instR and funct = "000001") else
-                  "11" when (opcode = andi) else
-                  "00" when (opcode = ori) else  
-                  "00";  
 
   -- Beq
   BEQ           <= '1' when opcode = beqw else 
