@@ -10,13 +10,16 @@ entity unidadeControle is
     ADDR_WIDTH : natural := 8 
   );
 
+
   port (
     -- Input ports
     CLK   : in std_logic;
     opcode: in std_logic_vector(5 downto 0);
 
     -- Output ports
+    ULAop : out std_logic_vector(1 downto 0);
     palavraControle : out std_logic_vector(6 downto 0)
+
   );
 end entity;
 architecture arch_name of unidadeControle is
@@ -79,5 +82,10 @@ begin
   
     selMUXPC <= '1' when opcode = jal or opcode = j else 
   '0';
+
+
+  ULAop <= "00" when opcode = lw or opcode = sw or opcode = lui else
+           "01" when opcode = beqw else 
+           "10";
 
 end architecture;

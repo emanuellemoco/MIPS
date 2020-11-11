@@ -5,166 +5,169 @@ CLOCK_50 => unidadecontrole:UC.CLK
 CLOCK_50 => unidadecontroleula:UCula.CLK
 CLOCK_50 => bancoregistradores:BR.clk
 CLOCK_50 => memoriaram:RAM.clk
-IR_a[0] <= memoriarom:ROM.Dado[0]
-IR_a[1] <= memoriarom:ROM.Dado[1]
-IR_a[2] <= memoriarom:ROM.Dado[2]
-IR_a[3] <= memoriarom:ROM.Dado[3]
-IR_a[4] <= memoriarom:ROM.Dado[4]
-IR_a[5] <= memoriarom:ROM.Dado[5]
-IR_a[6] <= memoriarom:ROM.Dado[6]
-IR_a[7] <= memoriarom:ROM.Dado[7]
-IR_a[8] <= memoriarom:ROM.Dado[8]
-IR_a[9] <= memoriarom:ROM.Dado[9]
-IR_a[10] <= memoriarom:ROM.Dado[10]
-IR_a[11] <= memoriarom:ROM.Dado[11]
-IR_a[12] <= memoriarom:ROM.Dado[12]
-IR_a[13] <= memoriarom:ROM.Dado[13]
-IR_a[14] <= memoriarom:ROM.Dado[14]
-IR_a[15] <= memoriarom:ROM.Dado[15]
-IR_a[16] <= memoriarom:ROM.Dado[16]
-IR_a[17] <= memoriarom:ROM.Dado[17]
-IR_a[18] <= memoriarom:ROM.Dado[18]
-IR_a[19] <= memoriarom:ROM.Dado[19]
-IR_a[20] <= memoriarom:ROM.Dado[20]
-IR_a[21] <= memoriarom:ROM.Dado[21]
-IR_a[22] <= memoriarom:ROM.Dado[22]
-IR_a[23] <= memoriarom:ROM.Dado[23]
-IR_a[24] <= memoriarom:ROM.Dado[24]
-IR_a[25] <= memoriarom:ROM.Dado[25]
-IR_a[26] <= memoriarom:ROM.Dado[26]
-IR_a[27] <= memoriarom:ROM.Dado[27]
-IR_a[28] <= memoriarom:ROM.Dado[28]
-IR_a[29] <= memoriarom:ROM.Dado[29]
-IR_a[30] <= memoriarom:ROM.Dado[30]
-IR_a[31] <= memoriarom:ROM.Dado[31]
-OUT_RS[0] <= bancoregistradores:BR.saidaA[0]
-OUT_RS[1] <= bancoregistradores:BR.saidaA[1]
-OUT_RS[2] <= bancoregistradores:BR.saidaA[2]
-OUT_RS[3] <= bancoregistradores:BR.saidaA[3]
-OUT_RS[4] <= bancoregistradores:BR.saidaA[4]
-OUT_RS[5] <= bancoregistradores:BR.saidaA[5]
-OUT_RS[6] <= bancoregistradores:BR.saidaA[6]
-OUT_RS[7] <= bancoregistradores:BR.saidaA[7]
-OUT_RS[8] <= bancoregistradores:BR.saidaA[8]
-OUT_RS[9] <= bancoregistradores:BR.saidaA[9]
-OUT_RS[10] <= bancoregistradores:BR.saidaA[10]
-OUT_RS[11] <= bancoregistradores:BR.saidaA[11]
-OUT_RS[12] <= bancoregistradores:BR.saidaA[12]
-OUT_RS[13] <= bancoregistradores:BR.saidaA[13]
-OUT_RS[14] <= bancoregistradores:BR.saidaA[14]
-OUT_RS[15] <= bancoregistradores:BR.saidaA[15]
-OUT_RS[16] <= bancoregistradores:BR.saidaA[16]
-OUT_RS[17] <= bancoregistradores:BR.saidaA[17]
-OUT_RS[18] <= bancoregistradores:BR.saidaA[18]
-OUT_RS[19] <= bancoregistradores:BR.saidaA[19]
-OUT_RS[20] <= bancoregistradores:BR.saidaA[20]
-OUT_RS[21] <= bancoregistradores:BR.saidaA[21]
-OUT_RS[22] <= bancoregistradores:BR.saidaA[22]
-OUT_RS[23] <= bancoregistradores:BR.saidaA[23]
-OUT_RS[24] <= bancoregistradores:BR.saidaA[24]
-OUT_RS[25] <= bancoregistradores:BR.saidaA[25]
-OUT_RS[26] <= bancoregistradores:BR.saidaA[26]
-OUT_RS[27] <= bancoregistradores:BR.saidaA[27]
-OUT_RS[28] <= bancoregistradores:BR.saidaA[28]
-OUT_RS[29] <= bancoregistradores:BR.saidaA[29]
-OUT_RS[30] <= bancoregistradores:BR.saidaA[30]
-OUT_RS[31] <= bancoregistradores:BR.saidaA[31]
-OUT_RT[0] <= bancoregistradores:BR.saidaB[0]
-OUT_RT[1] <= bancoregistradores:BR.saidaB[1]
-OUT_RT[2] <= bancoregistradores:BR.saidaB[2]
-OUT_RT[3] <= bancoregistradores:BR.saidaB[3]
-OUT_RT[4] <= bancoregistradores:BR.saidaB[4]
-OUT_RT[5] <= bancoregistradores:BR.saidaB[5]
-OUT_RT[6] <= bancoregistradores:BR.saidaB[6]
-OUT_RT[7] <= bancoregistradores:BR.saidaB[7]
-OUT_RT[8] <= bancoregistradores:BR.saidaB[8]
-OUT_RT[9] <= bancoregistradores:BR.saidaB[9]
-OUT_RT[10] <= bancoregistradores:BR.saidaB[10]
-OUT_RT[11] <= bancoregistradores:BR.saidaB[11]
-OUT_RT[12] <= bancoregistradores:BR.saidaB[12]
-OUT_RT[13] <= bancoregistradores:BR.saidaB[13]
-OUT_RT[14] <= bancoregistradores:BR.saidaB[14]
-OUT_RT[15] <= bancoregistradores:BR.saidaB[15]
-OUT_RT[16] <= bancoregistradores:BR.saidaB[16]
-OUT_RT[17] <= bancoregistradores:BR.saidaB[17]
-OUT_RT[18] <= bancoregistradores:BR.saidaB[18]
-OUT_RT[19] <= bancoregistradores:BR.saidaB[19]
-OUT_RT[20] <= bancoregistradores:BR.saidaB[20]
-OUT_RT[21] <= bancoregistradores:BR.saidaB[21]
-OUT_RT[22] <= bancoregistradores:BR.saidaB[22]
-OUT_RT[23] <= bancoregistradores:BR.saidaB[23]
-OUT_RT[24] <= bancoregistradores:BR.saidaB[24]
-OUT_RT[25] <= bancoregistradores:BR.saidaB[25]
-OUT_RT[26] <= bancoregistradores:BR.saidaB[26]
-OUT_RT[27] <= bancoregistradores:BR.saidaB[27]
-OUT_RT[28] <= bancoregistradores:BR.saidaB[28]
-OUT_RT[29] <= bancoregistradores:BR.saidaB[29]
-OUT_RT[30] <= bancoregistradores:BR.saidaB[30]
-OUT_RT[31] <= bancoregistradores:BR.saidaB[31]
-ulaOut_a[0] <= ula:ULAa.saida[0]
-ulaOut_a[1] <= ula:ULAa.saida[1]
-ulaOut_a[2] <= ula:ULAa.saida[2]
-ulaOut_a[3] <= ula:ULAa.saida[3]
-ulaOut_a[4] <= ula:ULAa.saida[4]
-ulaOut_a[5] <= ula:ULAa.saida[5]
-ulaOut_a[6] <= ula:ULAa.saida[6]
-ulaOut_a[7] <= ula:ULAa.saida[7]
-ulaOut_a[8] <= ula:ULAa.saida[8]
-ulaOut_a[9] <= ula:ULAa.saida[9]
-ulaOut_a[10] <= ula:ULAa.saida[10]
-ulaOut_a[11] <= ula:ULAa.saida[11]
-ulaOut_a[12] <= ula:ULAa.saida[12]
-ulaOut_a[13] <= ula:ULAa.saida[13]
-ulaOut_a[14] <= ula:ULAa.saida[14]
-ulaOut_a[15] <= ula:ULAa.saida[15]
-ulaOut_a[16] <= ula:ULAa.saida[16]
-ulaOut_a[17] <= ula:ULAa.saida[17]
-ulaOut_a[18] <= ula:ULAa.saida[18]
-ulaOut_a[19] <= ula:ULAa.saida[19]
-ulaOut_a[20] <= ula:ULAa.saida[20]
-ulaOut_a[21] <= ula:ULAa.saida[21]
-ulaOut_a[22] <= ula:ULAa.saida[22]
-ulaOut_a[23] <= ula:ULAa.saida[23]
-ulaOut_a[24] <= ula:ULAa.saida[24]
-ulaOut_a[25] <= ula:ULAa.saida[25]
-ulaOut_a[26] <= ula:ULAa.saida[26]
-ulaOut_a[27] <= ula:ULAa.saida[27]
-ulaOut_a[28] <= ula:ULAa.saida[28]
-ulaOut_a[29] <= ula:ULAa.saida[29]
-ulaOut_a[30] <= ula:ULAa.saida[30]
-ulaOut_a[31] <= ula:ULAa.saida[31]
-PC_a[0] <= registrador:ProgConter.DOUT[0]
-PC_a[1] <= registrador:ProgConter.DOUT[1]
-PC_a[2] <= registrador:ProgConter.DOUT[2]
-PC_a[3] <= registrador:ProgConter.DOUT[3]
-PC_a[4] <= registrador:ProgConter.DOUT[4]
-PC_a[5] <= registrador:ProgConter.DOUT[5]
-PC_a[6] <= registrador:ProgConter.DOUT[6]
-PC_a[7] <= registrador:ProgConter.DOUT[7]
-PC_a[8] <= registrador:ProgConter.DOUT[8]
-PC_a[9] <= registrador:ProgConter.DOUT[9]
-PC_a[10] <= registrador:ProgConter.DOUT[10]
-PC_a[11] <= registrador:ProgConter.DOUT[11]
-PC_a[12] <= registrador:ProgConter.DOUT[12]
-PC_a[13] <= registrador:ProgConter.DOUT[13]
-PC_a[14] <= registrador:ProgConter.DOUT[14]
-PC_a[15] <= registrador:ProgConter.DOUT[15]
-PC_a[16] <= registrador:ProgConter.DOUT[16]
-PC_a[17] <= registrador:ProgConter.DOUT[17]
-PC_a[18] <= registrador:ProgConter.DOUT[18]
-PC_a[19] <= registrador:ProgConter.DOUT[19]
-PC_a[20] <= registrador:ProgConter.DOUT[20]
-PC_a[21] <= registrador:ProgConter.DOUT[21]
-PC_a[22] <= registrador:ProgConter.DOUT[22]
-PC_a[23] <= registrador:ProgConter.DOUT[23]
-PC_a[24] <= registrador:ProgConter.DOUT[24]
-PC_a[25] <= registrador:ProgConter.DOUT[25]
-PC_a[26] <= registrador:ProgConter.DOUT[26]
-PC_a[27] <= registrador:ProgConter.DOUT[27]
-PC_a[28] <= registrador:ProgConter.DOUT[28]
-PC_a[29] <= registrador:ProgConter.DOUT[29]
-PC_a[30] <= registrador:ProgConter.DOUT[30]
-PC_a[31] <= registrador:ProgConter.DOUT[31]
+IR_a[0] << memoriarom:ROM.Dado[0]
+IR_a[1] << memoriarom:ROM.Dado[1]
+IR_a[2] << memoriarom:ROM.Dado[2]
+IR_a[3] << memoriarom:ROM.Dado[3]
+IR_a[4] << memoriarom:ROM.Dado[4]
+IR_a[5] << memoriarom:ROM.Dado[5]
+IR_a[6] << memoriarom:ROM.Dado[6]
+IR_a[7] << memoriarom:ROM.Dado[7]
+IR_a[8] << memoriarom:ROM.Dado[8]
+IR_a[9] << memoriarom:ROM.Dado[9]
+IR_a[10] << memoriarom:ROM.Dado[10]
+IR_a[11] << memoriarom:ROM.Dado[11]
+IR_a[12] << memoriarom:ROM.Dado[12]
+IR_a[13] << memoriarom:ROM.Dado[13]
+IR_a[14] << memoriarom:ROM.Dado[14]
+IR_a[15] << memoriarom:ROM.Dado[15]
+IR_a[16] << memoriarom:ROM.Dado[16]
+IR_a[17] << memoriarom:ROM.Dado[17]
+IR_a[18] << memoriarom:ROM.Dado[18]
+IR_a[19] << memoriarom:ROM.Dado[19]
+IR_a[20] << memoriarom:ROM.Dado[20]
+IR_a[21] << memoriarom:ROM.Dado[21]
+IR_a[22] << memoriarom:ROM.Dado[22]
+IR_a[23] << memoriarom:ROM.Dado[23]
+IR_a[24] << memoriarom:ROM.Dado[24]
+IR_a[25] << memoriarom:ROM.Dado[25]
+IR_a[26] << memoriarom:ROM.Dado[26]
+IR_a[27] << memoriarom:ROM.Dado[27]
+IR_a[28] << memoriarom:ROM.Dado[28]
+IR_a[29] << memoriarom:ROM.Dado[29]
+IR_a[30] << memoriarom:ROM.Dado[30]
+IR_a[31] << memoriarom:ROM.Dado[31]
+OUT_RS[0] << bancoregistradores:BR.saidaA[0]
+OUT_RS[1] << bancoregistradores:BR.saidaA[1]
+OUT_RS[2] << bancoregistradores:BR.saidaA[2]
+OUT_RS[3] << bancoregistradores:BR.saidaA[3]
+OUT_RS[4] << bancoregistradores:BR.saidaA[4]
+OUT_RS[5] << bancoregistradores:BR.saidaA[5]
+OUT_RS[6] << bancoregistradores:BR.saidaA[6]
+OUT_RS[7] << bancoregistradores:BR.saidaA[7]
+OUT_RS[8] << bancoregistradores:BR.saidaA[8]
+OUT_RS[9] << bancoregistradores:BR.saidaA[9]
+OUT_RS[10] << bancoregistradores:BR.saidaA[10]
+OUT_RS[11] << bancoregistradores:BR.saidaA[11]
+OUT_RS[12] << bancoregistradores:BR.saidaA[12]
+OUT_RS[13] << bancoregistradores:BR.saidaA[13]
+OUT_RS[14] << bancoregistradores:BR.saidaA[14]
+OUT_RS[15] << bancoregistradores:BR.saidaA[15]
+OUT_RS[16] << bancoregistradores:BR.saidaA[16]
+OUT_RS[17] << bancoregistradores:BR.saidaA[17]
+OUT_RS[18] << bancoregistradores:BR.saidaA[18]
+OUT_RS[19] << bancoregistradores:BR.saidaA[19]
+OUT_RS[20] << bancoregistradores:BR.saidaA[20]
+OUT_RS[21] << bancoregistradores:BR.saidaA[21]
+OUT_RS[22] << bancoregistradores:BR.saidaA[22]
+OUT_RS[23] << bancoregistradores:BR.saidaA[23]
+OUT_RS[24] << bancoregistradores:BR.saidaA[24]
+OUT_RS[25] << bancoregistradores:BR.saidaA[25]
+OUT_RS[26] << bancoregistradores:BR.saidaA[26]
+OUT_RS[27] << bancoregistradores:BR.saidaA[27]
+OUT_RS[28] << bancoregistradores:BR.saidaA[28]
+OUT_RS[29] << bancoregistradores:BR.saidaA[29]
+OUT_RS[30] << bancoregistradores:BR.saidaA[30]
+OUT_RS[31] << bancoregistradores:BR.saidaA[31]
+OUT_RT[0] << bancoregistradores:BR.saidaB[0]
+OUT_RT[1] << bancoregistradores:BR.saidaB[1]
+OUT_RT[2] << bancoregistradores:BR.saidaB[2]
+OUT_RT[3] << bancoregistradores:BR.saidaB[3]
+OUT_RT[4] << bancoregistradores:BR.saidaB[4]
+OUT_RT[5] << bancoregistradores:BR.saidaB[5]
+OUT_RT[6] << bancoregistradores:BR.saidaB[6]
+OUT_RT[7] << bancoregistradores:BR.saidaB[7]
+OUT_RT[8] << bancoregistradores:BR.saidaB[8]
+OUT_RT[9] << bancoregistradores:BR.saidaB[9]
+OUT_RT[10] << bancoregistradores:BR.saidaB[10]
+OUT_RT[11] << bancoregistradores:BR.saidaB[11]
+OUT_RT[12] << bancoregistradores:BR.saidaB[12]
+OUT_RT[13] << bancoregistradores:BR.saidaB[13]
+OUT_RT[14] << bancoregistradores:BR.saidaB[14]
+OUT_RT[15] << bancoregistradores:BR.saidaB[15]
+OUT_RT[16] << bancoregistradores:BR.saidaB[16]
+OUT_RT[17] << bancoregistradores:BR.saidaB[17]
+OUT_RT[18] << bancoregistradores:BR.saidaB[18]
+OUT_RT[19] << bancoregistradores:BR.saidaB[19]
+OUT_RT[20] << bancoregistradores:BR.saidaB[20]
+OUT_RT[21] << bancoregistradores:BR.saidaB[21]
+OUT_RT[22] << bancoregistradores:BR.saidaB[22]
+OUT_RT[23] << bancoregistradores:BR.saidaB[23]
+OUT_RT[24] << bancoregistradores:BR.saidaB[24]
+OUT_RT[25] << bancoregistradores:BR.saidaB[25]
+OUT_RT[26] << bancoregistradores:BR.saidaB[26]
+OUT_RT[27] << bancoregistradores:BR.saidaB[27]
+OUT_RT[28] << bancoregistradores:BR.saidaB[28]
+OUT_RT[29] << bancoregistradores:BR.saidaB[29]
+OUT_RT[30] << bancoregistradores:BR.saidaB[30]
+OUT_RT[31] << bancoregistradores:BR.saidaB[31]
+ulaOut_a[0] << ula:ULAa.saida[0]
+ulaOut_a[1] << ula:ULAa.saida[1]
+ulaOut_a[2] << ula:ULAa.saida[2]
+ulaOut_a[3] << ula:ULAa.saida[3]
+ulaOut_a[4] << ula:ULAa.saida[4]
+ulaOut_a[5] << ula:ULAa.saida[5]
+ulaOut_a[6] << ula:ULAa.saida[6]
+ulaOut_a[7] << ula:ULAa.saida[7]
+ulaOut_a[8] << ula:ULAa.saida[8]
+ulaOut_a[9] << ula:ULAa.saida[9]
+ulaOut_a[10] << ula:ULAa.saida[10]
+ulaOut_a[11] << ula:ULAa.saida[11]
+ulaOut_a[12] << ula:ULAa.saida[12]
+ulaOut_a[13] << ula:ULAa.saida[13]
+ulaOut_a[14] << ula:ULAa.saida[14]
+ulaOut_a[15] << ula:ULAa.saida[15]
+ulaOut_a[16] << ula:ULAa.saida[16]
+ulaOut_a[17] << ula:ULAa.saida[17]
+ulaOut_a[18] << ula:ULAa.saida[18]
+ulaOut_a[19] << ula:ULAa.saida[19]
+ulaOut_a[20] << ula:ULAa.saida[20]
+ulaOut_a[21] << ula:ULAa.saida[21]
+ulaOut_a[22] << ula:ULAa.saida[22]
+ulaOut_a[23] << ula:ULAa.saida[23]
+ulaOut_a[24] << ula:ULAa.saida[24]
+ulaOut_a[25] << ula:ULAa.saida[25]
+ulaOut_a[26] << ula:ULAa.saida[26]
+ulaOut_a[27] << ula:ULAa.saida[27]
+ulaOut_a[28] << ula:ULAa.saida[28]
+ulaOut_a[29] << ula:ULAa.saida[29]
+ulaOut_a[30] << ula:ULAa.saida[30]
+ulaOut_a[31] << ula:ULAa.saida[31]
+seletorrULA[0] << unidadecontroleula:UCula.seletorULA[0]
+seletorrULA[1] << unidadecontroleula:UCula.seletorULA[1]
+seletorrULA[2] << unidadecontroleula:UCula.seletorULA[2]
+PC_a[0] << registrador:ProgConter.DOUT[0]
+PC_a[1] << registrador:ProgConter.DOUT[1]
+PC_a[2] << registrador:ProgConter.DOUT[2]
+PC_a[3] << registrador:ProgConter.DOUT[3]
+PC_a[4] << registrador:ProgConter.DOUT[4]
+PC_a[5] << registrador:ProgConter.DOUT[5]
+PC_a[6] << registrador:ProgConter.DOUT[6]
+PC_a[7] << registrador:ProgConter.DOUT[7]
+PC_a[8] << registrador:ProgConter.DOUT[8]
+PC_a[9] << registrador:ProgConter.DOUT[9]
+PC_a[10] << registrador:ProgConter.DOUT[10]
+PC_a[11] << registrador:ProgConter.DOUT[11]
+PC_a[12] << registrador:ProgConter.DOUT[12]
+PC_a[13] << registrador:ProgConter.DOUT[13]
+PC_a[14] << registrador:ProgConter.DOUT[14]
+PC_a[15] << registrador:ProgConter.DOUT[15]
+PC_a[16] << registrador:ProgConter.DOUT[16]
+PC_a[17] << registrador:ProgConter.DOUT[17]
+PC_a[18] << registrador:ProgConter.DOUT[18]
+PC_a[19] << registrador:ProgConter.DOUT[19]
+PC_a[20] << registrador:ProgConter.DOUT[20]
+PC_a[21] << registrador:ProgConter.DOUT[21]
+PC_a[22] << registrador:ProgConter.DOUT[22]
+PC_a[23] << registrador:ProgConter.DOUT[23]
+PC_a[24] << registrador:ProgConter.DOUT[24]
+PC_a[25] << registrador:ProgConter.DOUT[25]
+PC_a[26] << registrador:ProgConter.DOUT[26]
+PC_a[27] << registrador:ProgConter.DOUT[27]
+PC_a[28] << registrador:ProgConter.DOUT[28]
+PC_a[29] << registrador:ProgConter.DOUT[29]
+PC_a[30] << registrador:ProgConter.DOUT[30]
+PC_a[31] << registrador:ProgConter.DOUT[31]
 
 
 |topLevel|memoriaROM:ROM
@@ -469,82 +472,84 @@ saida[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 CLK => ~NO_FANOUT~
 opcode[0] => Equal0.IN5
 opcode[0] => Equal1.IN5
-opcode[0] => Equal2.IN5
-opcode[0] => Equal3.IN5
-opcode[0] => Equal4.IN4
+opcode[0] => Equal2.IN4
+opcode[0] => Equal3.IN3
+opcode[0] => Equal4.IN5
 opcode[0] => Equal5.IN3
 opcode[0] => Equal6.IN5
-opcode[0] => Equal7.IN3
-opcode[0] => Equal8.IN5
-opcode[0] => Equal9.IN4
+opcode[0] => Equal7.IN4
+opcode[0] => Equal8.IN4
+opcode[0] => Equal9.IN5
 opcode[0] => Equal10.IN5
-opcode[0] => Equal11.IN4
+opcode[0] => Equal11.IN5
 opcode[1] => Equal0.IN3
 opcode[1] => Equal1.IN4
-opcode[1] => Equal2.IN4
-opcode[1] => Equal3.IN4
-opcode[1] => Equal4.IN3
-opcode[1] => Equal5.IN2
-opcode[1] => Equal6.IN2
+opcode[1] => Equal2.IN3
+opcode[1] => Equal3.IN2
+opcode[1] => Equal4.IN2
+opcode[1] => Equal5.IN5
+opcode[1] => Equal6.IN4
 opcode[1] => Equal7.IN5
-opcode[1] => Equal8.IN4
-opcode[1] => Equal9.IN3
+opcode[1] => Equal8.IN3
+opcode[1] => Equal9.IN4
 opcode[1] => Equal10.IN4
-opcode[1] => Equal11.IN5
+opcode[1] => Equal11.IN4
 opcode[2] => Equal0.IN4
 opcode[2] => Equal1.IN3
 opcode[2] => Equal2.IN2
-opcode[2] => Equal3.IN3
-opcode[2] => Equal4.IN2
-opcode[2] => Equal5.IN5
-opcode[2] => Equal6.IN4
-opcode[2] => Equal7.IN2
-opcode[2] => Equal8.IN2
-opcode[2] => Equal9.IN5
-opcode[2] => Equal10.IN3
+opcode[2] => Equal3.IN5
+opcode[2] => Equal4.IN4
+opcode[2] => Equal5.IN2
+opcode[2] => Equal6.IN3
+opcode[2] => Equal7.IN3
+opcode[2] => Equal8.IN5
+opcode[2] => Equal9.IN2
+opcode[2] => Equal10.IN2
 opcode[2] => Equal11.IN3
 opcode[3] => Equal0.IN2
 opcode[3] => Equal1.IN2
-opcode[3] => Equal2.IN1
-opcode[3] => Equal3.IN2
-opcode[3] => Equal4.IN5
+opcode[3] => Equal2.IN5
+opcode[3] => Equal3.IN4
+opcode[3] => Equal4.IN3
 opcode[3] => Equal5.IN4
-opcode[3] => Equal6.IN3
-opcode[3] => Equal7.IN4
-opcode[3] => Equal8.IN3
-opcode[3] => Equal9.IN2
-opcode[3] => Equal10.IN2
+opcode[3] => Equal6.IN2
+opcode[3] => Equal7.IN2
+opcode[3] => Equal8.IN2
+opcode[3] => Equal9.IN1
+opcode[3] => Equal10.IN3
 opcode[3] => Equal11.IN2
 opcode[4] => Equal0.IN1
 opcode[4] => Equal1.IN1
-opcode[4] => Equal2.IN0
+opcode[4] => Equal2.IN1
 opcode[4] => Equal3.IN1
 opcode[4] => Equal4.IN1
 opcode[4] => Equal5.IN1
 opcode[4] => Equal6.IN1
 opcode[4] => Equal7.IN1
 opcode[4] => Equal8.IN1
-opcode[4] => Equal9.IN1
+opcode[4] => Equal9.IN0
 opcode[4] => Equal10.IN1
 opcode[4] => Equal11.IN1
 opcode[5] => Equal0.IN0
 opcode[5] => Equal1.IN0
-opcode[5] => Equal2.IN3
+opcode[5] => Equal2.IN0
 opcode[5] => Equal3.IN0
 opcode[5] => Equal4.IN0
 opcode[5] => Equal5.IN0
 opcode[5] => Equal6.IN0
 opcode[5] => Equal7.IN0
 opcode[5] => Equal8.IN0
-opcode[5] => Equal9.IN0
+opcode[5] => Equal9.IN3
 opcode[5] => Equal10.IN0
 opcode[5] => Equal11.IN0
+ULAop[0] <= ULAop.DB_MAX_OUTPUT_PORT_TYPE
+ULAop[1] <= ULAop.DB_MAX_OUTPUT_PORT_TYPE
 palavraControle[0] <= selMUXULA.DB_MAX_OUTPUT_PORT_TYPE
 palavraControle[1] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 palavraControle[2] <= selMUXEscReg3.DB_MAX_OUTPUT_PORT_TYPE
 palavraControle[3] <= habEscritaReg.DB_MAX_OUTPUT_PORT_TYPE
-palavraControle[4] <= Equal8.DB_MAX_OUTPUT_PORT_TYPE
-palavraControle[5] <= Equal9.DB_MAX_OUTPUT_PORT_TYPE
+palavraControle[4] <= Equal10.DB_MAX_OUTPUT_PORT_TYPE
+palavraControle[5] <= Equal8.DB_MAX_OUTPUT_PORT_TYPE
 palavraControle[6] <= selMUXPC.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -580,9 +585,13 @@ funct[5] => Equal1.IN5
 funct[5] => Equal2.IN3
 funct[5] => Equal3.IN4
 funct[5] => Equal4.IN4
-seletorULA[0] <= seletor.DB_MAX_OUTPUT_PORT_TYPE
-seletorULA[1] <= seletor.DB_MAX_OUTPUT_PORT_TYPE
-seletorULA[2] <= Equal4.DB_MAX_OUTPUT_PORT_TYPE
+ulaOP[0] => Equal5.IN1
+ulaOP[0] => Equal6.IN1
+ulaOP[1] => Equal5.IN0
+ulaOP[1] => Equal6.IN0
+seletorULA[0] <= seletorULA.DB_MAX_OUTPUT_PORT_TYPE
+seletorULA[1] <= seletorULA.DB_MAX_OUTPUT_PORT_TYPE
+seletorULA[2] <= seletorULA.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|mux2x1:muxEndREG3
@@ -1103,7 +1112,6 @@ seletor[0] => miniula:ULA28.seletor[0]
 seletor[0] => miniula:ULA29.seletor[0]
 seletor[0] => miniula:ULA30.seletor[0]
 seletor[0] => miniula:ULA31.seletor[0]
-seletor[0] => Equal0.IN1
 seletor[1] => miniula:ULA0.seletor[1]
 seletor[1] => miniula:ULA1.seletor[1]
 seletor[1] => miniula:ULA2.seletor[1]
@@ -1136,40 +1144,39 @@ seletor[1] => miniula:ULA28.seletor[1]
 seletor[1] => miniula:ULA29.seletor[1]
 seletor[1] => miniula:ULA30.seletor[1]
 seletor[1] => miniula:ULA31.seletor[1]
-seletor[1] => Equal0.IN0
 seletor[2] => miniula:ULA0.C_in
-saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[4] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[5] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[6] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[7] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[8] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[9] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[10] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[11] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[12] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[13] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[14] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[15] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[16] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[17] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[18] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[19] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[20] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[21] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[22] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[23] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[24] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[25] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[26] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[27] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[28] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[29] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[30] <= saida.DB_MAX_OUTPUT_PORT_TYPE
-saida[31] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[0] <= miniula:ULA0.saida
+saida[1] <= miniula:ULA1.saida
+saida[2] <= miniula:ULA2.saida
+saida[3] <= miniula:ULA3.saida
+saida[4] <= miniula:ULA4.saida
+saida[5] <= miniula:ULA5.saida
+saida[6] <= miniula:ULA6.saida
+saida[7] <= miniula:ULA7.saida
+saida[8] <= miniula:ULA8.saida
+saida[9] <= miniula:ULA9.saida
+saida[10] <= miniula:ULA10.saida
+saida[11] <= miniula:ULA11.saida
+saida[12] <= miniula:ULA12.saida
+saida[13] <= miniula:ULA13.saida
+saida[14] <= miniula:ULA14.saida
+saida[15] <= miniula:ULA15.saida
+saida[16] <= miniula:ULA16.saida
+saida[17] <= miniula:ULA17.saida
+saida[18] <= miniula:ULA18.saida
+saida[19] <= miniula:ULA19.saida
+saida[20] <= miniula:ULA20.saida
+saida[21] <= miniula:ULA21.saida
+saida[22] <= miniula:ULA22.saida
+saida[23] <= miniula:ULA23.saida
+saida[24] <= miniula:ULA24.saida
+saida[25] <= miniula:ULA25.saida
+saida[26] <= miniula:ULA26.saida
+saida[27] <= miniula:ULA27.saida
+saida[28] <= miniula:ULA28.saida
+saida[29] <= miniula:ULA29.saida
+saida[30] <= miniula:ULA30.saida
+saida[31] <= miniula:ULA31.saida
 flagZ <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1184,16 +1191,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA0|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux
@@ -1221,16 +1230,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA1|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux
@@ -1258,16 +1269,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA2|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA2|mux4x1Bit:mux
@@ -1295,16 +1308,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA3|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA3|mux4x1Bit:mux
@@ -1332,16 +1347,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA4|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA4|mux4x1Bit:mux
@@ -1369,16 +1386,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA5|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA5|mux4x1Bit:mux
@@ -1406,16 +1425,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA6|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux
@@ -1443,16 +1464,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA7|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA7|mux4x1Bit:mux
@@ -1480,16 +1503,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA8|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA8|mux4x1Bit:mux
@@ -1517,16 +1542,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA9|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA9|mux4x1Bit:mux
@@ -1554,16 +1581,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA10|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA10|mux4x1Bit:mux
@@ -1591,16 +1620,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA11|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA11|mux4x1Bit:mux
@@ -1628,16 +1659,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA12|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA12|mux4x1Bit:mux
@@ -1665,16 +1698,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA13|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA13|mux4x1Bit:mux
@@ -1702,16 +1737,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA14|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA14|mux4x1Bit:mux
@@ -1739,16 +1776,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA15|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA15|mux4x1Bit:mux
@@ -1776,16 +1815,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA16|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA16|mux4x1Bit:mux
@@ -1813,16 +1854,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA17|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA17|mux4x1Bit:mux
@@ -1850,16 +1893,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA18|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux
@@ -1887,16 +1932,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA19|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA19|mux4x1Bit:mux
@@ -1924,16 +1971,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA20|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA20|mux4x1Bit:mux
@@ -1961,16 +2010,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA21|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA21|mux4x1Bit:mux
@@ -1998,16 +2049,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA22|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA22|mux4x1Bit:mux
@@ -2035,16 +2088,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA23|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA23|mux4x1Bit:mux
@@ -2072,16 +2127,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA24|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA24|mux4x1Bit:mux
@@ -2109,16 +2166,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA25|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA25|mux4x1Bit:mux
@@ -2146,16 +2205,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA26|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA26|mux4x1Bit:mux
@@ -2183,16 +2244,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA27|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA27|mux4x1Bit:mux
@@ -2220,16 +2283,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA28|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA28|mux4x1Bit:mux
@@ -2257,16 +2322,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA29|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA29|mux4x1Bit:mux
@@ -2294,16 +2361,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA30|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA30|mux4x1Bit:mux
@@ -2331,16 +2400,18 @@ C_in => somadorula:somador.C_in
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
-saida <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida <= mux4x1bit:mux.saida_MUX
 
 
 |topLevel|ULA:ULAa|miniULA:ULA31|somadorULA:somador
-entradaA => saida.IN1
-entradaB => entradaB_def.DATAA
-entradaB => entradaB_def.DATAB
+entradaA => xorA_B.IN0
+entradaA => andA_B.IN0
+entradaB => xorA_B.IN1
+entradaB => andA_B.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-C_in => entradaB_def.OUTPUTSELECT
-C_out <= <VCC>
+C_in => andCin_AB.IN1
+C_in => saida.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|ULA:ULAa|miniULA:ULA31|mux4x1Bit:mux

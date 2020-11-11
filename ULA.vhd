@@ -33,7 +33,7 @@ ULA0: entity work.miniULA
 ULA1: entity work.miniULA 
   port map (entradaA => entradaA(1), entradaB => entradaB(1), seletor => seletor(1 downto 0),  C_in =>c_out0, C_out =>c_out1, saida =>saida_intermed(1));
 ULA2: entity work.miniULA 
-  port map (entradaA => entradaA(2), entradaB => entradaB(2), seletor => seletor(1 downto 0),  C_in =>c_out1, C_out =>c_out2, saida =>saida_intermed(2));
+  port map (entradaA => entradaA(2), entradaB => entradaB(2), seletor => seletor(1 downto 0),  C_in =>c_out1, C_out =>c_out2, saida =>saida_intermed(2)); 
 ULA3: entity work.miniULA 
   port map (entradaA => entradaA(3), entradaB => entradaB(3), seletor => seletor(1 downto 0),  C_in =>c_out2, C_out =>c_out3, saida =>saida_intermed(3));
 ULA4: entity work.miniULA 
@@ -96,8 +96,7 @@ ULA31: entity work.miniULA
 
   overflow <= c_out31 xor c_out30; --?????????
 
-  saida <= "0000000000000000000000000000000" & overflow when seletor(1 downto 0) = "11" else saida_intermed;
+  saida <= saida_intermed; --"0000000000000000000000000000000" & overflow when seletor(1 downto 0) = "11" else saida_intermed;
 
 
   end architecture;
-  

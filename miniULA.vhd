@@ -17,7 +17,7 @@ end entity;
 architecture comportamento of miniULA is
   
 
-  SIGNAL saidaA, saidaB, outAdder, outOr, outAnd, saidaMux , intermed: std_logic;
+  SIGNAL saidaA, saidaB, outAdder, outOr, outAnd, intermed: std_logic;
   constant zero : std_logic :=  '0';
    
   begin
@@ -26,7 +26,7 @@ architecture comportamento of miniULA is
     port map(entradaA => entradaA, entradaB => entradaB, C_in => C_in, C_out => C_out, saida => outAdder);
   
     mux: entity work.mux4x1Bit 
-    port map(entradaA_MUX=> entradaA and entradaB, entradaB_MUX => entradaA or entradaB, entradaC_MUX => outAdder, entradaD_MUX => outAdder, seletor_MUX => seletor , saida_MUX => saidaMux);
+    port map(entradaA_MUX=> entradaA and entradaB, entradaB_MUX => entradaA or entradaB, entradaC_MUX => outAdder, entradaD_MUX => outAdder, seletor_MUX => seletor , saida_MUX => saida);
      
     
     

@@ -13,20 +13,27 @@ entity somadorULA is
 end entity;
 
 
-
 architecture comportamento of somadorULA is
 
-    SIGNAL entradaB_def : std_logic;
+    SIGNAL xorA_B, andA_B, andCin_AB : std_logic;
 
 
     begin
     
-        entradaB_def <= not entradaB when C_in = '1' else
-            entradaB;    
+--        entradaB_def <= not entradaB when C_in = '1' else
+--            entradaB;    
+--
+--        C_out <= '1' when entradaA = '1' and entradaB_def = '1' else 
+--                 '0';
+--        
+--        saida <= entradaA or entradaB_def;
+xorA_B <= entradaA xor entradaB;
+andA_B <= entradaA and entradaB;
+andCin_AB <= C_in and xorA_B;
 
-        C_out <= '1' when entradaA = '1' and entradaB = '1';
-        
-        saida <= entradaA or entradaB_def; 
+
+saida <= C_in xor xorA_B;
+C_out <= andA_B or andCin_AB;
         
         
         

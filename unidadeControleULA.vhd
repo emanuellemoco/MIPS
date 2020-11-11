@@ -14,6 +14,7 @@ entity unidadeControleULA is
     -- Input ports
     CLK   : in std_logic;
     funct : in std_logic_vector(5 downto 0);
+    ulaOP : in std_logic_vector(1 downto 0);
 
     -- Output ports
     seletorULA : out std_logic_vector(2 downto 0)
@@ -21,9 +22,10 @@ entity unidadeControleULA is
 end entity;
 architecture uwu of unidadeControleULA is
 
-  alias seletor  :      std_logic_vector(1 downto 0) is seletorULA(1 downto 0);
-  alias inverteB :      std_logic is seletorULA(2);
-  
+  signal seletorFUNCT : std_logic_vector(2 downto 0);
+
+  alias seletor  :      std_logic_vector(1 downto 0) is seletorFUNCT(1 downto 0);
+  alias inverteB :      std_logic is seletorFUNCT(2);
 
 -- TIPO R
 -- instR     000000 
@@ -54,6 +56,7 @@ architecture uwu of unidadeControleULA is
 begin
 
 
+
 seletor <= "00" when funct = andw else
            "01" when funct = orw else 
            "10" when funct = add or funct = subw else
@@ -64,5 +67,9 @@ seletor <= "00" when funct = andw else
 inverteB <= '1' when funct = subw else 
             '0';
 
+
+seletorULA <= "010" when ULAop = "00" else
+              "110" when ULAop = "01" else
+              seletorFUNCT;
 
 end architecture;
