@@ -1,0 +1,34 @@
+Quartus Prime Archive log --	/home/emanuelle/Desktop/INSPER/DesComp/MIPS/MIPS_entrega3.qarlog
+
+Archive:	/home/emanuelle/Desktop/INSPER/DesComp/MIPS/MIPS_entrega3.qar
+Date:		Wed Nov 11 17:09:29 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/MIPS.qpf
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/MIPS.qsf
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/ROMcontent.mif
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/Waveform.vwf
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/bancoRegistradores.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/constantes.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1Bit.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorULA.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControle.vhd
+/home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControleULA.vhd
+/opt/altera/18.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 23 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

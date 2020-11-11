@@ -36,6 +36,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "IR_a[8]",
+					"strict" : false
+				},
+				{
 					"name" : "IR_a[11]",
 					"strict" : false
 				},
@@ -49,6 +53,14 @@
 				},
 				{
 					"name" : "IR_a[17]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_a[18]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_a[21]",
 					"strict" : false
 				},
 				{
@@ -465,6 +477,14 @@
 				},
 				{
 					"name" : "seletorrULA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_a[1]",
 					"strict" : false
 				},
 				{

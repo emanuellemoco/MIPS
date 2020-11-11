@@ -32,7 +32,7 @@ andA_B <= entradaA and entradaB;
 andCin_AB <= C_in and xorA_B;
 
 
-saida <= C_in xor xorA_B;
+saida <= C_in xor xorA_B; 
 C_out <= andA_B or andCin_AB;
         
         

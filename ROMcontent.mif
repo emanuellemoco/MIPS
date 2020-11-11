@@ -19,10 +19,12 @@ DATA_RADIX=HEX;
                             
 CONTENT BEGIN               --I   opcode    Rs      Rt      immediate
 --endereco : dado;          --R   opcode	Rs	    Rt  	Rd  	shamt	funct
-    0    :   3C020002;      --    001111	00000	00010	0000000000000010 
-    1    :   3C010003;      --    001111	00000	00001   0000000000000011 
-    2    :     411820;      --    000000	00010	00001   00011   00000   100000
-    [3..5] : 2F;        
+    0    :   3C020002;      --    001111	00000	00010	0000000000000010            --(lui) carregando valor do imediato no reg2
+    1    :   3C010003;      --    001111	00000	00001   0000000000000011            --(lui) carregando valor do imediato no reg1
+    2    :     411820;      --    000000	00010	00001   00011   00000   100000      -- Add do REG2 + REG1, salva no REG3
+    3    :   3C040005;      --    001111	00000	00100	0000000000000101            --(lui) carregando valor do imediato no registrador 4
+    4    :   106401D4;      --    000100	00011	00100   0000000111010100            --(beq) compara reg3 com reg4, se igual faz o pulo
+    5    :   2F;        
     6    :   22;        
     [7..8] : 00;        
     9    :   01;        
