@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Wed Nov 11 17:02:05 2020
+Tue Nov 17 17:07:44 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -20,57 +20,87 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  12. Parameter Settings for User Entity Instance: memoriaROM:ROM
  13. Parameter Settings for User Entity Instance: registrador:ProgConter
  14. Parameter Settings for User Entity Instance: somadorConstante:SOMADOR_C
- 15. Parameter Settings for User Entity Instance: unidadeControle:UC
- 16. Parameter Settings for User Entity Instance: unidadeControleULA:UCula
- 17. Parameter Settings for User Entity Instance: mux2x1:muxEndREG3
- 18. Parameter Settings for User Entity Instance: bancoRegistradores:BR
- 19. Parameter Settings for User Entity Instance: estendeSinal:EXT
- 20. Parameter Settings for User Entity Instance: mux2x1:muxULA
- 21. Parameter Settings for User Entity Instance: ULA:ULAa
- 22. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux
- 23. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux
- 24. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA2|mux4x1Bit:mux
- 25. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA3|mux4x1Bit:mux
- 26. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA4|mux4x1Bit:mux
- 27. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA5|mux4x1Bit:mux
- 28. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux
- 29. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA7|mux4x1Bit:mux
- 30. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA8|mux4x1Bit:mux
- 31. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA9|mux4x1Bit:mux
- 32. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA10|mux4x1Bit:mux
- 33. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA11|mux4x1Bit:mux
- 34. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA12|mux4x1Bit:mux
- 35. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA13|mux4x1Bit:mux
- 36. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA14|mux4x1Bit:mux
- 37. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA15|mux4x1Bit:mux
- 38. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA16|mux4x1Bit:mux
- 39. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA17|mux4x1Bit:mux
- 40. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux
- 41. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA19|mux4x1Bit:mux
- 42. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA20|mux4x1Bit:mux
- 43. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA21|mux4x1Bit:mux
- 44. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA22|mux4x1Bit:mux
- 45. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA23|mux4x1Bit:mux
- 46. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA24|mux4x1Bit:mux
- 47. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA25|mux4x1Bit:mux
- 48. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA26|mux4x1Bit:mux
- 49. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA27|mux4x1Bit:mux
- 50. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA28|mux4x1Bit:mux
- 51. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA29|mux4x1Bit:mux
- 52. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA30|mux4x1Bit:mux
- 53. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA31|mux4x1Bit:mux
- 54. Parameter Settings for User Entity Instance: memoriaRAM:RAM
- 55. Parameter Settings for User Entity Instance: mux2x1:muxEscREG3
- 56. Parameter Settings for User Entity Instance: shifter:SHIFTER
- 57. Parameter Settings for User Entity Instance: somador:SOMADOR
- 58. Parameter Settings for User Entity Instance: mux2x1:muxJUMP
- 59. Parameter Settings for User Entity Instance: mux2x1:muxPC
- 60. Port Connectivity Checks: "mux2x1:muxPC"
- 61. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA0"
- 62. Port Connectivity Checks: "registrador:ProgConter"
- 63. Post-Synthesis Netlist Statistics for Top Partition
- 64. Elapsed Time Per Partition
- 65. Analysis & Synthesis Messages
+ 15. Parameter Settings for User Entity Instance: mux2x1:muxPC
+ 16. Parameter Settings for User Entity Instance: unidadeControle:UC
+ 17. Parameter Settings for User Entity Instance: unidadeControleULA:UCula
+ 18. Parameter Settings for User Entity Instance: mux2x1:muxEndREG3
+ 19. Parameter Settings for User Entity Instance: bancoRegistradores:BR
+ 20. Parameter Settings for User Entity Instance: estendeSinal:EXT
+ 21. Parameter Settings for User Entity Instance: mux2x1:muxULA
+ 22. Parameter Settings for User Entity Instance: ULA:ULAa
+ 23. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux
+ 24. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux
+ 25. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA2|mux4x1Bit:mux
+ 26. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA3|mux4x1Bit:mux
+ 27. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA4|mux4x1Bit:mux
+ 28. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA5|mux4x1Bit:mux
+ 29. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux
+ 30. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA7|mux4x1Bit:mux
+ 31. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA8|mux4x1Bit:mux
+ 32. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA9|mux4x1Bit:mux
+ 33. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA10|mux4x1Bit:mux
+ 34. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA11|mux4x1Bit:mux
+ 35. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA12|mux4x1Bit:mux
+ 36. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA13|mux4x1Bit:mux
+ 37. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA14|mux4x1Bit:mux
+ 38. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA15|mux4x1Bit:mux
+ 39. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA16|mux4x1Bit:mux
+ 40. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA17|mux4x1Bit:mux
+ 41. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux
+ 42. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA19|mux4x1Bit:mux
+ 43. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA20|mux4x1Bit:mux
+ 44. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA21|mux4x1Bit:mux
+ 45. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA22|mux4x1Bit:mux
+ 46. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA23|mux4x1Bit:mux
+ 47. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA24|mux4x1Bit:mux
+ 48. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA25|mux4x1Bit:mux
+ 49. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA26|mux4x1Bit:mux
+ 50. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA27|mux4x1Bit:mux
+ 51. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA28|mux4x1Bit:mux
+ 52. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA29|mux4x1Bit:mux
+ 53. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA30|mux4x1Bit:mux
+ 54. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA31|mux4x1Bit:mux
+ 55. Parameter Settings for User Entity Instance: memoriaRAM:RAM
+ 56. Parameter Settings for User Entity Instance: mux2x1:muxEscREG3
+ 57. Parameter Settings for User Entity Instance: shifter:SHIFTER_BEQ
+ 58. Parameter Settings for User Entity Instance: somador:SOMADOR
+ 59. Parameter Settings for User Entity Instance: mux2x1:muxJUMP
+ 60. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA31"
+ 61. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA30"
+ 62. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA29"
+ 63. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA28"
+ 64. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA27"
+ 65. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA26"
+ 66. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA25"
+ 67. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA24"
+ 68. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA23"
+ 69. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA22"
+ 70. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA21"
+ 71. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA20"
+ 72. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA19"
+ 73. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA18"
+ 74. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA17"
+ 75. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA16"
+ 76. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA15"
+ 77. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA14"
+ 78. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA13"
+ 79. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA12"
+ 80. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA11"
+ 81. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA10"
+ 82. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA9"
+ 83. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA8"
+ 84. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA7"
+ 85. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA6"
+ 86. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA5"
+ 87. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA4"
+ 88. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA3"
+ 89. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA2"
+ 90. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA1"
+ 91. Port Connectivity Checks: "mux2x1:muxPC"
+ 92. Port Connectivity Checks: "registrador:ProgConter"
+ 93. Post-Synthesis Netlist Statistics for Top Partition
+ 94. Elapsed Time Per Partition
+ 95. Analysis & Synthesis Messages
 
 
 
@@ -96,14 +126,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 11 17:02:05 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 17 17:07:44 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; topLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2336                                        ;
-; Total pins                      ; 164                                         ;
+; Total registers                 ; 288                                         ;
+; Total pins                      ; 198                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -253,25 +283,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 1708           ;
+; Estimate of Logic utilization (ALMs needed) ; 296            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1255           ;
-;     -- 7 input functions                    ; 66             ;
-;     -- 6 input functions                    ; 840            ;
-;     -- 5 input functions                    ; 52             ;
-;     -- 4 input functions                    ; 89             ;
-;     -- <=3 input functions                  ; 208            ;
+; Combinational ALUT usage for logic          ; 394            ;
+;     -- 7 input functions                    ; 65             ;
+;     -- 6 input functions                    ; 87             ;
+;     -- 5 input functions                    ; 68             ;
+;     -- 4 input functions                    ; 36             ;
+;     -- <=3 input functions                  ; 138            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 2336           ;
+; Dedicated logic registers                   ; 288            ;
 ;                                             ;                ;
-; I/O pins                                    ; 164            ;
+; I/O pins                                    ; 198            ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 2336           ;
-; Total fan-out                               ; 13998          ;
-; Average fan-out                             ; 3.57           ;
+; Maximum fan-out                             ; 288            ;
+; Total fan-out                               ; 3224           ;
+; Average fan-out                             ; 2.99           ;
 +---------------------------------------------+----------------+
 
 
@@ -280,81 +310,106 @@ refer to the applicable agreement for further details.
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name        ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
-; |topLevel                       ; 1255 (12)           ; 2336 (0)                  ; 0                 ; 0          ; 164  ; 0            ; |topLevel                                           ; topLevel           ; work         ;
-;    |ULA:ULAa|                   ; 183 (97)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa                                  ; ULA                ; work         ;
-;       |miniULA:ULA10|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA11|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA11                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA11|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA12|           ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA12                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA12|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA13|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA13                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA13|somadorULA:somador ; somadorULA         ; work         ;
+; |topLevel                       ; 394 (10)            ; 288 (0)                   ; 0                 ; 0          ; 198  ; 0            ; |topLevel                                           ; topLevel           ; work         ;
+;    |ULA:ULAa|                   ; 123 (31)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa                                  ; ULA                ; work         ;
+;       |miniULA:ULA0|            ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA10|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA11|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA11                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA11|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA12|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA12                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA12|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA12|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA13|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA13                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA13|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA13|somadorULA:somador ; somadorULA         ; work         ;
 ;       |miniULA:ULA14|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA14                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA14|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA15|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA16|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA17|           ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA18|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA19|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA1|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA14|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA14|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA15|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA16|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA17|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA18|           ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA19|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA1|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1|somadorULA:somador  ; somadorULA         ; work         ;
-;       |miniULA:ULA20|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA20                    ; miniULA            ; work         ;
+;       |miniULA:ULA20|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA20                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA20|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA20|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA21|           ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA21                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA21|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA22|           ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA22                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA22|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA23|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA23                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA23|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA21|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA21                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA21|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA22|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA22                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA22|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA22|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA23|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA23                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA23|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA23|somadorULA:somador ; somadorULA         ; work         ;
 ;       |miniULA:ULA24|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA24                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA24|somadorULA:somador ; somadorULA         ; work         ;
+;          |mux4x1Bit:mux|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA24|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
 ;       |miniULA:ULA25|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA25                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA25|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA26|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA26                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA26|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA27|           ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA27                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA27|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA28|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA28                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA28|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA29|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA29                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA29|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA2|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA2                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA25|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA25|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA26|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA26                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA26|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA27|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA27                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA27|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA27|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA28|           ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA28                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA28|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA28|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA29|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA29                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA29|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA2|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA2                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA2|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA2|somadorULA:somador  ; somadorULA         ; work         ;
-;       |miniULA:ULA30|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA30                    ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA30|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA31|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA31                    ; miniULA            ; work         ;
+;       |miniULA:ULA30|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA30                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA30|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA30|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA31|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA31                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA31|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA31|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA3|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA3                     ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA3|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA3|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA3                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA3|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA3|somadorULA:somador  ; somadorULA         ; work         ;
 ;       |miniULA:ULA4|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA4                     ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA4|somadorULA:somador  ; somadorULA         ; work         ;
-;       |miniULA:ULA5|            ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5                     ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5|somadorULA:somador  ; somadorULA         ; work         ;
-;       |miniULA:ULA6|            ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6                     ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6|somadorULA:somador  ; somadorULA         ; work         ;
-;       |miniULA:ULA7|            ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7                     ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7|somadorULA:somador  ; somadorULA         ; work         ;
-;       |miniULA:ULA8|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA8                     ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA8|somadorULA:somador  ; somadorULA         ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA4|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA4|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA5|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA6|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA7|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA8|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA8                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA8|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA8|somadorULA:somador  ; somadorULA         ; work         ;
 ;       |miniULA:ULA9|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9                     ; miniULA            ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9|somadorULA:somador  ; somadorULA         ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9|somadorULA:somador  ; somadorULA         ; work         ;
 ;    |bancoRegistradores:BR|      ; 137 (137)           ; 256 (256)                 ; 0                 ; 0          ; 0    ; 0            ; |topLevel|bancoRegistradores:BR                     ; bancoRegistradores ; work         ;
-;    |memoriaRAM:RAM|             ; 798 (798)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |topLevel|memoriaRAM:RAM                            ; memoriaRAM         ; work         ;
 ;    |memoriaROM:ROM|             ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|memoriaROM:ROM                            ; memoriaROM         ; work         ;
 ;    |mux2x1:muxEndREG3|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxEndREG3                         ; mux2x1             ; work         ;
-;    |mux2x1:muxEscREG3|          ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxEscREG3                         ; mux2x1             ; work         ;
-;    |mux2x1:muxULA|              ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxULA                             ; mux2x1             ; work         ;
+;    |mux2x1:muxJUMP|             ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxJUMP                            ; mux2x1             ; work         ;
+;    |mux2x1:muxPC|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxPC                              ; mux2x1             ; work         ;
 ;    |registrador:ProgConter|     ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |topLevel|registrador:ProgConter                    ; registrador        ; work         ;
-;    |somador:SOMADOR|            ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|somador:SOMADOR                           ; somador            ; work         ;
+;    |somador:SOMADOR|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|somador:SOMADOR                           ; somador            ; work         ;
 ;    |somadorConstante:SOMADOR_C| ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|somadorConstante:SOMADOR_C                ; somadorConstante   ; work         ;
 ;    |unidadeControle:UC|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControle:UC                        ; unidadeControle    ; work         ;
-;    |unidadeControleULA:UCula|   ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControleULA:UCula                  ; unidadeControleULA ; work         ;
+;    |unidadeControleULA:UCula|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControleULA:UCula                  ; unidadeControleULA ; work         ;
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1141,23 +1196,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2336  ;
-; Number of registers using Synchronous Clear  ; 16    ;
-; Number of registers using Synchronous Load   ; 14    ;
+; Total registers                              ; 288   ;
+; Number of registers using Synchronous Clear  ; 256   ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2306  ;
+; Number of registers using Clock Enable       ; 258   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |topLevel|ULA:ULAa|saida[16] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; 4:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |topLevel|ULA:ULAa|entradaBdef[16]                       ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |topLevel|ULA:ULAa|entradaBdef[12]                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |topLevel|ULA:ULAa|miniULA:ULA24|mux4x1Bit:mux|saida_MUX ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -1202,6 +1259,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; larguradados   ; 32    ; Signed Integer                                 ;
 ; constante      ; 4     ; Signed Integer                                 ;
 +----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxPC ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; larguradados   ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1621,13 +1688,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: shifter:SHIFTER ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; larguradados   ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shifter:SHIFTER_BEQ ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; larguradados   ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1651,14 +1718,283 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2x1:muxPC ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; larguradados   ; 32    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA31" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA30" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA29" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA28" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA27" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA26" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA25" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA24" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA23" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA22" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA21" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA20" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA19" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA18" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA17" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA16" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA15" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA14" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA13" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA12" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA11" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA10" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA9" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA8" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA7" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA6" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA5" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA4" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA3" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA2" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA1" ;
++-------+-------+----------+------------------------+
+; Port  ; Type  ; Severity ; Details                ;
++-------+-------+----------+------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND           ;
++-------+-------+----------+------------------------+
 
 
 +------------------------------------------------------+
@@ -1668,15 +2004,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------+-------+----------+--------------+
 ; entradab_mux[1..0] ; Input ; Info     ; Stuck at GND ;
 +--------------------+-------+----------+--------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA0" ;
-+------+-------+----------+-------------------------+
-; Port ; Type  ; Severity ; Details                 ;
-+------+-------+----------+-------------------------+
-; c_in ; Input ; Info     ; Stuck at GND            ;
-+------+-------+----------+-------------------------+
 
 
 +----------------------------------------------------+
@@ -1694,31 +2021,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2336                        ;
-;     ENA               ; 2306                        ;
-;     SCLR              ; 16                          ;
-;     SLD               ; 14                          ;
-; arriav_lcell_comb     ; 1257                        ;
-;     arith             ; 76                          ;
+; arriav_ff             ; 288                         ;
+;     ENA               ; 2                           ;
+;     ENA SCLR          ; 256                         ;
+;     plain             ; 30                          ;
+; arriav_lcell_comb     ; 397                         ;
+;     arith             ; 62                          ;
+;         1 data inputs ; 53                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 1                           ;
+;     extend            ; 65                          ;
+;         7 data inputs ; 65                          ;
+;     normal            ; 270                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 36                          ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 34                          ;
-;     extend            ; 66                          ;
-;         7 data inputs ; 66                          ;
-;     normal            ; 1115                        ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 76                          ;
-;         3 data inputs ; 90                          ;
-;         4 data inputs ; 55                          ;
-;         5 data inputs ; 52                          ;
-;         6 data inputs ; 840                         ;
-; boundary_port         ; 164                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 50                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 35                          ;
+;         5 data inputs ; 68                          ;
+;         6 data inputs ; 87                          ;
+; boundary_port         ; 198                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.10                       ;
-; Average LUT depth     ; 7.50                        ;
+; Max LUT depth         ; 17.00                       ;
+; Average LUT depth     ; 11.00                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1727,7 +2053,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -1737,7 +2063,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 11 17:01:40 2020
+    Info: Processing started: Tue Nov 17 17:07:24 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1760,7 +2086,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.
     Info (12022): Found design unit 1: mux2x1-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd Line: 14
     Info (12023): Found entity 1: mux2x1 File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file topLevel.vhd
-    Info (12022): Found design unit 1: topLevel-uwu File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 28
+    Info (12022): Found design unit 1: topLevel-uwu File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 30
     Info (12023): Found entity 1: topLevel File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
     Info (12022): Found design unit 1: registrador-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd Line: 15
@@ -1786,7 +2112,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux4x1.
     Info (12022): Found design unit 1: mux4x1-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1.vhd Line: 14
     Info (12023): Found entity 1: mux4x1 File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file miniULA.vhd
-    Info (12022): Found design unit 1: miniULA-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 17
+    Info (12022): Found design unit 1: miniULA-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 18
     Info (12023): Found entity 1: miniULA File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x1Bit.vhd
     Info (12022): Found design unit 1: mux4x1Bit-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1Bit.vhd Line: 14
@@ -1795,29 +2121,27 @@ Info (12021): Found 2 design units, including 1 entities, in source file unidade
     Info (12022): Found design unit 1: unidadeControleULA-uwu File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControleULA.vhd Line: 23
     Info (12023): Found entity 1: unidadeControleULA File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControleULA.vhd Line: 7
 Info (12127): Elaborating entity "topLevel" for the top level hierarchy
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 54
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 56
 Warning (10541): VHDL Signal Declaration warning at memoriaROM.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd Line: 19
-Info (12128): Elaborating entity "registrador" for hierarchy "registrador:ProgConter" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 57
-Info (12128): Elaborating entity "somadorConstante" for hierarchy "somadorConstante:SOMADOR_C" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 60
-Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 63
-Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeControleULA:UCula" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 66
-Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxEndREG3" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 69
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 79
-Info (12128): Elaborating entity "estendeSinal" for hierarchy "estendeSinal:EXT" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 82
-Warning (10540): VHDL Signal Declaration warning at estendeSinal.vhd(22): used explicit default value for signal "right" because signal was never assigned a value File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 22
-Warning (10492): VHDL Process Statement warning at estendeSinal.vhd(33): signal "left" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 33
-Warning (10492): VHDL Process Statement warning at estendeSinal.vhd(33): signal "right" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 33
-Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxULA" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 85
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULAa" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 88
-Info (12128): Elaborating entity "miniULA" for hierarchy "ULA:ULAa|miniULA:ULA0" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 37
-Info (12128): Elaborating entity "somadorULA" for hierarchy "ULA:ULAa|miniULA:ULA0|somadorULA:somador" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 25
-Info (12128): Elaborating entity "mux4x1Bit" for hierarchy "ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 28
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 91
-Info (12128): Elaborating entity "shifter" for hierarchy "shifter:SHIFTER" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 97
-Info (12128): Elaborating entity "somador" for hierarchy "somador:SOMADOR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 100
+Info (12128): Elaborating entity "registrador" for hierarchy "registrador:ProgConter" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 59
+Info (12128): Elaborating entity "somadorConstante" for hierarchy "somadorConstante:SOMADOR_C" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 65
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxPC" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 68
+Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 72
+Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeControleULA:UCula" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 75
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxEndREG3" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 78
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 85
+Info (12128): Elaborating entity "estendeSinal" for hierarchy "estendeSinal:EXT" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at estendeSinal.vhd(32): signal "left" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 32
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULAa" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 94
+Info (12128): Elaborating entity "miniULA" for hierarchy "ULA:ULAa|miniULA:ULA0" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 38
+Info (12128): Elaborating entity "somadorULA" for hierarchy "ULA:ULAa|miniULA:ULA0|somadorULA:somador" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 26
+Info (12128): Elaborating entity "mux4x1Bit" for hierarchy "ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 29
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 97
+Info (12128): Elaborating entity "shifter" for hierarchy "shifter:SHIFTER_BEQ" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 103
+Info (12128): Elaborating entity "somador" for hierarchy "somador:SOMADOR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 106
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "memoriaRAM:RAM|memRAM" is uninferred due to asynchronous read logic File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 21
-    Info (276007): RAM logic "bancoRegistradores:BR|registrador" is uninferred due to asynchronous read logic File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/bancoRegistradores.vhd Line: 36
+    Info (276007): RAM logic "bancoRegistradores:BR|registrador" is uninferred due to asynchronous read logic File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/bancoRegistradores.vhd Line: 63
     Info (276004): RAM logic "memoriaROM:ROM|memROM" is uninferred due to inappropriate RAM size File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd Line: 19
 Critical Warning (127004): Memory depth (64) in the design file differs from memory depth (256) in the Memory Initialization File "/home/emanuelle/Desktop/INSPER/DesComp/MIPS/ROMcontent.mif" -- truncated remaining initial content value to fit RAM
 Warning (13024): Output pins are stuck at VCC or GND
@@ -1833,18 +2157,39 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "IR_a[25]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
     Warning (13410): Pin "IR_a[30]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
     Warning (13410): Pin "IR_a[31]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 20
+    Warning (13410): Pin "Immed[9]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[10]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[13]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[14]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[15]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[16]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[17]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[18]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[19]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[20]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[21]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[22]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[23]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[24]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[25]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[26]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[27]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[28]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[29]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[30]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
+    Warning (13410): Pin "Immed[31]" is stuck at GND File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3725 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 848 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 163 output pins
-    Info (21061): Implemented 3561 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 1042 megabytes
-    Info: Processing ended: Wed Nov 11 17:02:05 2020
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:54
+    Info (21059): Implemented 197 output pins
+    Info (21061): Implemented 650 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 1047 megabytes
+    Info: Processing ended: Tue Nov 17 17:07:44 2020
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:43
 
 

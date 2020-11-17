@@ -18,8 +18,7 @@ end entity;
 
 architecture comportamento of estendeSinal is
 
-    signal left : std_logic_vector(larguraDadoEntrada -3 downto 0);
-    signal right : std_logic_vector(1 downto 0) := "00";
+    signal left : std_logic_vector(larguraDadoEntrada -1 downto 0);
 
 begin
     process (estendeSinal_IN) is
@@ -30,6 +29,6 @@ begin
                 left <= (others => '0');
             end if;
 
-            estendeSinal_OUT <= left & estendeSinal_IN & right;
+            estendeSinal_OUT <= left & estendeSinal_IN;
     end process;
 end architecture;

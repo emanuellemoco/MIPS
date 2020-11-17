@@ -13,41 +13,29 @@
 -- refer to the applicable agreement for further details.
 
 WIDTH=32;
-DEPTH=256;
+DEPTH=64;
 ADDRESS_RADIX=DEC;
 DATA_RADIX=HEX;
-                            
-CONTENT BEGIN               --I   opcode    Rs      Rt      immediate
---endereco : dado;          --R   opcode	Rs	    Rt  	Rd  	shamt	funct
-    0    :   3C020002;      --    001111	00000	00010	0000000000000010            --(lui) carregando valor do imediato no reg2
-    1    :   3C010003;      --    001111	00000	00001   0000000000000011            --(lui) carregando valor do imediato no reg1
-    2    :     411820;      --    000000	00010	00001   00011   00000   100000      -- Add do REG2 + REG1, salva no REG3
-    3    :   3C040005;      --    001111	00000	00100	0000000000000101            --(lui) carregando valor do imediato no registrador 4
-    4    :   106401D4;      --    000100	00011	00100   0000000111010100            --(beq) compara reg3 com reg4, se igual faz o pulo
-    5    :   2F;        
-    6    :   22;        
-    [7..8] : 00;        
-    9    :   01;        
-    10   :   6A;
-    11   :   AB;
-    12   :   1B;
-    13   :   AC;
-    14   :   09;
-    15   :   00;
-    16   :   AF;
-    17   :   00;
-    18   :   AE;
-    19   :   11;
-    20   :   01;
-    [21..23] : 00;
-    24   :   AE;
-    25   :   14;
-    [26..28] : 00;
-    29   :   8D;
-    30   :   0C;
-    [31..33] : 00;
-    34   :   AE;
-    [35..37] : 00;
-    38   :   26;
-    [39..255] : 20;
+
+CONTENT BEGIN
+      -- Valores iniciais no banco de registradores:
+      -- $zero (#0) := 0x00
+      -- $t0   (#8) := 0x00
+      -- $t1   (#9) := 0x0A
+      -- $t2  (#10) := 0x0B
+      -- $t3  (#11) := 0x0C
+      -- $t4  (#12) := 0x0D
+      -- $t5  (#13) := 0x16
+
+    0    :   AC090008; --sw $t1 8($zero)     (m(8) := 0x0000000A)
+    1    :   8C080008; --lw $t0 8($zero)     ($t0  := 0x0000000A)
+    2    :   012A4022; --sub $t0 $t1 $t2     ($t0  := 0xFFFFFFFF)
+    3    :   012A4024; --and $t0 $t1 $t2     ($t0  := 0x0000000A)
+    4    :   012A4025; --or $t0 $t1 $t2      ($t0  := 0x0000000B)
+    5    :   012A402A; --slt $t0 $t1 $t2     ($t0  := 0x00000001)
+    6    :   010A4020; --add $t0 $t0 $t2     ($t0  := 0x0000000C)
+                       --segunda execução:   ($t0 := 0x00000017)
+    7    :   110BFFFE; --beq $t0 $t3 0xFFFE  (pc := #6)
+                       --segunda execução:   (pc := #8)
+    8    :   08000000; --j 0x000000          (pc := #0)
 END;

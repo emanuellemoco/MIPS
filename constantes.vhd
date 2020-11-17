@@ -21,7 +21,7 @@ package constantes is
     constant lw    : opcode  := "100011";
     constant ori   : opcode  := "001101";
     constant slti  : opcode  := "001010";
-    constant sw    : opcode  := "001011";
+    constant sw    : opcode  := "101011";
     constant j     : opcode  := "000010";
     constant jal   : opcode  := "000011";
 
@@ -30,7 +30,7 @@ package constantes is
     constant jr    : funct   := "001000";
     constant orw   : funct   := "100101";
     constant slt   : funct   := "101010";
-    constant subw   : funct   := "100010";
+    constant subw  : funct   := "100010";
 
      
 
