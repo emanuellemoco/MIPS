@@ -40,11 +40,31 @@
 					"strict" : false
 				},
 				{
+					"name" : "IR_a[9]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_a[10]",
+					"strict" : false
+				},
+				{
 					"name" : "IR_a[11]",
 					"strict" : false
 				},
 				{
 					"name" : "IR_a[12]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_a[13]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_a[14]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_a[15]",
 					"strict" : false
 				},
 				{
@@ -56,7 +76,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "IR_a[18]",
+					"name" : "IR_a[19]",
 					"strict" : false
 				},
 				{
@@ -64,7 +84,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "IR_a[22]",
+					"name" : "IR_a[24]",
 					"strict" : false
 				},
 				{
@@ -81,6 +101,10 @@
 				},
 				{
 					"name" : "IR_a[29]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_a[31]",
 					"strict" : false
 				},
 				{
@@ -468,18 +492,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "seletorrULA[0]",
-					"strict" : false
-				},
-				{
-					"name" : "seletorrULA[1]",
-					"strict" : false
-				},
-				{
-					"name" : "seletorrULA[2]",
-					"strict" : false
-				},
-				{
 					"name" : "PC_a[0]",
 					"strict" : false
 				},
@@ -608,14 +620,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "ULA_op[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ULA_op[1]",
-					"strict" : false
-				},
-				{
 					"name" : "Immed[0]",
 					"strict" : false
 				},
@@ -652,11 +656,219 @@
 					"strict" : false
 				},
 				{
+					"name" : "Immed[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[10]",
+					"strict" : false
+				},
+				{
 					"name" : "Immed[11]",
 					"strict" : false
 				},
 				{
 					"name" : "Immed[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Immed[30]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[15]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[16]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[17]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[18]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[19]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[20]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[21]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[22]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[23]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[24]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[25]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[26]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[27]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[28]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[29]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[30]",
+					"strict" : false
+				},
+				{
+					"name" : "entReg3[31]",
 					"strict" : false
 				},
 				{

@@ -63,8 +63,8 @@ seletor <= "00" when funct = andw else
            "11" when funct = slt else 
            "01";
 
-
-inverteB <= '1' when funct = subw else 
+                              -- FEITO POR LEONARDO MENDES
+inverteB <= '1' when funct = subw or funct = slt else 
             '0';
 
 

@@ -56,7 +56,7 @@ architecture arch_name of unidadeControle is
 begin
 
   -- Instrução R
-    selMuxUla     <= '0' when opcode = instR or opcode = beqw or opcode = bne or opcode = sw else 
+    selMuxUla     <= '0' when opcode = instR or opcode = beqw or opcode = bne else 
     '1'; 
 
   -- Instrução R

@@ -27,9 +27,9 @@ architecture comportamento of somadorULA is
 --                 '0';
 --        
 --        saida <= entradaA or entradaB_def;
-xorA_B <= entradaA xor entradaB;
+xorA_B <= entradaA xor entradaB; 
 andA_B <= entradaA and entradaB;
-andCin_AB <= C_in and xorA_B;
+andCin_AB <= C_in and xorA_B; 
 
 
 saida <= C_in xor xorA_B; 

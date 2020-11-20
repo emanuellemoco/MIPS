@@ -5,203 +5,229 @@ CLOCK_50 => unidadecontrole:UC.CLK
 CLOCK_50 => unidadecontroleula:UCula.CLK
 CLOCK_50 => bancoregistradores:BR.clk
 CLOCK_50 => memoriaram:RAM.clk
-IR_a[0] << memoriarom:ROM.Dado[0]
-IR_a[1] << memoriarom:ROM.Dado[1]
-IR_a[2] << memoriarom:ROM.Dado[2]
-IR_a[3] << memoriarom:ROM.Dado[3]
-IR_a[4] << memoriarom:ROM.Dado[4]
-IR_a[5] << memoriarom:ROM.Dado[5]
-IR_a[6] << memoriarom:ROM.Dado[6]
-IR_a[7] << memoriarom:ROM.Dado[7]
-IR_a[8] << memoriarom:ROM.Dado[8]
-IR_a[9] << memoriarom:ROM.Dado[9]
-IR_a[10] << memoriarom:ROM.Dado[10]
-IR_a[11] << memoriarom:ROM.Dado[11]
-IR_a[12] << memoriarom:ROM.Dado[12]
-IR_a[13] << memoriarom:ROM.Dado[13]
-IR_a[14] << memoriarom:ROM.Dado[14]
-IR_a[15] << memoriarom:ROM.Dado[15]
-IR_a[16] << memoriarom:ROM.Dado[16]
-IR_a[17] << memoriarom:ROM.Dado[17]
-IR_a[18] << memoriarom:ROM.Dado[18]
-IR_a[19] << memoriarom:ROM.Dado[19]
-IR_a[20] << memoriarom:ROM.Dado[20]
-IR_a[21] << memoriarom:ROM.Dado[21]
-IR_a[22] << memoriarom:ROM.Dado[22]
-IR_a[23] << memoriarom:ROM.Dado[23]
-IR_a[24] << memoriarom:ROM.Dado[24]
-IR_a[25] << memoriarom:ROM.Dado[25]
-IR_a[26] << memoriarom:ROM.Dado[26]
-IR_a[27] << memoriarom:ROM.Dado[27]
-IR_a[28] << memoriarom:ROM.Dado[28]
-IR_a[29] << memoriarom:ROM.Dado[29]
-IR_a[30] << memoriarom:ROM.Dado[30]
-IR_a[31] << memoriarom:ROM.Dado[31]
-OUT_RS[0] << bancoregistradores:BR.saidaA[0]
-OUT_RS[1] << bancoregistradores:BR.saidaA[1]
-OUT_RS[2] << bancoregistradores:BR.saidaA[2]
-OUT_RS[3] << bancoregistradores:BR.saidaA[3]
-OUT_RS[4] << bancoregistradores:BR.saidaA[4]
-OUT_RS[5] << bancoregistradores:BR.saidaA[5]
-OUT_RS[6] << bancoregistradores:BR.saidaA[6]
-OUT_RS[7] << bancoregistradores:BR.saidaA[7]
-OUT_RS[8] << bancoregistradores:BR.saidaA[8]
-OUT_RS[9] << bancoregistradores:BR.saidaA[9]
-OUT_RS[10] << bancoregistradores:BR.saidaA[10]
-OUT_RS[11] << bancoregistradores:BR.saidaA[11]
-OUT_RS[12] << bancoregistradores:BR.saidaA[12]
-OUT_RS[13] << bancoregistradores:BR.saidaA[13]
-OUT_RS[14] << bancoregistradores:BR.saidaA[14]
-OUT_RS[15] << bancoregistradores:BR.saidaA[15]
-OUT_RS[16] << bancoregistradores:BR.saidaA[16]
-OUT_RS[17] << bancoregistradores:BR.saidaA[17]
-OUT_RS[18] << bancoregistradores:BR.saidaA[18]
-OUT_RS[19] << bancoregistradores:BR.saidaA[19]
-OUT_RS[20] << bancoregistradores:BR.saidaA[20]
-OUT_RS[21] << bancoregistradores:BR.saidaA[21]
-OUT_RS[22] << bancoregistradores:BR.saidaA[22]
-OUT_RS[23] << bancoregistradores:BR.saidaA[23]
-OUT_RS[24] << bancoregistradores:BR.saidaA[24]
-OUT_RS[25] << bancoregistradores:BR.saidaA[25]
-OUT_RS[26] << bancoregistradores:BR.saidaA[26]
-OUT_RS[27] << bancoregistradores:BR.saidaA[27]
-OUT_RS[28] << bancoregistradores:BR.saidaA[28]
-OUT_RS[29] << bancoregistradores:BR.saidaA[29]
-OUT_RS[30] << bancoregistradores:BR.saidaA[30]
-OUT_RS[31] << bancoregistradores:BR.saidaA[31]
-OUT_RT[0] << bancoregistradores:BR.saidaB[0]
-OUT_RT[1] << bancoregistradores:BR.saidaB[1]
-OUT_RT[2] << bancoregistradores:BR.saidaB[2]
-OUT_RT[3] << bancoregistradores:BR.saidaB[3]
-OUT_RT[4] << bancoregistradores:BR.saidaB[4]
-OUT_RT[5] << bancoregistradores:BR.saidaB[5]
-OUT_RT[6] << bancoregistradores:BR.saidaB[6]
-OUT_RT[7] << bancoregistradores:BR.saidaB[7]
-OUT_RT[8] << bancoregistradores:BR.saidaB[8]
-OUT_RT[9] << bancoregistradores:BR.saidaB[9]
-OUT_RT[10] << bancoregistradores:BR.saidaB[10]
-OUT_RT[11] << bancoregistradores:BR.saidaB[11]
-OUT_RT[12] << bancoregistradores:BR.saidaB[12]
-OUT_RT[13] << bancoregistradores:BR.saidaB[13]
-OUT_RT[14] << bancoregistradores:BR.saidaB[14]
-OUT_RT[15] << bancoregistradores:BR.saidaB[15]
-OUT_RT[16] << bancoregistradores:BR.saidaB[16]
-OUT_RT[17] << bancoregistradores:BR.saidaB[17]
-OUT_RT[18] << bancoregistradores:BR.saidaB[18]
-OUT_RT[19] << bancoregistradores:BR.saidaB[19]
-OUT_RT[20] << bancoregistradores:BR.saidaB[20]
-OUT_RT[21] << bancoregistradores:BR.saidaB[21]
-OUT_RT[22] << bancoregistradores:BR.saidaB[22]
-OUT_RT[23] << bancoregistradores:BR.saidaB[23]
-OUT_RT[24] << bancoregistradores:BR.saidaB[24]
-OUT_RT[25] << bancoregistradores:BR.saidaB[25]
-OUT_RT[26] << bancoregistradores:BR.saidaB[26]
-OUT_RT[27] << bancoregistradores:BR.saidaB[27]
-OUT_RT[28] << bancoregistradores:BR.saidaB[28]
-OUT_RT[29] << bancoregistradores:BR.saidaB[29]
-OUT_RT[30] << bancoregistradores:BR.saidaB[30]
-OUT_RT[31] << bancoregistradores:BR.saidaB[31]
-ulaOut_a[0] << ula:ULAa.saida[0]
-ulaOut_a[1] << ula:ULAa.saida[1]
-ulaOut_a[2] << ula:ULAa.saida[2]
-ulaOut_a[3] << ula:ULAa.saida[3]
-ulaOut_a[4] << ula:ULAa.saida[4]
-ulaOut_a[5] << ula:ULAa.saida[5]
-ulaOut_a[6] << ula:ULAa.saida[6]
-ulaOut_a[7] << ula:ULAa.saida[7]
-ulaOut_a[8] << ula:ULAa.saida[8]
-ulaOut_a[9] << ula:ULAa.saida[9]
-ulaOut_a[10] << ula:ULAa.saida[10]
-ulaOut_a[11] << ula:ULAa.saida[11]
-ulaOut_a[12] << ula:ULAa.saida[12]
-ulaOut_a[13] << ula:ULAa.saida[13]
-ulaOut_a[14] << ula:ULAa.saida[14]
-ulaOut_a[15] << ula:ULAa.saida[15]
-ulaOut_a[16] << ula:ULAa.saida[16]
-ulaOut_a[17] << ula:ULAa.saida[17]
-ulaOut_a[18] << ula:ULAa.saida[18]
-ulaOut_a[19] << ula:ULAa.saida[19]
-ulaOut_a[20] << ula:ULAa.saida[20]
-ulaOut_a[21] << ula:ULAa.saida[21]
-ulaOut_a[22] << ula:ULAa.saida[22]
-ulaOut_a[23] << ula:ULAa.saida[23]
-ulaOut_a[24] << ula:ULAa.saida[24]
-ulaOut_a[25] << ula:ULAa.saida[25]
-ulaOut_a[26] << ula:ULAa.saida[26]
-ulaOut_a[27] << ula:ULAa.saida[27]
-ulaOut_a[28] << ula:ULAa.saida[28]
-ulaOut_a[29] << ula:ULAa.saida[29]
-ulaOut_a[30] << ula:ULAa.saida[30]
-ulaOut_a[31] << ula:ULAa.saida[31]
-seletorrULA[0] << unidadecontroleula:UCula.seletorULA[0]
-seletorrULA[1] << unidadecontroleula:UCula.seletorULA[1]
-seletorrULA[2] << unidadecontroleula:UCula.seletorULA[2]
-PC_a[0] << registrador:ProgConter.DOUT[0]
-PC_a[1] << registrador:ProgConter.DOUT[1]
-PC_a[2] << registrador:ProgConter.DOUT[2]
-PC_a[3] << registrador:ProgConter.DOUT[3]
-PC_a[4] << registrador:ProgConter.DOUT[4]
-PC_a[5] << registrador:ProgConter.DOUT[5]
-PC_a[6] << registrador:ProgConter.DOUT[6]
-PC_a[7] << registrador:ProgConter.DOUT[7]
-PC_a[8] << registrador:ProgConter.DOUT[8]
-PC_a[9] << registrador:ProgConter.DOUT[9]
-PC_a[10] << registrador:ProgConter.DOUT[10]
-PC_a[11] << registrador:ProgConter.DOUT[11]
-PC_a[12] << registrador:ProgConter.DOUT[12]
-PC_a[13] << registrador:ProgConter.DOUT[13]
-PC_a[14] << registrador:ProgConter.DOUT[14]
-PC_a[15] << registrador:ProgConter.DOUT[15]
-PC_a[16] << registrador:ProgConter.DOUT[16]
-PC_a[17] << registrador:ProgConter.DOUT[17]
-PC_a[18] << registrador:ProgConter.DOUT[18]
-PC_a[19] << registrador:ProgConter.DOUT[19]
-PC_a[20] << registrador:ProgConter.DOUT[20]
-PC_a[21] << registrador:ProgConter.DOUT[21]
-PC_a[22] << registrador:ProgConter.DOUT[22]
-PC_a[23] << registrador:ProgConter.DOUT[23]
-PC_a[24] << registrador:ProgConter.DOUT[24]
-PC_a[25] << registrador:ProgConter.DOUT[25]
-PC_a[26] << registrador:ProgConter.DOUT[26]
-PC_a[27] << registrador:ProgConter.DOUT[27]
-PC_a[28] << registrador:ProgConter.DOUT[28]
-PC_a[29] << registrador:ProgConter.DOUT[29]
-PC_a[30] << registrador:ProgConter.DOUT[30]
-PC_a[31] << registrador:ProgConter.DOUT[31]
-ULA_op[0] << unidadecontrole:UC.ULAop[0]
-ULA_op[1] << unidadecontrole:UC.ULAop[1]
-Immed[0] << estendesinal:EXT.estendeSinal_OUT[0]
-Immed[1] << estendesinal:EXT.estendeSinal_OUT[1]
-Immed[2] << estendesinal:EXT.estendeSinal_OUT[2]
-Immed[3] << estendesinal:EXT.estendeSinal_OUT[3]
-Immed[4] << estendesinal:EXT.estendeSinal_OUT[4]
-Immed[5] << estendesinal:EXT.estendeSinal_OUT[5]
-Immed[6] << estendesinal:EXT.estendeSinal_OUT[6]
-Immed[7] << estendesinal:EXT.estendeSinal_OUT[7]
-Immed[8] << estendesinal:EXT.estendeSinal_OUT[8]
-Immed[9] << estendesinal:EXT.estendeSinal_OUT[9]
-Immed[10] << estendesinal:EXT.estendeSinal_OUT[10]
-Immed[11] << estendesinal:EXT.estendeSinal_OUT[11]
-Immed[12] << estendesinal:EXT.estendeSinal_OUT[12]
-Immed[13] << estendesinal:EXT.estendeSinal_OUT[13]
-Immed[14] << estendesinal:EXT.estendeSinal_OUT[14]
-Immed[15] << estendesinal:EXT.estendeSinal_OUT[15]
-Immed[16] << estendesinal:EXT.estendeSinal_OUT[16]
-Immed[17] << estendesinal:EXT.estendeSinal_OUT[17]
-Immed[18] << estendesinal:EXT.estendeSinal_OUT[18]
-Immed[19] << estendesinal:EXT.estendeSinal_OUT[19]
-Immed[20] << estendesinal:EXT.estendeSinal_OUT[20]
-Immed[21] << estendesinal:EXT.estendeSinal_OUT[21]
-Immed[22] << estendesinal:EXT.estendeSinal_OUT[22]
-Immed[23] << estendesinal:EXT.estendeSinal_OUT[23]
-Immed[24] << estendesinal:EXT.estendeSinal_OUT[24]
-Immed[25] << estendesinal:EXT.estendeSinal_OUT[25]
-Immed[26] << estendesinal:EXT.estendeSinal_OUT[26]
-Immed[27] << estendesinal:EXT.estendeSinal_OUT[27]
-Immed[28] << estendesinal:EXT.estendeSinal_OUT[28]
-Immed[29] << estendesinal:EXT.estendeSinal_OUT[29]
-Immed[30] << estendesinal:EXT.estendeSinal_OUT[30]
-Immed[31] << estendesinal:EXT.estendeSinal_OUT[31]
+IR_a[0] <= memoriarom:ROM.Dado[0]
+IR_a[1] <= memoriarom:ROM.Dado[1]
+IR_a[2] <= memoriarom:ROM.Dado[2]
+IR_a[3] <= memoriarom:ROM.Dado[3]
+IR_a[4] <= memoriarom:ROM.Dado[4]
+IR_a[5] <= memoriarom:ROM.Dado[5]
+IR_a[6] <= memoriarom:ROM.Dado[6]
+IR_a[7] <= memoriarom:ROM.Dado[7]
+IR_a[8] <= memoriarom:ROM.Dado[8]
+IR_a[9] <= memoriarom:ROM.Dado[9]
+IR_a[10] <= memoriarom:ROM.Dado[10]
+IR_a[11] <= memoriarom:ROM.Dado[11]
+IR_a[12] <= memoriarom:ROM.Dado[12]
+IR_a[13] <= memoriarom:ROM.Dado[13]
+IR_a[14] <= memoriarom:ROM.Dado[14]
+IR_a[15] <= memoriarom:ROM.Dado[15]
+IR_a[16] <= memoriarom:ROM.Dado[16]
+IR_a[17] <= memoriarom:ROM.Dado[17]
+IR_a[18] <= memoriarom:ROM.Dado[18]
+IR_a[19] <= memoriarom:ROM.Dado[19]
+IR_a[20] <= memoriarom:ROM.Dado[20]
+IR_a[21] <= memoriarom:ROM.Dado[21]
+IR_a[22] <= memoriarom:ROM.Dado[22]
+IR_a[23] <= memoriarom:ROM.Dado[23]
+IR_a[24] <= memoriarom:ROM.Dado[24]
+IR_a[25] <= memoriarom:ROM.Dado[25]
+IR_a[26] <= memoriarom:ROM.Dado[26]
+IR_a[27] <= memoriarom:ROM.Dado[27]
+IR_a[28] <= memoriarom:ROM.Dado[28]
+IR_a[29] <= memoriarom:ROM.Dado[29]
+IR_a[30] <= memoriarom:ROM.Dado[30]
+IR_a[31] <= memoriarom:ROM.Dado[31]
+OUT_RS[0] <= bancoregistradores:BR.saidaA[0]
+OUT_RS[1] <= bancoregistradores:BR.saidaA[1]
+OUT_RS[2] <= bancoregistradores:BR.saidaA[2]
+OUT_RS[3] <= bancoregistradores:BR.saidaA[3]
+OUT_RS[4] <= bancoregistradores:BR.saidaA[4]
+OUT_RS[5] <= bancoregistradores:BR.saidaA[5]
+OUT_RS[6] <= bancoregistradores:BR.saidaA[6]
+OUT_RS[7] <= bancoregistradores:BR.saidaA[7]
+OUT_RS[8] <= bancoregistradores:BR.saidaA[8]
+OUT_RS[9] <= bancoregistradores:BR.saidaA[9]
+OUT_RS[10] <= bancoregistradores:BR.saidaA[10]
+OUT_RS[11] <= bancoregistradores:BR.saidaA[11]
+OUT_RS[12] <= bancoregistradores:BR.saidaA[12]
+OUT_RS[13] <= bancoregistradores:BR.saidaA[13]
+OUT_RS[14] <= bancoregistradores:BR.saidaA[14]
+OUT_RS[15] <= bancoregistradores:BR.saidaA[15]
+OUT_RS[16] <= bancoregistradores:BR.saidaA[16]
+OUT_RS[17] <= bancoregistradores:BR.saidaA[17]
+OUT_RS[18] <= bancoregistradores:BR.saidaA[18]
+OUT_RS[19] <= bancoregistradores:BR.saidaA[19]
+OUT_RS[20] <= bancoregistradores:BR.saidaA[20]
+OUT_RS[21] <= bancoregistradores:BR.saidaA[21]
+OUT_RS[22] <= bancoregistradores:BR.saidaA[22]
+OUT_RS[23] <= bancoregistradores:BR.saidaA[23]
+OUT_RS[24] <= bancoregistradores:BR.saidaA[24]
+OUT_RS[25] <= bancoregistradores:BR.saidaA[25]
+OUT_RS[26] <= bancoregistradores:BR.saidaA[26]
+OUT_RS[27] <= bancoregistradores:BR.saidaA[27]
+OUT_RS[28] <= bancoregistradores:BR.saidaA[28]
+OUT_RS[29] <= bancoregistradores:BR.saidaA[29]
+OUT_RS[30] <= bancoregistradores:BR.saidaA[30]
+OUT_RS[31] <= bancoregistradores:BR.saidaA[31]
+OUT_RT[0] <= bancoregistradores:BR.saidaB[0]
+OUT_RT[1] <= bancoregistradores:BR.saidaB[1]
+OUT_RT[2] <= bancoregistradores:BR.saidaB[2]
+OUT_RT[3] <= bancoregistradores:BR.saidaB[3]
+OUT_RT[4] <= bancoregistradores:BR.saidaB[4]
+OUT_RT[5] <= bancoregistradores:BR.saidaB[5]
+OUT_RT[6] <= bancoregistradores:BR.saidaB[6]
+OUT_RT[7] <= bancoregistradores:BR.saidaB[7]
+OUT_RT[8] <= bancoregistradores:BR.saidaB[8]
+OUT_RT[9] <= bancoregistradores:BR.saidaB[9]
+OUT_RT[10] <= bancoregistradores:BR.saidaB[10]
+OUT_RT[11] <= bancoregistradores:BR.saidaB[11]
+OUT_RT[12] <= bancoregistradores:BR.saidaB[12]
+OUT_RT[13] <= bancoregistradores:BR.saidaB[13]
+OUT_RT[14] <= bancoregistradores:BR.saidaB[14]
+OUT_RT[15] <= bancoregistradores:BR.saidaB[15]
+OUT_RT[16] <= bancoregistradores:BR.saidaB[16]
+OUT_RT[17] <= bancoregistradores:BR.saidaB[17]
+OUT_RT[18] <= bancoregistradores:BR.saidaB[18]
+OUT_RT[19] <= bancoregistradores:BR.saidaB[19]
+OUT_RT[20] <= bancoregistradores:BR.saidaB[20]
+OUT_RT[21] <= bancoregistradores:BR.saidaB[21]
+OUT_RT[22] <= bancoregistradores:BR.saidaB[22]
+OUT_RT[23] <= bancoregistradores:BR.saidaB[23]
+OUT_RT[24] <= bancoregistradores:BR.saidaB[24]
+OUT_RT[25] <= bancoregistradores:BR.saidaB[25]
+OUT_RT[26] <= bancoregistradores:BR.saidaB[26]
+OUT_RT[27] <= bancoregistradores:BR.saidaB[27]
+OUT_RT[28] <= bancoregistradores:BR.saidaB[28]
+OUT_RT[29] <= bancoregistradores:BR.saidaB[29]
+OUT_RT[30] <= bancoregistradores:BR.saidaB[30]
+OUT_RT[31] <= bancoregistradores:BR.saidaB[31]
+ulaOut_a[0] <= ula:ULAa.saida[0]
+ulaOut_a[1] <= ula:ULAa.saida[1]
+ulaOut_a[2] <= ula:ULAa.saida[2]
+ulaOut_a[3] <= ula:ULAa.saida[3]
+ulaOut_a[4] <= ula:ULAa.saida[4]
+ulaOut_a[5] <= ula:ULAa.saida[5]
+ulaOut_a[6] <= ula:ULAa.saida[6]
+ulaOut_a[7] <= ula:ULAa.saida[7]
+ulaOut_a[8] <= ula:ULAa.saida[8]
+ulaOut_a[9] <= ula:ULAa.saida[9]
+ulaOut_a[10] <= ula:ULAa.saida[10]
+ulaOut_a[11] <= ula:ULAa.saida[11]
+ulaOut_a[12] <= ula:ULAa.saida[12]
+ulaOut_a[13] <= ula:ULAa.saida[13]
+ulaOut_a[14] <= ula:ULAa.saida[14]
+ulaOut_a[15] <= ula:ULAa.saida[15]
+ulaOut_a[16] <= ula:ULAa.saida[16]
+ulaOut_a[17] <= ula:ULAa.saida[17]
+ulaOut_a[18] <= ula:ULAa.saida[18]
+ulaOut_a[19] <= ula:ULAa.saida[19]
+ulaOut_a[20] <= ula:ULAa.saida[20]
+ulaOut_a[21] <= ula:ULAa.saida[21]
+ulaOut_a[22] <= ula:ULAa.saida[22]
+ulaOut_a[23] <= ula:ULAa.saida[23]
+ulaOut_a[24] <= ula:ULAa.saida[24]
+ulaOut_a[25] <= ula:ULAa.saida[25]
+ulaOut_a[26] <= ula:ULAa.saida[26]
+ulaOut_a[27] <= ula:ULAa.saida[27]
+ulaOut_a[28] <= ula:ULAa.saida[28]
+ulaOut_a[29] <= ula:ULAa.saida[29]
+ulaOut_a[30] <= ula:ULAa.saida[30]
+ulaOut_a[31] <= ula:ULAa.saida[31]
+PC_a[0] <= registrador:ProgConter.DOUT[0]
+PC_a[1] <= registrador:ProgConter.DOUT[1]
+PC_a[2] <= registrador:ProgConter.DOUT[2]
+PC_a[3] <= registrador:ProgConter.DOUT[3]
+PC_a[4] <= registrador:ProgConter.DOUT[4]
+PC_a[5] <= registrador:ProgConter.DOUT[5]
+PC_a[6] <= registrador:ProgConter.DOUT[6]
+PC_a[7] <= registrador:ProgConter.DOUT[7]
+PC_a[8] <= registrador:ProgConter.DOUT[8]
+PC_a[9] <= registrador:ProgConter.DOUT[9]
+PC_a[10] <= registrador:ProgConter.DOUT[10]
+PC_a[11] <= registrador:ProgConter.DOUT[11]
+PC_a[12] <= registrador:ProgConter.DOUT[12]
+PC_a[13] <= registrador:ProgConter.DOUT[13]
+PC_a[14] <= registrador:ProgConter.DOUT[14]
+PC_a[15] <= registrador:ProgConter.DOUT[15]
+PC_a[16] <= registrador:ProgConter.DOUT[16]
+PC_a[17] <= registrador:ProgConter.DOUT[17]
+PC_a[18] <= registrador:ProgConter.DOUT[18]
+PC_a[19] <= registrador:ProgConter.DOUT[19]
+PC_a[20] <= registrador:ProgConter.DOUT[20]
+PC_a[21] <= registrador:ProgConter.DOUT[21]
+PC_a[22] <= registrador:ProgConter.DOUT[22]
+PC_a[23] <= registrador:ProgConter.DOUT[23]
+PC_a[24] <= registrador:ProgConter.DOUT[24]
+PC_a[25] <= registrador:ProgConter.DOUT[25]
+PC_a[26] <= registrador:ProgConter.DOUT[26]
+PC_a[27] <= registrador:ProgConter.DOUT[27]
+PC_a[28] <= registrador:ProgConter.DOUT[28]
+PC_a[29] <= registrador:ProgConter.DOUT[29]
+PC_a[30] <= registrador:ProgConter.DOUT[30]
+PC_a[31] <= registrador:ProgConter.DOUT[31]
+Immed[0] <= estendesinal:EXT.estendeSinal_OUT[0]
+Immed[1] <= estendesinal:EXT.estendeSinal_OUT[1]
+Immed[2] <= estendesinal:EXT.estendeSinal_OUT[2]
+Immed[3] <= estendesinal:EXT.estendeSinal_OUT[3]
+Immed[4] <= estendesinal:EXT.estendeSinal_OUT[4]
+Immed[5] <= estendesinal:EXT.estendeSinal_OUT[5]
+Immed[6] <= estendesinal:EXT.estendeSinal_OUT[6]
+Immed[7] <= estendesinal:EXT.estendeSinal_OUT[7]
+Immed[8] <= estendesinal:EXT.estendeSinal_OUT[8]
+Immed[9] <= estendesinal:EXT.estendeSinal_OUT[9]
+Immed[10] <= estendesinal:EXT.estendeSinal_OUT[10]
+Immed[11] <= estendesinal:EXT.estendeSinal_OUT[11]
+Immed[12] <= estendesinal:EXT.estendeSinal_OUT[12]
+Immed[13] <= estendesinal:EXT.estendeSinal_OUT[13]
+Immed[14] <= estendesinal:EXT.estendeSinal_OUT[14]
+Immed[15] <= estendesinal:EXT.estendeSinal_OUT[15]
+Immed[16] <= estendesinal:EXT.estendeSinal_OUT[16]
+Immed[17] <= estendesinal:EXT.estendeSinal_OUT[17]
+Immed[18] <= estendesinal:EXT.estendeSinal_OUT[18]
+Immed[19] <= estendesinal:EXT.estendeSinal_OUT[19]
+Immed[20] <= estendesinal:EXT.estendeSinal_OUT[20]
+Immed[21] <= estendesinal:EXT.estendeSinal_OUT[21]
+Immed[22] <= estendesinal:EXT.estendeSinal_OUT[22]
+Immed[23] <= estendesinal:EXT.estendeSinal_OUT[23]
+Immed[24] <= estendesinal:EXT.estendeSinal_OUT[24]
+Immed[25] <= estendesinal:EXT.estendeSinal_OUT[25]
+Immed[26] <= estendesinal:EXT.estendeSinal_OUT[26]
+Immed[27] <= estendesinal:EXT.estendeSinal_OUT[27]
+Immed[28] <= estendesinal:EXT.estendeSinal_OUT[28]
+Immed[29] <= estendesinal:EXT.estendeSinal_OUT[29]
+Immed[30] <= estendesinal:EXT.estendeSinal_OUT[30]
+entReg3[0] <= escReg3Def[0].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[1] <= escReg3Def[1].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[2] <= escReg3Def[2].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[3] <= escReg3Def[3].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[4] <= escReg3Def[4].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[5] <= escReg3Def[5].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[6] <= escReg3Def[6].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[7] <= escReg3Def[7].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[8] <= escReg3Def[8].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[9] <= escReg3Def[9].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[10] <= escReg3Def[10].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[11] <= escReg3Def[11].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[12] <= escReg3Def[12].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[13] <= escReg3Def[13].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[14] <= escReg3Def[14].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[15] <= escReg3Def[15].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[16] <= escReg3Def[16].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[17] <= escReg3Def[17].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[18] <= escReg3Def[18].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[19] <= escReg3Def[19].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[20] <= escReg3Def[20].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[21] <= escReg3Def[21].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[22] <= escReg3Def[22].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[23] <= escReg3Def[23].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[24] <= escReg3Def[24].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[25] <= escReg3Def[25].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[26] <= escReg3Def[26].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[27] <= escReg3Def[27].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[28] <= escReg3Def[28].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[29] <= escReg3Def[29].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[30] <= escReg3Def[30].DB_MAX_OUTPUT_PORT_TYPE
+entReg3[31] <= escReg3Def[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topLevel|memoriaROM:ROM
@@ -720,36 +746,36 @@ palavraControle[6] <= selMUXPC.DB_MAX_OUTPUT_PORT_TYPE
 
 |topLevel|unidadeControleULA:UCula
 CLK => ~NO_FANOUT~
-funct[0] => Equal0.IN2
-funct[0] => Equal1.IN4
-funct[0] => Equal2.IN5
+funct[0] => Equal0.IN4
+funct[0] => Equal1.IN5
+funct[0] => Equal2.IN3
 funct[0] => Equal3.IN3
-funct[0] => Equal4.IN3
-funct[1] => Equal0.IN5
-funct[1] => Equal1.IN3
+funct[0] => Equal4.IN2
+funct[1] => Equal0.IN3
+funct[1] => Equal1.IN2
 funct[1] => Equal2.IN2
-funct[1] => Equal3.IN2
+funct[1] => Equal3.IN5
 funct[1] => Equal4.IN5
-funct[2] => Equal0.IN1
-funct[2] => Equal1.IN2
-funct[2] => Equal2.IN4
-funct[2] => Equal3.IN5
-funct[2] => Equal4.IN2
-funct[3] => Equal0.IN4
+funct[2] => Equal0.IN2
+funct[2] => Equal1.IN4
+funct[2] => Equal2.IN5
+funct[2] => Equal3.IN2
+funct[2] => Equal4.IN1
+funct[3] => Equal0.IN1
 funct[3] => Equal1.IN1
 funct[3] => Equal2.IN1
 funct[3] => Equal3.IN1
-funct[3] => Equal4.IN1
+funct[3] => Equal4.IN4
 funct[4] => Equal0.IN0
 funct[4] => Equal1.IN0
 funct[4] => Equal2.IN0
 funct[4] => Equal3.IN0
 funct[4] => Equal4.IN0
-funct[5] => Equal0.IN3
-funct[5] => Equal1.IN5
-funct[5] => Equal2.IN3
+funct[5] => Equal0.IN5
+funct[5] => Equal1.IN3
+funct[5] => Equal2.IN4
 funct[5] => Equal3.IN4
-funct[5] => Equal4.IN4
+funct[5] => Equal4.IN3
 ulaOP[0] => Equal5.IN1
 ulaOP[0] => Equal6.IN1
 ulaOP[1] => Equal5.IN0
@@ -1423,6 +1449,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1463,6 +1490,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1503,6 +1531,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1543,6 +1572,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1583,6 +1613,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1623,6 +1654,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1663,6 +1695,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1703,6 +1736,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1743,6 +1777,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1783,6 +1818,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1823,6 +1859,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1863,6 +1900,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1903,6 +1941,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1943,6 +1982,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -1983,6 +2023,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2023,6 +2064,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2063,6 +2105,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2103,6 +2146,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2143,6 +2187,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2183,6 +2228,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2223,6 +2269,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2263,6 +2310,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2303,6 +2351,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2343,6 +2392,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2383,6 +2433,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2423,6 +2474,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2463,6 +2515,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2503,6 +2556,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2543,6 +2597,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2583,6 +2638,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2623,6 +2679,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
@@ -2663,6 +2720,7 @@ d_mux => mux4x1bit:mux.entradaD_MUX
 seletor[0] => mux4x1bit:mux.seletor_MUX[0]
 seletor[1] => mux4x1bit:mux.seletor_MUX[1]
 C_out <= somadorula:somador.C_out
+set <= somadorula:somador.saida
 saida <= mux4x1bit:mux.saida_MUX
 
 
