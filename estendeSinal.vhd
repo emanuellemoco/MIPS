@@ -1,3 +1,4 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -17,18 +18,13 @@ entity estendeSinal is
 end entity;
 
 architecture comportamento of estendeSinal is
-
-    signal left : std_logic_vector(larguraDadoEntrada -1 downto 0);
-
 begin
     process (estendeSinal_IN) is
     begin
             if (estendeSinal_IN(larguraDadoEntrada-1) = '1') then
-                left <= (others => '1');
+                estendeSinal_OUT <= (larguraDadoSaida-1 downto larguraDadoEntrada => '1') & estendeSinal_IN;
             else
-                left <= (others => '0');
+                estendeSinal_OUT <= (larguraDadoSaida-1 downto larguraDadoEntrada => '0') & estendeSinal_IN;
             end if;
-
-            estendeSinal_OUT <= left & estendeSinal_IN;
     end process;
 end architecture;

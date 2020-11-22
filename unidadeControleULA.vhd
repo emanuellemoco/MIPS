@@ -57,13 +57,13 @@ begin
 
 
 
-seletor <= "00" when funct = andw else
-           "01" when funct = orw else 
-           "10" when funct = add or funct = subw else
-           "11" when funct = slt else 
-           "01";
+seletor <= "00" when funct = andw else                      -- 000
+           "01" when funct = orw else                       -- 001
+           "10" when funct = add or funct = subw else       -- 010   110
+           "11" when funct = slt else                       -- 111
+           "01";                                            -- 001
 
-                              -- FEITO POR LEONARDO MENDES
+                              
 inverteB <= '1' when funct = subw or funct = slt else 
             '0';
 

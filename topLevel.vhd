@@ -1,6 +1,3 @@
--- mif do professor ta dando errado!!!!!!!!!!!!!!!!!!!!!!
-
-
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
@@ -17,12 +14,8 @@ ENTITY topLevel IS
  PORT (
    CLOCK_50 : IN STD_LOGIC;
    IR_a : OUT STD_LOGIC_VECTOR(ROM_DATA_WIDTH -1 downto 0);
-   OUT_RS : OUT STD_LOGIC_VECTOR(DATA_WIDTH -1 downto 0);
-   OUT_RT : OUT STD_LOGIC_VECTOR(DATA_WIDTH -1 downto 0);
-   ulaOut_a : OUT std_logic_vector(DATA_WIDTH -1 downto 0);
-   PC_a : OUT std_logic_vector(ADDR_WIDTH -1 downto 0);
-   Immed: OUT std_logic_vector(30 downto 0);
-   entReg3 : OUT std_logic_vector(DATA_WIDTH -1 DOWNTO 0)
+   Immed: OUT std_logic_vector(31 downto 0);
+   somadorBEQout, PC_4, shifterOutt: OUT std_logic_vector(DATA_WIDTH -1 downto 0)
  );
 END ENTITY;
 ARCHITECTURE uwu OF topLevel IS
@@ -63,7 +56,7 @@ BEGIN
  SOMADOR_C: ENTITY work.somadorConstante GENERIC MAP(larguraDados => DATA_WIDTH, constante => incremento)
  PORT MAP(entrada => PC, saida => ADDER);
 
- muxPC : entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)          -- entrada HARDCODED, trocar pro shiftJump
+ muxPC : entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)          --ntrada HARDCODED, trocar pro shiftJump e
  port map(entradaA_MUX => outJUMP, entradaB_MUX => ADDER(31 downto 28) & IR(25 downto 0) & "00", seletor_MUX => selMUXPC, saida_MUX => inPC );
 
 
@@ -107,12 +100,11 @@ BEGIN
  muxJUMP: entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)
  port map(entradaA_MUX => ADDER, entradaB_MUX => outAdder, seletor_MUX => ( flagULA and BEQ ) , saida_MUX => outJUMP );
  IR_a <= IR;
- OUT_RS <= saidaA;
- OUT_RT <= saidaB;
- ulaOut_a <= saidaULA;
- PC_a <= PC;
- Immed <= IMED(30 downto 0);
- entReg3 <= escReg3Def;
+ Immed <= IMED(31 downto 0);
+ somadorBEQout <= outAdder; 
+ PC_4 <= ADDER;
+ shifterOutt <= shiftBeq;
+ 
 
 END ARCHITECTURE;
 

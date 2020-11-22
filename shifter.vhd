@@ -14,5 +14,5 @@ end entity;
 
 architecture comportamento of shifter is
   begin
-    outShift <= std_logic_vector(SHIFT_RIGHT(unsigned(inShift) ,2));
+    outShift <= std_logic_vector(SHIFT_LEFT(unsigned(inShift) ,2));
 end architecture;
