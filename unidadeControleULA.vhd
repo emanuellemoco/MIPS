@@ -14,7 +14,7 @@ entity unidadeControleULA is
     -- Input ports
     CLK   : in std_logic;
     funct : in std_logic_vector(5 downto 0);
-    ulaOP : in std_logic_vector(1 downto 0);
+    ulaOP : in std_logic_vector(2 downto 0);
 
     -- Output ports
     seletorULA : out std_logic_vector(2 downto 0)
@@ -68,8 +68,12 @@ inverteB <= '1' when funct = subw or funct = slt else
             '0';
 
 
-seletorULA <= "010" when ULAop = "00" else
-              "110" when ULAop = "01" else
+seletorULA <= "010" when ULAop = "000" else
+              "110" when ULAop = "001" else
+              "000" when ULAop = "011" else   --andi
+              "001" when ULAop = "100" else   --ori
+              "111" when ULAop = "101" else   --slti
               seletorFUNCT;
 
 end architecture;
+

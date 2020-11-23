@@ -16,7 +16,7 @@ package constantes is
     constant addi  : opcode  := "001000";
     constant andi  : opcode  := "001100";
     constant beqw  : opcode  := "000100";
-    constant bne   : opcode  := "000101";
+    constant bnew   : opcode  := "000101";
     constant lui   : opcode  := "001111";
     constant lw    : opcode  := "100011";
     constant ori   : opcode  := "001101";

@@ -1,3 +1,9 @@
+-- Coisas para conversar com o brother:
+-- como estamos fazendo a JAL (codigo perdido no toplevel), LUI(shiffter com habilita, logo apos o extensor de sinal)
+-- como fizemos o BNE (alem do beq, temos o BNE)
+-- implementamos o JR com um outro mux antes do MucProxPC (com saida do dado lido e saida MUx que tem apos AND)
+
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
@@ -14,22 +20,22 @@ ENTITY topLevel IS
  PORT (
    CLOCK_50 : IN STD_LOGIC;
    IR_a : OUT STD_LOGIC_VECTOR(ROM_DATA_WIDTH -1 downto 0);
-   Immed: OUT std_logic_vector(31 downto 0);
-   somadorBEQout, PC_4, shifterOutt: OUT std_logic_vector(DATA_WIDTH -1 downto 0)
+   ULAoutt, entReg3,entAula, entBula, RT_a : OUT std_logic_vector(DATA_WIDTH -1 downto 0)
+   
  );
 END ENTITY;
 ARCHITECTURE uwu OF topLevel IS
 
- SIGNAL selUlA, flagULA         : std_logic;
+ SIGNAL selUlA, flagULA        : std_logic;
  SIGNAL endReg3, reg3        : std_logic_vector(4 downto 0);
- SIGNAL palavraControle: std_logic_vector(6 downto 0);
+ SIGNAL palavraControle: std_logic_vector(9 downto 0);
  SIGNAL IR             : STD_LOGIC_VECTOR(ROM_DATA_WIDTH - 1 DOWNTO 0);
- SIGNAL PC, ADDER, outAdder,shiftBeq, outShift, outJUMP, inPC : STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
+ SIGNAL PC, ADDER, outAdder,shiftBeq, outShift, outJUMP, inPC, outRsPC, shift16 : STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
  SIGNAL saidaULA, IMED, entradaB, escReg3, escReg3Def, saidaA, saidaB, dadoRAM: STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0);
  SIGNAL seletorULA            : STD_LOGIC_VECTOR(2 DOWNTO 0);
- SIGNAL ULAop : std_logic_vector(1 downto 0);
+ SIGNAL ULAop : std_logic_vector(2 downto 0);
 
-
+ 
  
  alias selMUXULA     : std_logic is palavraControle(0);
  alias selMUXEndReg3 : std_logic is palavraControle(1);
@@ -38,6 +44,10 @@ ARCHITECTURE uwu OF topLevel IS
  alias habEscritaRAM : std_logic is palavraControle(4);
  alias BEQ           : std_logic is palavraControle(5);
  alias selMUXPC      : std_logic is palavraControle(6);
+ alias habShift      : std_logic is palavraControle(7);
+ alias BNE           : std_logic is palavraControle(8);
+ alias selMuxRS      : std_logic is palavraControle(9);
+
 
 
  CONSTANT incremento : NATURAL := 4;
@@ -56,6 +66,10 @@ BEGIN
  SOMADOR_C: ENTITY work.somadorConstante GENERIC MAP(larguraDados => DATA_WIDTH, constante => incremento)
  PORT MAP(entrada => PC, saida => ADDER);
 
+ --muxRsPC : entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)         
+ --port map(entradaA_MUX => saidaA, entradaB_MUX => outJUMP, seletor_MUX => selMuxRS, saida_MUX => outRsPC );
+
+ 
  muxPC : entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)          --ntrada HARDCODED, trocar pro shiftJump e
  port map(entradaA_MUX => outJUMP, entradaB_MUX => ADDER(31 downto 28) & IR(25 downto 0) & "00", seletor_MUX => selMUXPC, saida_MUX => inPC );
 
@@ -80,7 +94,7 @@ BEGIN
  port map (estendeSinal_IN => IR(15 downto 0), estendeSinal_OUT => IMED);
 
  muxULA: entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)
- port map(entradaA_MUX => saidaB, entradaB_MUX => IMED, seletor_MUX => selMUXULA, saida_MUX => entradaB);
+ port map(entradaA_MUX => saidaB, entradaB_MUX => shift16, seletor_MUX => selMUXULA, saida_MUX => entradaB);
    
  ULAa: ENTITY work.ULA generic map (larguraDados => DATA_WIDTH)
  PORT MAP(entradaA => saidaA , entradaB => entradaB, seletor => seletorULA, saida => saidaULA , flagZ => flagULA);
@@ -91,20 +105,34 @@ BEGIN
  muxEscREG3: entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)
  port map(entradaA_MUX => saidaULA, entradaB_MUX => dadoRAM, seletor_MUX => selMUXEscReg3, saida_MUX => escReg3);
 
- SHIFTER_BEQ: entity work.shifter generic map (larguraDados => DATA_WIDTH)
- port map(inShift => IMED, outShift => shiftBeq);
+ SHIFTER_BEQ: entity work.shifter generic map (larguraDados => DATA_WIDTH, shiftValue => 2)
+ port map(inShift => shift16, outShift => shiftBeq, habilita => '1');
  
  SOMADOR: entity work.somador  generic map (larguraDados => DATA_WIDTH)
  port map(entradaA => ADDER, entradaB => shiftBeq , saida => outAdder);
  
  muxJUMP: entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)
- port map(entradaA_MUX => ADDER, entradaB_MUX => outAdder, seletor_MUX => ( flagULA and BEQ ) , saida_MUX => outJUMP );
+ port map(entradaA_MUX => ADDER, entradaB_MUX => outAdder, seletor_MUX => ( (flagULA and BEQ) or ((not flagULA) and BNE) ) , saida_MUX => outJUMP );
+
+
+ SHIFTER_16: entity work.shifter generic map (larguraDados => DATA_WIDTH, shiftValue => 16)
+ port map(inShift => IMED, outShift => shift16, habilita => habShift );
+
  IR_a <= IR;
- Immed <= IMED(31 downto 0);
- somadorBEQout <= outAdder; 
- PC_4 <= ADDER;
- shifterOutt <= shiftBeq;
- 
+ ULAoutt <= saidaULA;
+ entReg3 <=  escReg3;
+ entAula <=  saidaA;
+ entBula <=  entradaB;
+ RT_a <= saidaB;
 
 END ARCHITECTURE;
+
+
+-- Z   BEQ    BNE      Q
+-- 0   0      0        0
+-- 0   0      1        1
+-- 0   1      0        0
+-- 1   0      0        0
+-- 1   0      1        0
+-- 1   1      0        1                                
 

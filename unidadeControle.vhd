@@ -17,8 +17,8 @@ entity unidadeControle is
     opcode: in std_logic_vector(5 downto 0);
 
     -- Output ports
-    ULAop : out std_logic_vector(1 downto 0);
-    palavraControle : out std_logic_vector(6 downto 0)
+    ULAop : out std_logic_vector(2 downto 0);
+    palavraControle : out std_logic_vector(9 downto 0)
 
   );
 end entity;
@@ -31,6 +31,11 @@ architecture arch_name of unidadeControle is
   alias habEscritaRAM : std_logic is palavraControle(4);
   alias BEQ           : std_logic is palavraControle(5);
   alias selMUXPC      : std_logic is palavraControle(6);
+  alias habShift      : std_logic is palavraControle(7);
+  alias BNE           : std_logic is palavraControle(8);
+  alias selMuxRS      : std_logic is palavraControle(9);
+
+
 
 
 -- TIPO R
@@ -56,7 +61,7 @@ architecture arch_name of unidadeControle is
 begin
 
   -- Instrução R, beqw, bne
-    selMuxUla     <= '0' when opcode = instR or opcode = beqw or opcode = bne else 
+    selMuxUla     <= '0' when opcode = instR or opcode = beqw or opcode = bnew else 
     '1'; 
 
   -- Instrução R
@@ -84,8 +89,20 @@ begin
   '0';
 
 
-  ULAop <= "00" when opcode = lw or opcode = sw or opcode = lui else
-           "01" when opcode = beqw else 
-           "10";
+  ULAop <= "000" when opcode = lw or opcode = sw or opcode = lui or opcode = addi else
+           "001" when opcode = beqw or opcode = bnew else
+           "011" when opcode = andi else
+           "100" when opcode = ori  else
+           "101" when opcode = slti else  
+           "010";
+  
+  habShift <= '1' when opcode = lui else 
+              '0';
 
+  BNE <= '1' when opcode = bnew else 
+         '0';
+    
+--  selMuxRS <= '0' when opcode = jr else 
+  --            '1';
+  
 end architecture;
