@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Tue Nov 24 14:47:18 2020
+Tue Nov 24 15:17:50 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -131,13 +131,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 24 14:47:18 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 24 15:17:50 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; topLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2592                                        ;
+; Total registers                 ; 2528                                        ;
 ; Total pins                      ; 194                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -252,7 +252,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -288,25 +288,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 1996           ;
+; Estimate of Logic utilization (ALMs needed) ; 1972           ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1730           ;
-;     -- 7 input functions                    ; 41             ;
-;     -- 6 input functions                    ; 1036           ;
-;     -- 5 input functions                    ; 192            ;
-;     -- 4 input functions                    ; 120            ;
-;     -- <=3 input functions                  ; 341            ;
+; Combinational ALUT usage for logic          ; 1731           ;
+;     -- 7 input functions                    ; 39             ;
+;     -- 6 input functions                    ; 978            ;
+;     -- 5 input functions                    ; 276            ;
+;     -- 4 input functions                    ; 104            ;
+;     -- <=3 input functions                  ; 334            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 2592           ;
+; Dedicated logic registers                   ; 2528           ;
 ;                                             ;                ;
 ; I/O pins                                    ; 194            ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 2592           ;
-; Total fan-out                               ; 17862          ;
-; Average fan-out                             ; 3.79           ;
+; Maximum fan-out                             ; 2528           ;
+; Total fan-out                               ; 17516          ;
+; Average fan-out                             ; 3.77           ;
 +---------------------------------------------+----------------+
 
 
@@ -315,10 +315,10 @@ refer to the applicable agreement for further details.
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name        ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
-; |topLevel                       ; 1730 (37)           ; 2592 (0)                  ; 0                 ; 0          ; 194  ; 0            ; |topLevel                                           ; topLevel           ; work         ;
-;    |ULA:ULAa|                   ; 140 (34)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa                                  ; ULA                ; work         ;
-;       |miniULA:ULA0|            ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0                     ; miniULA            ; work         ;
-;          |mux4x1Bit:mux|        ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+; |topLevel                       ; 1731 (37)           ; 2528 (0)                  ; 0                 ; 0          ; 194  ; 0            ; |topLevel                                           ; topLevel           ; work         ;
+;    |ULA:ULAa|                   ; 141 (32)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa                                  ; ULA                ; work         ;
+;       |miniULA:ULA0|            ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0|somadorULA:somador  ; somadorULA         ; work         ;
 ;       |miniULA:ULA10|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10                    ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
@@ -337,19 +337,19 @@ refer to the applicable agreement for further details.
 ;       |miniULA:ULA15|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15                    ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA16|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16                    ; miniULA            ; work         ;
+;       |miniULA:ULA16|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16                    ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
-;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16|somadorULA:somador ; somadorULA         ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16|somadorULA:somador ; somadorULA         ; work         ;
 ;       |miniULA:ULA17|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17                    ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
-;       |miniULA:ULA18|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18                    ; miniULA            ; work         ;
+;       |miniULA:ULA18|           ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18                    ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
-;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18|somadorULA:somador ; somadorULA         ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18|somadorULA:somador ; somadorULA         ; work         ;
 ;       |miniULA:ULA19|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19                    ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19|somadorULA:somador ; somadorULA         ; work         ;
-;       |miniULA:ULA1|            ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1                     ; miniULA            ; work         ;
-;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA1|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1|somadorULA:somador  ; somadorULA         ; work         ;
 ;       |miniULA:ULA20|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA20                    ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA20|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
@@ -396,8 +396,8 @@ refer to the applicable agreement for further details.
 ;       |miniULA:ULA5|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5                     ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5|somadorULA:somador  ; somadorULA         ; work         ;
-;       |miniULA:ULA6|            ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6                     ; miniULA            ; work         ;
-;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA6|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6|somadorULA:somador  ; somadorULA         ; work         ;
 ;       |miniULA:ULA7|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7                     ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
@@ -407,18 +407,18 @@ refer to the applicable agreement for further details.
 ;       |miniULA:ULA9|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9                     ; miniULA            ; work         ;
 ;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
 ;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9|somadorULA:somador  ; somadorULA         ; work         ;
-;    |bancoRegistradores:BR|      ; 504 (504)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |topLevel|bancoRegistradores:BR                     ; bancoRegistradores ; work         ;
+;    |bancoRegistradores:BR|      ; 501 (501)           ; 448 (448)                 ; 0                 ; 0          ; 0    ; 0            ; |topLevel|bancoRegistradores:BR                     ; bancoRegistradores ; work         ;
+;    |estendeSinal:EXT|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|estendeSinal:EXT                          ; estendeSinal       ; work         ;
 ;    |memoriaRAM:RAM|             ; 798 (798)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |topLevel|memoriaRAM:RAM                            ; memoriaRAM         ; work         ;
-;    |memoriaROM:ROM|             ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|memoriaROM:ROM                            ; memoriaROM         ; work         ;
+;    |memoriaROM:ROM|             ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|memoriaROM:ROM                            ; memoriaROM         ; work         ;
 ;    |mux2x1:muxEscREG3|          ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxEscREG3                         ; mux2x1             ; work         ;
 ;    |mux2x1:muxPC|               ; 57 (57)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxPC                              ; mux2x1             ; work         ;
-;    |mux2x1:muxULA|              ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxULA                             ; mux2x1             ; work         ;
+;    |mux2x1:muxULA|              ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxULA                             ; mux2x1             ; work         ;
 ;    |registrador:ProgConter|     ; 3 (3)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |topLevel|registrador:ProgConter                    ; registrador        ; work         ;
-;    |shifter:SHIFTER_16|         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|shifter:SHIFTER_16                        ; shifter            ; work         ;
-;    |somador:SOMADOR|            ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|somador:SOMADOR                           ; somador            ; work         ;
+;    |somador:SOMADOR|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|somador:SOMADOR                           ; somador            ; work         ;
 ;    |somadorConstante:SOMADOR_C| ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|somadorConstante:SOMADOR_C                ; somadorConstante   ; work         ;
-;    |unidadeControle:UC|         ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControle:UC                        ; unidadeControle    ; work         ;
-;    |unidadeControleULA:UCula|   ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControleULA:UCula                  ; unidadeControleULA ; work         ;
+;    |unidadeControle:UC|         ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControle:UC                        ; unidadeControle    ; work         ;
+;    |unidadeControleULA:UCula|   ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControleULA:UCula                  ; unidadeControleULA ; work         ;
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -877,103 +877,172 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:BR|registrador~261   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~517   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~678   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~742   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~934   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~998   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~679   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~743   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~935   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~999   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~680   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~744   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~936   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1000  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~681   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~745   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~937   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1001  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~682   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~746   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~938   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1002  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~683   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~747   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~939   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1003  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~684   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~748   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~940   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1004  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~685   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~749   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~941   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1005  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~686   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~750   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~942   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1006  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~687   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~751   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~943   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1007  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~688   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~752   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~944   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1008  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~689   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~753   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~945   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1009  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~690   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~754   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~946   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1010  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~691   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~755   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~947   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1011  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~692   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~756   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~948   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1012  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~693   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~757   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~949   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1013  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~694   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~758   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~950   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1014  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~695   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~759   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~951   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1015  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~696   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~760   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~952   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1016  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~697   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~761   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~953   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1017  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~698   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~762   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~954   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1018  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~699   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~763   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~955   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1019  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~700   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~764   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~956   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1020  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~701   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~765   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~957   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1021  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~702   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~766   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~958   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1022  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~703   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~767   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~959   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1023  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~704   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~768   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~960   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1024  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~705   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~769   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~961   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1025  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~706   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~770   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~962   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1026  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~707   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~771   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~963   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1027  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~708   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~772   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~964   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~1028  ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~709   ; Stuck at GND due to stuck port clock ;
+; bancoRegistradores:BR|registrador~773   ; Stuck at GND due to stuck port clock ;
 ; bancoRegistradores:BR|registrador~965   ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 512 ;                                      ;
+; bancoRegistradores:BR|registrador~1029  ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 576 ;                                      ;
 +-----------------------------------------+--------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                     ;
-+---------------------------------------+-------------------------+-------------------------------------------------------------------------------+
-; Register name                         ; Reason for Removal      ; Registers Removed due to This Register                                        ;
-+---------------------------------------+-------------------------+-------------------------------------------------------------------------------+
-; bancoRegistradores:BR|registrador~582 ; Stuck at GND            ; bancoRegistradores:BR|registrador~583, bancoRegistradores:BR|registrador~647, ;
-;                                       ; due to stuck port clock ; bancoRegistradores:BR|registrador~551, bancoRegistradores:BR|registrador~615, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~839, bancoRegistradores:BR|registrador~903, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~807, bancoRegistradores:BR|registrador~871, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~167, bancoRegistradores:BR|registrador~423, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~103, bancoRegistradores:BR|registrador~359, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~231, bancoRegistradores:BR|registrador~487, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~679, bancoRegistradores:BR|registrador~935  ;
-; bancoRegistradores:BR|registrador~171 ; Stuck at GND            ; bancoRegistradores:BR|registrador~110, bancoRegistradores:BR|registrador~366, ;
-;                                       ; due to stuck port clock ; bancoRegistradores:BR|registrador~174, bancoRegistradores:BR|registrador~238, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~430, bancoRegistradores:BR|registrador~494, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~175, bancoRegistradores:BR|registrador~431, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~111, bancoRegistradores:BR|registrador~367, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~239, bancoRegistradores:BR|registrador~495, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~686, bancoRegistradores:BR|registrador~942, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~687, bancoRegistradores:BR|registrador~943  ;
-; bancoRegistradores:BR|registrador~107 ; Stuck at GND            ; bancoRegistradores:BR|registrador~177, bancoRegistradores:BR|registrador~433, ;
-;                                       ; due to stuck port clock ; bancoRegistradores:BR|registrador~113, bancoRegistradores:BR|registrador~369, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~241, bancoRegistradores:BR|registrador~497, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~114, bancoRegistradores:BR|registrador~370, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~178, bancoRegistradores:BR|registrador~242, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~434, bancoRegistradores:BR|registrador~498, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~689, bancoRegistradores:BR|registrador~945, ;
-;                                       ;                         ; bancoRegistradores:BR|registrador~690, bancoRegistradores:BR|registrador~946  ;
-+---------------------------------------+-------------------------+-------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                      ;
++---------------------------------------+-------------------------+--------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal      ; Registers Removed due to This Register                                         ;
++---------------------------------------+-------------------------+--------------------------------------------------------------------------------+
+; bancoRegistradores:BR|registrador~171 ; Stuck at GND            ; bancoRegistradores:BR|registrador~110, bancoRegistradores:BR|registrador~366,  ;
+;                                       ; due to stuck port clock ; bancoRegistradores:BR|registrador~174, bancoRegistradores:BR|registrador~238,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~430, bancoRegistradores:BR|registrador~494,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~175, bancoRegistradores:BR|registrador~431,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~111, bancoRegistradores:BR|registrador~367,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~239, bancoRegistradores:BR|registrador~495,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~686, bancoRegistradores:BR|registrador~750,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~942, bancoRegistradores:BR|registrador~1006, ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~687, bancoRegistradores:BR|registrador~751,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~943, bancoRegistradores:BR|registrador~1007  ;
+; bancoRegistradores:BR|registrador~107 ; Stuck at GND            ; bancoRegistradores:BR|registrador~177, bancoRegistradores:BR|registrador~433,  ;
+;                                       ; due to stuck port clock ; bancoRegistradores:BR|registrador~113, bancoRegistradores:BR|registrador~369,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~241, bancoRegistradores:BR|registrador~497,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~114, bancoRegistradores:BR|registrador~370,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~178, bancoRegistradores:BR|registrador~242,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~434, bancoRegistradores:BR|registrador~498,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~689, bancoRegistradores:BR|registrador~753,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~945, bancoRegistradores:BR|registrador~1009, ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~690, bancoRegistradores:BR|registrador~754,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~946, bancoRegistradores:BR|registrador~1010  ;
+; bancoRegistradores:BR|registrador~582 ; Stuck at GND            ; bancoRegistradores:BR|registrador~583, bancoRegistradores:BR|registrador~647,  ;
+;                                       ; due to stuck port clock ; bancoRegistradores:BR|registrador~551, bancoRegistradores:BR|registrador~615,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~839, bancoRegistradores:BR|registrador~903,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~807, bancoRegistradores:BR|registrador~871,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~167, bancoRegistradores:BR|registrador~423,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~103, bancoRegistradores:BR|registrador~359,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~231, bancoRegistradores:BR|registrador~487,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~679, bancoRegistradores:BR|registrador~743,  ;
+;                                       ;                         ; bancoRegistradores:BR|registrador~935, bancoRegistradores:BR|registrador~999   ;
++---------------------------------------+-------------------------+--------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -981,12 +1050,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2592  ;
+; Total registers                              ; 2528  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 512   ;
+; Number of registers using Synchronous Load   ; 448   ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2562  ;
+; Number of registers using Clock Enable       ; 2498  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -996,12 +1065,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[0]                 ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[31]                ;
-; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[20]                ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |topLevel|endReg3[0]                                     ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |topLevel|ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux|saida_MUX ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |topLevel|unidadeControle:UC|ULAop[0]                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[1]                 ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[28]                ;
+; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[2]                 ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |topLevel|endReg3[3]                                     ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |topLevel|ULA:ULAa|miniULA:ULA23|mux4x1Bit:mux|saida_MUX ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |topLevel|unidadeControle:UC|ULAop[2]                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
@@ -1879,29 +1948,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2592                        ;
+; arriav_ff             ; 2528                        ;
 ;     ENA               ; 2050                        ;
-;     ENA SLD           ; 512                         ;
+;     ENA SLD           ; 448                         ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 1736                        ;
-;     arith             ; 89                          ;
-;         1 data inputs ; 59                          ;
-;         4 data inputs ; 14                          ;
-;         5 data inputs ; 16                          ;
-;     extend            ; 41                          ;
-;         7 data inputs ; 41                          ;
-;     normal            ; 1606                        ;
+; arriav_lcell_comb     ; 1737                        ;
+;     arith             ; 91                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 60                          ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 29                          ;
+;     extend            ; 39                          ;
+;         7 data inputs ; 39                          ;
+;     normal            ; 1607                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 13                          ;
-;         2 data inputs ; 211                         ;
-;         3 data inputs ; 63                          ;
-;         4 data inputs ; 106                         ;
-;         5 data inputs ; 176                         ;
-;         6 data inputs ; 1036                        ;
+;         2 data inputs ; 207                         ;
+;         3 data inputs ; 58                          ;
+;         4 data inputs ; 103                         ;
+;         5 data inputs ; 247                         ;
+;         6 data inputs ; 978                         ;
 ; boundary_port         ; 194                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 8.21                        ;
+; Average LUT depth     ; 8.15                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1910,7 +1980,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:11     ;
 +----------------+--------------+
 
 
@@ -1920,7 +1990,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 24 14:46:49 2020
+    Info: Processing started: Tue Nov 24 15:17:25 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1952,7 +2022,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file memoria
     Info (12022): Found design unit 1: memoriaRAM-assincrona File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 18
     Info (12023): Found entity 1: memoriaRAM File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file estendeSinal.vhd
-    Info (12022): Found design unit 1: estendeSinal-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 20
+    Info (12022): Found design unit 1: estendeSinal-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 21
     Info (12023): Found entity 1: estendeSinal File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file shifter.vhd
     Info (12022): Found design unit 1: shifter-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 19
@@ -1988,6 +2058,7 @@ Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeCont
 Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxEndREG3" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 82
 Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 89
 Info (12128): Elaborating entity "estendeSinal" for hierarchy "estendeSinal:EXT" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 92
+Warning (10540): VHDL Signal Declaration warning at estendeSinal.vhd(24): used explicit default value for signal "zero" because signal was never assigned a value File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 24
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULAa" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 98
 Info (12128): Elaborating entity "miniULA" for hierarchy "ULA:ULAa|miniULA:ULA0" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 42
 Info (12128): Elaborating entity "somadorULA" for hierarchy "ULA:ULAa|miniULA:ULA0|somadorULA:somador" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 30
@@ -2010,14 +2081,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4483 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4420 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 193 output pins
-    Info (21061): Implemented 4289 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 1056 megabytes
-    Info: Processing ended: Tue Nov 24 14:47:18 2020
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:56
+    Info (21061): Implemented 4226 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 1066 megabytes
+    Info: Processing ended: Tue Nov 24 15:17:50 2020
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:43
 
 

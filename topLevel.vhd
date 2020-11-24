@@ -28,7 +28,7 @@ ARCHITECTURE uwu OF topLevel IS
 
  SIGNAL selUlA, flagULA, selMuxRsPC        : std_logic;
  SIGNAL endReg3, reg3        : std_logic_vector(4 downto 0);
- SIGNAL palavraControle: std_logic_vector(8 downto 0);
+ SIGNAL palavraControle: std_logic_vector(9 downto 0);
  SIGNAL IR             : STD_LOGIC_VECTOR(ROM_DATA_WIDTH - 1 DOWNTO 0);
  SIGNAL PC, ADDER, outAdder,shiftBeq, outShift, outJUMP, inPC, outRsPC, shift16 : STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
  SIGNAL saidaULA, IMED, entradaB, escReg3, escReg3Def, saidaA, saidaB, dadoRAM: STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0);
@@ -45,8 +45,8 @@ ARCHITECTURE uwu OF topLevel IS
  alias BEQ           : std_logic is palavraControle(5);
  alias selMUXPC      : std_logic is palavraControle(6);
  alias habShift      : std_logic is palavraControle(7);
- alias BNE           : std_logic is palavraControle(8);
-
+ alias BNE           : std_logic is palavraControle(8);     
+ alias selExt        : std_logic is palavraControle(9);
 
 
  CONSTANT incremento : NATURAL := 4;
@@ -90,7 +90,7 @@ BEGIN
  PORT MAP(clk => CLOCK_50, enderecoA => IR(25 DOWNTO 21), enderecoB => IR(20 DOWNTO 16), enderecoC => endReg3, dadoEscritaC => escReg3Def, escreveC => habEscritaReg, saidaA => saidaA, saidaB => saidaB );
 
  EXT: entity work.estendeSinal   generic map (larguraDadoEntrada => 16, larguraDadoSaida => DATA_WIDTH)
- port map (estendeSinal_IN => IR(15 downto 0), estendeSinal_OUT => IMED);
+ port map (estendeSinal_IN => IR(15 downto 0), seletor=> selExt, estendeSinal_OUT => IMED);
 
  muxULA: entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)
  port map(entradaA_MUX => saidaB, entradaB_MUX => shift16, seletor_MUX => selMUXULA, saida_MUX => entradaB);

@@ -19,7 +19,7 @@ entity unidadeControle is
 
     -- Output ports
     ULAop : out std_logic_vector(2 downto 0);
-    palavraControle : out std_logic_vector(8 downto 0)
+    palavraControle : out std_logic_vector(9 downto 0)
 
   );
 end entity;
@@ -34,6 +34,8 @@ architecture arch_name of unidadeControle is
   alias selMUXPC      : std_logic is palavraControle(6);
   alias habShift      : std_logic is palavraControle(7);
   alias BNE           : std_logic is palavraControle(8);
+  alias selExt        : std_logic is palavraControle(9);
+
 
 
 
@@ -100,6 +102,9 @@ begin
 
   BNE <= '1' when opcode = bnew else 
          '0';
+
+  selExt <= '1' when opcode = andi or opcode = addi else 
+            '0';
 
   
 end architecture;
