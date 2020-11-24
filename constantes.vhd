@@ -27,7 +27,7 @@ package constantes is
 
     constant add   : funct   := "100000";
     constant andw  : funct   := "100100";
-    constant jr    : funct   := "001000";
+    constant jrw    : funct   := "001000";
     constant orw   : funct   := "100101";
     constant slt   : funct   := "101010";
     constant subw  : funct   := "100010";

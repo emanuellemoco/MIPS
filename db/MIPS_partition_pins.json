@@ -764,6 +764,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "selMuxRssssss",
+					"strict" : false
+				},
+				{
 					"name" : "CLOCK_50",
 					"strict" : false
 				}

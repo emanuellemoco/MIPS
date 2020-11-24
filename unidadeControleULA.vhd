@@ -17,6 +17,7 @@ entity unidadeControleULA is
     ulaOP : in std_logic_vector(2 downto 0);
 
     -- Output ports
+    JR         : out std_logic;
     seletorULA : out std_logic_vector(2 downto 0)
   );
 end entity;
@@ -59,7 +60,7 @@ begin
 
 seletor <= "00" when funct = andw else                      -- 000
            "01" when funct = orw else                       -- 001
-           "10" when funct = add or funct = subw else       -- 010   110
+           "10" when funct = add or funct = subw or funct = jrw else       -- 010   110
            "11" when funct = slt else                       -- 111
            "01";                                            -- 001
 
@@ -74,6 +75,9 @@ seletorULA <= "010" when ULAop = "000" else
               "001" when ULAop = "100" else   --ori
               "111" when ULAop = "101" else   --slti
               seletorFUNCT;
+
+JR <= '1' when funct = jrw and ULAop = "010" else 
+      '0';
 
 end architecture;
 

@@ -51,8 +51,3 @@ CONTENT BEGIN
     31   :   03E00008; --jr $ra              (pc := #17)
 END;
 
-
-3C08FFFF
-
-op      rs    rt    im
-001111  00000 01000 1111111111111111
