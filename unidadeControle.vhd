@@ -19,22 +19,22 @@ entity unidadeControle is
 
     -- Output ports
     ULAop : out std_logic_vector(2 downto 0);
-    palavraControle : out std_logic_vector(9 downto 0)
+    palavraControle : out std_logic_vector(11 downto 0)
 
   );
 end entity;
 architecture arch_name of unidadeControle is
 
   alias selMUXULA     : std_logic is palavraControle(0);
-  alias selMUXEndReg3 : std_logic is palavraControle(1);
-  alias selMUXEscReg3 : std_logic is palavraControle(2);
-  alias habEscritaReg : std_logic is palavraControle(3);
-  alias habEscritaRAM : std_logic is palavraControle(4);
-  alias BEQ           : std_logic is palavraControle(5);
-  alias selMUXPC      : std_logic is palavraControle(6);
-  alias habShift      : std_logic is palavraControle(7);
-  alias BNE           : std_logic is palavraControle(8);
-  alias selExt        : std_logic is palavraControle(9);
+  alias selMUXEndReg3 : std_logic_vector(1 downto 0) is palavraControle(2 downto 1);
+  alias selMUXEscReg3 : std_logic_vector(1 downto 0) is palavraControle(4 downto 3);
+  alias habEscritaReg : std_logic is palavraControle(5);
+  alias habEscritaRAM : std_logic is palavraControle(6);
+  alias BEQ           : std_logic is palavraControle(7);
+  alias selMUXPC      : std_logic is palavraControle(8);
+  alias habShift      : std_logic is palavraControle(9);
+  alias BNE           : std_logic is palavraControle(10);
+  alias selExt        : std_logic is palavraControle(11);
 
 
 
@@ -66,12 +66,14 @@ begin
     '1'; 
 
   -- Instrução R
-  selMUXEndReg3 <= '1' when opcode = instR else 
-    '0'; 
+  selMUXEndReg3 <= "01" when opcode = instR else
+                   "10" when opcode = jal else  
+    "00"; 
 
   -- Instrução R, lui, addi, andi, ori, slti
-  selMUXEscReg3 <= '0' when opcode = instR or opcode = lui or opcode = addi or opcode = andi or opcode = ori or opcode = slti else 
-    '1';
+  selMUXEscReg3 <= "00" when opcode = instR or opcode = lui or opcode = addi or opcode = andi or opcode = ori or opcode = slti else
+                   "10" when opcode =  jal else  
+    "01";
 
   -- Instrução R, lw, lui, addi, andi, ori, slti
   habEscritaReg <= '1' when (opcode = instR and funct /= jrw) or opcode = lw or opcode = lui or opcode = addi or opcode = andi or opcode = ori or opcode = slti else 

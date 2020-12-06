@@ -31,7 +31,7 @@ ARCHITECTURE uwu OF topLevel IS
 
  SIGNAL selUlA, flagULA, selMuxRsPC        : std_logic;
  SIGNAL endReg3, reg3        : std_logic_vector(4 downto 0);
- SIGNAL palavraControle: std_logic_vector(9 downto 0);
+ SIGNAL palavraControle: std_logic_vector(11 downto 0);
  SIGNAL IR             : STD_LOGIC_VECTOR(ROM_DATA_WIDTH - 1 DOWNTO 0);
  SIGNAL PC, ADDER, outAdder,shiftBeq, outShift, outJUMP, inPC, outRsPC, shift16 : STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
  SIGNAL saidaULA, IMED, entradaB, escReg3, escReg3Def, saidaA, saidaB, dadoRAM, saidaHex: STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0);
@@ -39,17 +39,17 @@ ARCHITECTURE uwu OF topLevel IS
  SIGNAL ULAop : std_logic_vector(2 downto 0);
 
  
- 
+
  alias selMUXULA     : std_logic is palavraControle(0);
- alias selMUXEndReg3 : std_logic is palavraControle(1);
- alias selMUXEscReg3 : std_logic is palavraControle(2);
- alias habEscritaReg : std_logic is palavraControle(3);
- alias habEscritaRAM : std_logic is palavraControle(4);
- alias BEQ           : std_logic is palavraControle(5);
- alias selMUXPC      : std_logic is palavraControle(6);
- alias habShift      : std_logic is palavraControle(7);
- alias BNE           : std_logic is palavraControle(8);     
- alias selExt        : std_logic is palavraControle(9);
+ alias selMUXEndReg3 : std_logic_vector(1 downto 0) is palavraControle(2 downto 1);
+ alias selMUXEscReg3 : std_logic_vector(1 downto 0) is palavraControle(4 downto 3);
+ alias habEscritaReg : std_logic is palavraControle(5);
+ alias habEscritaRAM : std_logic is palavraControle(6);
+ alias BEQ           : std_logic is palavraControle(7);
+ alias selMUXPC      : std_logic is palavraControle(8);
+ alias habShift      : std_logic is palavraControle(9);
+ alias BNE           : std_logic is palavraControle(10);
+ alias selExt        : std_logic is palavraControle(11);
 
 
  CONSTANT incremento : NATURAL := 4;
@@ -82,10 +82,10 @@ BEGIN
  UCula: ENTITY work.unidadeControleULA generic map (DATA_WIDTH => DATA_WIDTH, ADDR_WIDTH => ADDR_WIDTH)
  PORT MAP(CLK => FPGA_RESET_N, funct => IR(5 DOWNTO 0), ULAop => ULAop, JR => selMuxRsPC, seletorULA  => seletorULA);
  
- muxEndREG3: entity work.mux2x1 generic map (larguraDados => 5)
- port map(entradaA_MUX => IR(20 downto 16), entradaB_MUX => IR(15 downto 11), seletor_MUX => selMUXEndReg3, saida_MUX => reg3 );
+ muxEndREG3: entity work.mux4x1 generic map (larguraDados => 5)
+ port map(entradaA_MUX => IR(20 downto 16), entradaB_MUX => IR(15 downto 11), entradaC_MUX => "11111", entradaD_MUX => (others => '0'), seletor_MUX => selMUXEndReg3, saida_MUX => endReg3 );
  
- endReg3 <= "11111" when IR(31 downto 26) = jal else reg3;
+-- endReg3 <= "11111" when IR(31 downto 26) = jal else reg3;
  escReg3Def <= std_logic_vector(unsigned(PC) + 8) when IR(31 downto 26) = jal else escReg3;
  
  BR: ENTITY work.bancoRegistradores generic map (larguraDados => DATA_WIDTH, larguraEndBancoRegs => 5)
@@ -103,8 +103,8 @@ BEGIN
  RAM: entity work.memoriaRAM generic map (dataWidth => DATA_WIDTH, addrWidth => ADDR_WIDTH, memoryAddrWidth => 6)
  port map(clk => FPGA_RESET_N, Endereco => saidaULA, Dado_in => saidaB , Dado_out => dadoRAM, we => habEscritaRAM);
  
- muxEscREG3: entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)
- port map(entradaA_MUX => saidaULA, entradaB_MUX => dadoRAM, seletor_MUX => selMUXEscReg3, saida_MUX => escReg3);
+ muxEscREG3: entity work.mux4x1 generic map (larguraDados => DATA_WIDTH)
+ port map(entradaA_MUX => saidaULA, entradaB_MUX => dadoRAM, entradaC_MUX => ADDER, entradaD_MUX => (others => '0'), seletor_MUX => selMUXEscReg3, saida_MUX => escReg3);
 
  SHIFTER_BEQ: entity work.shifter generic map (larguraDados => DATA_WIDTH, shiftValue => 2)
  port map(inShift => shift16, outShift => shiftBeq, habilita => '1');
@@ -144,13 +144,3 @@ BEGIN
 
 
 END ARCHITECTURE;
-
-
--- Z   BEQ    BNE      Q
--- 0   0      0        0
--- 0   0      1        1
--- 0   1      0        0
--- 1   0      0        0
--- 1   0      1        0
--- 1   1      0        1                                
-
