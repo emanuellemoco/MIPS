@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Sun Dec  6 17:06:17 2020
+Sun Dec  6 18:51:01 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -141,7 +141,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Dec  6 17:06:17 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sun Dec  6 18:51:01 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; topLevel                                    ;
@@ -169,6 +169,7 @@ refer to the applicable agreement for further details.
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
 ; Top-level entity name                                                           ; topLevel           ; MIPS               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation                             ; 4                  ;                    ;
 ; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
 ; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -262,7 +263,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -273,6 +274,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; shifter.vhd                      ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd            ;         ;
+; estendeSinal.vhd                 ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd       ;         ;
 ; memoriaROM.vhd                   ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd         ;         ;
 ; unidadeControle.vhd              ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControle.vhd    ;         ;
 ; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/bancoRegistradores.vhd ;         ;
@@ -282,8 +285,6 @@ refer to the applicable agreement for further details.
 ; topLevel.vhd                     ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd           ;         ;
 ; registrador.vhd                  ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd        ;         ;
 ; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd         ;         ;
-; estendeSinal.vhd                 ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd       ;         ;
-; shifter.vhd                      ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd            ;         ;
 ; somadorConstante.vhd             ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd   ;         ;
 ; constantes.vhd                   ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/constantes.vhd         ;         ;
 ; somadorULA.vhd                   ; yes             ; User VHDL File  ; /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorULA.vhd         ;         ;
@@ -1777,7 +1778,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:17     ;
+; Top            ; 00:00:13     ;
 +----------------+--------------+
 
 
@@ -1787,10 +1788,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec  6 17:05:41 2020
+    Info: Processing started: Sun Dec  6 18:49:38 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (12021): Found 2 design units, including 1 entities, in source file shifter.vhd
+    Info (12022): Found design unit 1: shifter-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 19
+    Info (12023): Found entity 1: shifter File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file estendeSinal.vhd
+    Info (12022): Found design unit 1: estendeSinal-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 21
+    Info (12023): Found entity 1: estendeSinal File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaROM.vhd
     Info (12022): Found design unit 1: memoriaROM-assincrona File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd Line: 16
     Info (12023): Found entity 1: memoriaROM File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd Line: 6
@@ -1818,12 +1824,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file registr
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaRAM.vhd
     Info (12022): Found design unit 1: memoriaRAM-assincrona File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 18
     Info (12023): Found entity 1: memoriaRAM File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file estendeSinal.vhd
-    Info (12022): Found design unit 1: estendeSinal-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 21
-    Info (12023): Found entity 1: estendeSinal File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file shifter.vhd
-    Info (12022): Found design unit 1: shifter-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 19
-    Info (12023): Found entity 1: shifter File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somadorConstante.vhd
     Info (12022): Found design unit 1: somadorConstante-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd Line: 16
     Info (12023): Found entity 1: somadorConstante File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd Line: 5
@@ -1858,7 +1858,6 @@ Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeCont
 Info (12128): Elaborating entity "mux4x1" for hierarchy "mux4x1:muxEndREG3" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 85
 Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 91
 Info (12128): Elaborating entity "estendeSinal" for hierarchy "estendeSinal:EXT" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 94
-Warning (10540): VHDL Signal Declaration warning at estendeSinal.vhd(24): used explicit default value for signal "zero" because signal was never assigned a value File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 24
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULAa" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 100
 Info (12128): Elaborating entity "miniULA" for hierarchy "ULA:ULAa|miniULA:ULA0" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 42
 Info (12128): Elaborating entity "somadorULA" for hierarchy "ULA:ULAa|miniULA:ULA0|somadorULA:somador" File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 30
@@ -1885,10 +1884,10 @@ Info (21057): Implemented 4779 device resources after synthesis - the final reso
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 42 output pins
     Info (21061): Implemented 4734 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 1069 megabytes
-    Info: Processing ended: Sun Dec  6 17:06:17 2020
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:04
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1050 megabytes
+    Info: Processing ended: Sun Dec  6 18:51:01 2020
+    Info: Elapsed time: 00:01:23
+    Info: Total CPU time (on all processors): 00:00:52
 
 

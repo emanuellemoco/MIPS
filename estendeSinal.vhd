@@ -21,7 +21,7 @@ end entity;
 architecture comportamento of estendeSinal is
 
 signal sigExt : std_logic_vector(larguraDadoSaida -1 downto 0);
-signal zero   : std_logic_vector(larguraDadoSaida -1 downto larguraDadoEntrada) := (others => '0'); 
+constant zero   : std_logic_vector(larguraDadoSaida -1 downto larguraDadoEntrada) := (others => '0'); 
 
 begin
     process (estendeSinal_IN) is
