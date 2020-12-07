@@ -105,7 +105,7 @@ begin
   BNE <= '1' when opcode = bnew else 
          '0';
 
-  selExt <= '1' when opcode = andi or opcode = addi else 
+  selExt <= '1' when opcode = andi or opcode = addi or opcode = ori else 
             '0';
 
   
