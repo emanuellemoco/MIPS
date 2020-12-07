@@ -62,9 +62,6 @@ BEGIN
  ProgConter: ENTITY work.registrador generic map (larguraDados => DATA_WIDTH)
  PORT MAP(DIN => inPC, DOUT => PC, ENABLE => '1', CLK => FPGA_RESET_N, RST => '0');
 
- SHIFTER_JUMP: entity work.shifter generic map (larguraDados => 28, shiftValue => 2 )
- port map(inShift => "00" & IR(25 downto 0), outShift => outShift, habilita => '1');
-
 
  SOMADOR_C: ENTITY work.somadorConstante GENERIC MAP(larguraDados => DATA_WIDTH, constante => incremento)
  PORT MAP(entrada => PC, saida => ADDER);
@@ -73,8 +70,8 @@ BEGIN
  port map(entradaA_MUX => outJUMP, entradaB_MUX => saidaA, seletor_MUX => selMuxRsPC, saida_MUX => outRsPC );
  
  
- muxPC : entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)          --ntrada HARDCODED, trocar pro shiftJump e
- port map(entradaA_MUX => outRsPC, entradaB_MUX => ADDER(31 downto 28) & outShift, seletor_MUX => selMUXPC, saida_MUX => inPC );
+ muxPC : entity work.mux2x1 generic map (larguraDados => DATA_WIDTH)        
+ port map(entradaA_MUX => outRsPC, entradaB_MUX => ADDER(31 downto 28) & IR(25 downto 0) & "00", seletor_MUX => selMUXPC, saida_MUX => inPC );
 
  
  UC: ENTITY work.unidadeControle generic map (DATA_WIDTH => DATA_WIDTH, ADDR_WIDTH => ADDR_WIDTH)
@@ -85,9 +82,6 @@ BEGIN
  
  muxEndREG3: entity work.mux4x1 generic map (larguraDados => 5)
  port map(entradaA_MUX => IR(20 downto 16), entradaB_MUX => IR(15 downto 11), entradaC_MUX => "11111", entradaD_MUX => (others => '0'), seletor_MUX => selMUXEndReg3, saida_MUX => endReg3 );
- 
--- endReg3 <= "11111" when IR(31 downto 26) = jal else reg3;
--- escReg3Def <= std_logic_vector(unsigned(PC) + 8) when IR(31 downto 26) = jal else escReg3;
  
  BR: ENTITY work.bancoRegistradores generic map (larguraDados => DATA_WIDTH, larguraEndBancoRegs => 5)
  PORT MAP(clk => FPGA_RESET_N, enderecoA => IR(25 DOWNTO 21), enderecoB => IR(20 DOWNTO 16), enderecoC => endReg3, dadoEscritaC => escReg3, escreveC => habEscritaReg, saidaA => saidaA, saidaB => saidaB );

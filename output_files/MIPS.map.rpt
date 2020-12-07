@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Mon Dec  7 16:53:06 2020
+Mon Dec  7 17:20:10 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,110 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |topLevel
+ 11. Parameter Settings for User Entity Instance: memoriaROM:ROM
+ 12. Parameter Settings for User Entity Instance: registrador:ProgConter
+ 13. Parameter Settings for User Entity Instance: somadorConstante:SOMADOR_C
+ 14. Parameter Settings for User Entity Instance: mux2x1:muxRsPC
+ 15. Parameter Settings for User Entity Instance: mux2x1:muxPC
+ 16. Parameter Settings for User Entity Instance: unidadeControle:UC
+ 17. Parameter Settings for User Entity Instance: unidadeControleULA:UCula
+ 18. Parameter Settings for User Entity Instance: mux4x1:muxEndREG3
+ 19. Parameter Settings for User Entity Instance: bancoRegistradores:BR
+ 20. Parameter Settings for User Entity Instance: estendeSinal:EXT
+ 21. Parameter Settings for User Entity Instance: mux2x1:muxULA
+ 22. Parameter Settings for User Entity Instance: ULA:ULAa
+ 23. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux
+ 24. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux
+ 25. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA2|mux4x1Bit:mux
+ 26. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA3|mux4x1Bit:mux
+ 27. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA4|mux4x1Bit:mux
+ 28. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA5|mux4x1Bit:mux
+ 29. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux
+ 30. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA7|mux4x1Bit:mux
+ 31. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA8|mux4x1Bit:mux
+ 32. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA9|mux4x1Bit:mux
+ 33. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA10|mux4x1Bit:mux
+ 34. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA11|mux4x1Bit:mux
+ 35. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA12|mux4x1Bit:mux
+ 36. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA13|mux4x1Bit:mux
+ 37. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA14|mux4x1Bit:mux
+ 38. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA15|mux4x1Bit:mux
+ 39. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA16|mux4x1Bit:mux
+ 40. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA17|mux4x1Bit:mux
+ 41. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux
+ 42. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA19|mux4x1Bit:mux
+ 43. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA20|mux4x1Bit:mux
+ 44. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA21|mux4x1Bit:mux
+ 45. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA22|mux4x1Bit:mux
+ 46. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA23|mux4x1Bit:mux
+ 47. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA24|mux4x1Bit:mux
+ 48. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA25|mux4x1Bit:mux
+ 49. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA26|mux4x1Bit:mux
+ 50. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA27|mux4x1Bit:mux
+ 51. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA28|mux4x1Bit:mux
+ 52. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA29|mux4x1Bit:mux
+ 53. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA30|mux4x1Bit:mux
+ 54. Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA31|mux4x1Bit:mux
+ 55. Parameter Settings for User Entity Instance: memoriaRAM:RAM
+ 56. Parameter Settings for User Entity Instance: mux4x1:muxEscREG3
+ 57. Parameter Settings for User Entity Instance: shifter:SHIFTER_BEQ
+ 58. Parameter Settings for User Entity Instance: somador:SOMADOR
+ 59. Parameter Settings for User Entity Instance: mux2x1:muxJUMP
+ 60. Parameter Settings for User Entity Instance: shifter:SHIFTER_16
+ 61. Parameter Settings for User Entity Instance: mux4x1:MUXHEX
+ 62. Port Connectivity Checks: "conversorHex7Seg:HEX_5"
+ 63. Port Connectivity Checks: "conversorHex7Seg:HEX_4"
+ 64. Port Connectivity Checks: "conversorHex7Seg:HEX_3"
+ 65. Port Connectivity Checks: "conversorHex7Seg:HEX_2"
+ 66. Port Connectivity Checks: "conversorHex7Seg:HEX_1"
+ 67. Port Connectivity Checks: "conversorHex7Seg:HEX_0"
+ 68. Port Connectivity Checks: "mux4x1:MUXHEX"
+ 69. Port Connectivity Checks: "shifter:SHIFTER_BEQ"
+ 70. Port Connectivity Checks: "mux4x1:muxEscREG3"
+ 71. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA31"
+ 72. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA30"
+ 73. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA29"
+ 74. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA28"
+ 75. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA27"
+ 76. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA26"
+ 77. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA25"
+ 78. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA24"
+ 79. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA23"
+ 80. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA22"
+ 81. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA21"
+ 82. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA20"
+ 83. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA19"
+ 84. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA18"
+ 85. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA17"
+ 86. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA16"
+ 87. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA15"
+ 88. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA14"
+ 89. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA13"
+ 90. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA12"
+ 91. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA11"
+ 92. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA10"
+ 93. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA9"
+ 94. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA8"
+ 95. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA7"
+ 96. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA6"
+ 97. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA5"
+ 98. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA4"
+ 99. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA3"
+100. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA2"
+101. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA1"
+102. Port Connectivity Checks: "ULA:ULAa|miniULA:ULA0"
+103. Port Connectivity Checks: "mux4x1:muxEndREG3"
+104. Port Connectivity Checks: "mux2x1:muxPC"
+105. Port Connectivity Checks: "registrador:ProgConter"
+106. Post-Synthesis Netlist Statistics for Top Partition
+107. Elapsed Time Per Partition
+108. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +136,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Dec  7 16:53:06 2020           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; MIPS                                        ;
-; Top-level Entity Name       ; topLevel                                    ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Dec  7 17:20:10 2020       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; MIPS                                        ;
+; Top-level Entity Name           ; topLevel                                    ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 3104                                        ;
+; Total pins                      ; 45                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -149,11 +257,1229 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; shifter.vhd                      ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/shifter.vhd            ;         ;
+; estendeSinal.vhd                 ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/estendeSinal.vhd       ;         ;
+; memoriaROM.vhd                   ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/memoriaROM.vhd         ;         ;
+; unidadeControle.vhd              ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/unidadeControle.vhd    ;         ;
+; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/bancoRegistradores.vhd ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/ULA.vhd                ;         ;
+; somador.vhd                      ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/somador.vhd            ;         ;
+; mux2x1.vhd                       ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/mux2x1.vhd             ;         ;
+; topLevel.vhd                     ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/topLevel.vhd           ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/registrador.vhd        ;         ;
+; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/memoriaRAM.vhd         ;         ;
+; somadorConstante.vhd             ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/somadorConstante.vhd   ;         ;
+; constantes.vhd                   ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/constantes.vhd         ;         ;
+; somadorULA.vhd                   ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/somadorULA.vhd         ;         ;
+; mux4x1.vhd                       ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/mux4x1.vhd             ;         ;
+; miniULA.vhd                      ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/miniULA.vhd            ;         ;
+; mux4x1Bit.vhd                    ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/mux4x1Bit.vhd          ;         ;
+; unidadeControleULA.vhd           ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/unidadeControleULA.vhd ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; /home/leo/Desktop/DesComp/MIPS/conversorHex7Seg.vhd   ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimate of Logic utilization (ALMs needed) ; 2445               ;
+;                                             ;                    ;
+; Combinational ALUT usage for logic          ; 1788               ;
+;     -- 7 input functions                    ; 303                ;
+;     -- 6 input functions                    ; 1017               ;
+;     -- 5 input functions                    ; 143                ;
+;     -- 4 input functions                    ; 106                ;
+;     -- <=3 input functions                  ; 219                ;
+;                                             ;                    ;
+; Dedicated logic registers                   ; 3104               ;
+;                                             ;                    ;
+; I/O pins                                    ; 45                 ;
+;                                             ;                    ;
+; Total DSP Blocks                            ; 0                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; FPGA_RESET_N~input ;
+; Maximum fan-out                             ; 3104               ;
+; Total fan-out                               ; 19216              ;
+; Average fan-out                             ; 3.86               ;
++---------------------------------------------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name        ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
+; |topLevel                       ; 1788 (2)            ; 3104 (0)                  ; 0                 ; 0          ; 45   ; 0            ; |topLevel                                           ; topLevel           ; work         ;
+;    |ULA:ULAa|                   ; 132 (37)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa                                  ; ULA                ; work         ;
+;       |miniULA:ULA0|            ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA0|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA10|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA10|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA11|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA11                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA11|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA11|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA12|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA12                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA12|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA13|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA13                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA13|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA13|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA14|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA14                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA14|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA14|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA15|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA15|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA16|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA16|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA17|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA17|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA18|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA18|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA19|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA19|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA1|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA1|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA20|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA20                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA20|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA21|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA21                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA21|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA21|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA22|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA22                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA22|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA23|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA23                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA23|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA23|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA24|           ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA24                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA24|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA24|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA25|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA25                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA25|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA26|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA26                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA26|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA26|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA27|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA27                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA27|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA28|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA28                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA28|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA28|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA29|           ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA29                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA29|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA29|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA2|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA2                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA2|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA30|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA30                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA30|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA31|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA31                    ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA31|mux4x1Bit:mux      ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA31|somadorULA:somador ; somadorULA         ; work         ;
+;       |miniULA:ULA3|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA3                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA3|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA3|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA4|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA4                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA4|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA4|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA5|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA5|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA6|            ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA6|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA7|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA7|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;       |miniULA:ULA8|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA8                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA8|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA8|somadorULA:somador  ; somadorULA         ; work         ;
+;       |miniULA:ULA9|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9                     ; miniULA            ; work         ;
+;          |mux4x1Bit:mux|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9|mux4x1Bit:mux       ; mux4x1Bit          ; work         ;
+;          |somadorULA:somador|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|ULA:ULAa|miniULA:ULA9|somadorULA:somador  ; somadorULA         ; work         ;
+;    |bancoRegistradores:BR|      ; 547 (547)           ; 1024 (1024)               ; 0                 ; 0          ; 0    ; 0            ; |topLevel|bancoRegistradores:BR                     ; bancoRegistradores ; work         ;
+;    |conversorHex7Seg:HEX_0|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|conversorHex7Seg:HEX_0                    ; conversorHex7Seg   ; work         ;
+;    |conversorHex7Seg:HEX_1|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|conversorHex7Seg:HEX_1                    ; conversorHex7Seg   ; work         ;
+;    |conversorHex7Seg:HEX_2|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|conversorHex7Seg:HEX_2                    ; conversorHex7Seg   ; work         ;
+;    |conversorHex7Seg:HEX_3|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|conversorHex7Seg:HEX_3                    ; conversorHex7Seg   ; work         ;
+;    |conversorHex7Seg:HEX_4|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|conversorHex7Seg:HEX_4                    ; conversorHex7Seg   ; work         ;
+;    |conversorHex7Seg:HEX_5|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|conversorHex7Seg:HEX_5                    ; conversorHex7Seg   ; work         ;
+;    |estendeSinal:EXT|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|estendeSinal:EXT                          ; estendeSinal       ; work         ;
+;    |memoriaRAM:RAM|             ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |topLevel|memoriaRAM:RAM                            ; memoriaRAM         ; work         ;
+;    |memoriaROM:ROM|             ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|memoriaROM:ROM                            ; memoriaROM         ; work         ;
+;    |mux2x1:muxPC|               ; 59 (59)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxPC                              ; mux2x1             ; work         ;
+;    |mux2x1:muxULA|              ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux2x1:muxULA                             ; mux2x1             ; work         ;
+;    |mux4x1:MUXHEX|              ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux4x1:MUXHEX                             ; mux4x1             ; work         ;
+;    |mux4x1:muxEndREG3|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux4x1:muxEndREG3                         ; mux4x1             ; work         ;
+;    |mux4x1:muxEscREG3|          ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|mux4x1:muxEscREG3                         ; mux4x1             ; work         ;
+;    |registrador:ProgConter|     ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |topLevel|registrador:ProgConter                    ; registrador        ; work         ;
+;    |somador:SOMADOR|            ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|somador:SOMADOR                           ; somador            ; work         ;
+;    |somadorConstante:SOMADOR_C| ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|somadorConstante:SOMADOR_C                ; somadorConstante   ; work         ;
+;    |unidadeControle:UC|         ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControle:UC                        ; unidadeControle    ; work         ;
+;    |unidadeControleULA:UCula|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topLevel|unidadeControleULA:UCula                  ; unidadeControleULA ; work         ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 3104  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 3074  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[1]                 ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[28]                ;
+; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |topLevel|registrador:ProgConter|DOUT[19]                ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |topLevel|ULA:ULAa|entradaBdef[30]                       ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |topLevel|mux4x1:MUXHEX|saida_MUX[19]                    ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |topLevel|ULA:ULAa|miniULA:ULA22|mux4x1Bit:mux|saida_MUX ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |topLevel|mux4x1:muxEscREG3|saida_MUX[22]                ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |topLevel|unidadeControle:UC|ULAop[0]                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |topLevel ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                  ;
+; ROM_DATA_WIDTH ; 32    ; Signed Integer                                  ;
+; ADDR_WIDTH     ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaROM:ROM ;
++-----------------+-------+-----------------------------------+
+; Parameter Name  ; Value ; Type                              ;
++-----------------+-------+-----------------------------------+
+; datawidth       ; 32    ; Signed Integer                    ;
+; addrwidth       ; 32    ; Signed Integer                    ;
+; memoryaddrwidth ; 6     ; Signed Integer                    ;
++-----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:ProgConter ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somadorConstante:SOMADOR_C ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                 ;
+; constante      ; 4     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxRsPC ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxPC ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; larguradados   ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: unidadeControle:UC ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; data_width     ; 32    ; Signed Integer                         ;
+; addr_width     ; 32    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: unidadeControleULA:UCula ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; data_width     ; 32    ; Signed Integer                               ;
+; addr_width     ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4x1:muxEndREG3 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; larguradados   ; 5     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:BR ;
++---------------------+-------+--------------------------------------+
+; Parameter Name      ; Value ; Type                                 ;
++---------------------+-------+--------------------------------------+
+; larguradados        ; 32    ; Signed Integer                       ;
+; larguraendbancoregs ; 5     ; Signed Integer                       ;
++---------------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: estendeSinal:EXT ;
++--------------------+-------+----------------------------------+
+; Parameter Name     ; Value ; Type                             ;
++--------------------+-------+----------------------------------+
+; larguradadoentrada ; 16    ; Signed Integer                   ;
+; larguradadosaida   ; 32    ; Signed Integer                   ;
++--------------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxULA ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; larguradados   ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; larguradados   ; 32    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA1|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA2|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA3|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA4|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA5|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA6|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA7|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA8|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA9|mux4x1Bit:mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA10|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA11|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA12|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA13|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA14|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA15|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA16|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA17|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA18|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA19|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA20|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA21|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA22|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA23|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA24|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA25|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA26|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA27|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA28|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA29|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA30|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULAa|miniULA:ULA31|mux4x1Bit:mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaRAM:RAM ;
++-----------------+-------+-----------------------------------+
+; Parameter Name  ; Value ; Type                              ;
++-----------------+-------+-----------------------------------+
+; datawidth       ; 32    ; Signed Integer                    ;
+; addrwidth       ; 32    ; Signed Integer                    ;
+; memoryaddrwidth ; 6     ; Signed Integer                    ;
++-----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4x1:muxEscREG3 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; larguradados   ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shifter:SHIFTER_BEQ ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; larguradados   ; 32    ; Signed Integer                          ;
+; shiftvalue     ; 2     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somador:SOMADOR ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; larguradados   ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2x1:muxJUMP ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shifter:SHIFTER_16 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; larguradados   ; 32    ; Signed Integer                         ;
+; shiftvalue     ; 16    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4x1:MUXHEX ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; larguradados   ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_5" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_4" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_3" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_2" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_1" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_0" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux4x1:MUXHEX"                                                                                   ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                             ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; saida_mux[31..24] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "shifter:SHIFTER_BEQ" ;
++----------+-------+----------+-------------------+
+; Port     ; Type  ; Severity ; Details           ;
++----------+-------+----------+-------------------+
+; habilita ; Input ; Info     ; Stuck at VCC      ;
++----------+-------+----------+-------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "mux4x1:muxEscREG3"  ;
++--------------+-------+----------+--------------+
+; Port         ; Type  ; Severity ; Details      ;
++--------------+-------+----------+--------------+
+; entradad_mux ; Input ; Info     ; Stuck at GND ;
++--------------+-------+----------+--------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA31" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; d_mux ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA30"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA29"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA28"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA27"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA26"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA25"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA24"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA23"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA22"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA21"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA20"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA19"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA18"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA17"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA16"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA15"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA14"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA13"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA12"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA11"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA10"                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA9"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA8"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA7"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA6"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA5"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA4"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA3"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA2"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA1"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; d_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULAa|miniULA:ULA0"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; set  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "mux4x1:muxEndREG3"  ;
++--------------+-------+----------+--------------+
+; Port         ; Type  ; Severity ; Details      ;
++--------------+-------+----------+--------------+
+; entradac_mux ; Input ; Info     ; Stuck at VCC ;
+; entradad_mux ; Input ; Info     ; Stuck at GND ;
++--------------+-------+----------+--------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "mux2x1:muxPC"             ;
++--------------------+-------+----------+--------------+
+; Port               ; Type  ; Severity ; Details      ;
++--------------------+-------+----------+--------------+
+; entradab_mux[1..0] ; Input ; Info     ; Stuck at GND ;
++--------------------+-------+----------+--------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "registrador:ProgConter" ;
++--------+-------+----------+------------------------+
+; Port   ; Type  ; Severity ; Details                ;
++--------+-------+----------+------------------------+
+; enable ; Input ; Info     ; Stuck at VCC           ;
+; rst    ; Input ; Info     ; Stuck at GND           ;
++--------+-------+----------+------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 3104                        ;
+;     ENA               ; 3074                        ;
+;     plain             ; 30                          ;
+; arriav_lcell_comb     ; 1788                        ;
+;     arith             ; 60                          ;
+;         1 data inputs ; 30                          ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 29                          ;
+;     extend            ; 303                         ;
+;         7 data inputs ; 303                         ;
+;     normal            ; 1425                        ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 144                         ;
+;         3 data inputs ; 32                          ;
+;         4 data inputs ; 105                         ;
+;         5 data inputs ; 114                         ;
+;         6 data inputs ; 1017                        ;
+; boundary_port         ; 45                          ;
+;                       ;                             ;
+; Max LUT depth         ; 19.00                       ;
+; Average LUT depth     ; 8.87                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:07     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -162,75 +1488,105 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Dec  7 16:51:59 2020
+    Info: Processing started: Mon Dec  7 17:18:56 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 2 design units, including 1 entities, in source file shifter.vhd
-    Info (12022): Found design unit 1: shifter-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 19
-    Info (12023): Found entity 1: shifter File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/shifter.vhd Line: 5
+    Info (12022): Found design unit 1: shifter-comportamento File: /home/leo/Desktop/DesComp/MIPS/shifter.vhd Line: 19
+    Info (12023): Found entity 1: shifter File: /home/leo/Desktop/DesComp/MIPS/shifter.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file estendeSinal.vhd
-    Info (12022): Found design unit 1: estendeSinal-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 21
-    Info (12023): Found entity 1: estendeSinal File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/estendeSinal.vhd Line: 5
+    Info (12022): Found design unit 1: estendeSinal-comportamento File: /home/leo/Desktop/DesComp/MIPS/estendeSinal.vhd Line: 21
+    Info (12023): Found entity 1: estendeSinal File: /home/leo/Desktop/DesComp/MIPS/estendeSinal.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaROM.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaROM.vhd Line: 6
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: /home/leo/Desktop/DesComp/MIPS/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: /home/leo/Desktop/DesComp/MIPS/memoriaROM.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file unidadeControle.vhd
-    Info (12022): Found design unit 1: unidadeControle-arch_name File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControle.vhd Line: 26
-    Info (12023): Found entity 1: unidadeControle File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControle.vhd Line: 7
+    Info (12022): Found design unit 1: unidadeControle-arch_name File: /home/leo/Desktop/DesComp/MIPS/unidadeControle.vhd Line: 26
+    Info (12023): Found entity 1: unidadeControle File: /home/leo/Desktop/DesComp/MIPS/unidadeControle.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file bancoRegistradores.vhd
-    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/bancoRegistradores.vhd Line: 30
-    Info (12023): Found entity 1: bancoRegistradores File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/bancoRegistradores.vhd Line: 7
+    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: /home/leo/Desktop/DesComp/MIPS/bancoRegistradores.vhd Line: 30
+    Info (12023): Found entity 1: bancoRegistradores File: /home/leo/Desktop/DesComp/MIPS/bancoRegistradores.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file ULA.vhd
-    Info (12022): Found design unit 1: ULA-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 21
-    Info (12023): Found entity 1: ULA File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/ULA.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-comportamento File: /home/leo/Desktop/DesComp/MIPS/ULA.vhd Line: 21
+    Info (12023): Found entity 1: ULA File: /home/leo/Desktop/DesComp/MIPS/ULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
-    Info (12022): Found design unit 1: somador-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd Line: 18
-    Info (12023): Found entity 1: somador File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somador.vhd Line: 6
+    Info (12022): Found design unit 1: somador-comportamento File: /home/leo/Desktop/DesComp/MIPS/somador.vhd Line: 18
+    Info (12023): Found entity 1: somador File: /home/leo/Desktop/DesComp/MIPS/somador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
-    Info (12022): Found design unit 1: mux2x1-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd Line: 14
-    Info (12023): Found entity 1: mux2x1 File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux2x1.vhd Line: 4
+    Info (12022): Found design unit 1: mux2x1-comportamento File: /home/leo/Desktop/DesComp/MIPS/mux2x1.vhd Line: 14
+    Info (12023): Found entity 1: mux2x1 File: /home/leo/Desktop/DesComp/MIPS/mux2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file topLevel.vhd
-    Info (12022): Found design unit 1: topLevel-uwu File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 30
-    Info (12023): Found entity 1: topLevel File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 7
+    Info (12022): Found design unit 1: topLevel-uwu File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 30
+    Info (12023): Found entity 1: topLevel File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
-    Info (12022): Found design unit 1: registrador-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd Line: 15
-    Info (12023): Found entity 1: registrador File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/registrador.vhd Line: 4
+    Info (12022): Found design unit 1: registrador-comportamento File: /home/leo/Desktop/DesComp/MIPS/registrador.vhd Line: 15
+    Info (12023): Found entity 1: registrador File: /home/leo/Desktop/DesComp/MIPS/registrador.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaRAM.vhd
-    Info (12022): Found design unit 1: memoriaRAM-assincrona File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 18
-    Info (12023): Found entity 1: memoriaRAM File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-assincrona File: /home/leo/Desktop/DesComp/MIPS/memoriaRAM.vhd Line: 18
+    Info (12023): Found entity 1: memoriaRAM File: /home/leo/Desktop/DesComp/MIPS/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somadorConstante.vhd
-    Info (12022): Found design unit 1: somadorConstante-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd Line: 16
-    Info (12023): Found entity 1: somadorConstante File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somadorConstante-comportamento File: /home/leo/Desktop/DesComp/MIPS/somadorConstante.vhd Line: 16
+    Info (12023): Found entity 1: somadorConstante File: /home/leo/Desktop/DesComp/MIPS/somadorConstante.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file constantes.vhd
-    Info (12022): Found design unit 1: constantes File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/constantes.vhd Line: 6
+    Info (12022): Found design unit 1: constantes File: /home/leo/Desktop/DesComp/MIPS/constantes.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somadorULA.vhd
-    Info (12022): Found design unit 1: somadorULA-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorULA.vhd Line: 16
-    Info (12023): Found entity 1: somadorULA File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/somadorULA.vhd Line: 5
+    Info (12022): Found design unit 1: somadorULA-comportamento File: /home/leo/Desktop/DesComp/MIPS/somadorULA.vhd Line: 16
+    Info (12023): Found entity 1: somadorULA File: /home/leo/Desktop/DesComp/MIPS/somadorULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x1.vhd
-    Info (12022): Found design unit 1: mux4x1-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1.vhd Line: 14
-    Info (12023): Found entity 1: mux4x1 File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1.vhd Line: 4
+    Info (12022): Found design unit 1: mux4x1-comportamento File: /home/leo/Desktop/DesComp/MIPS/mux4x1.vhd Line: 14
+    Info (12023): Found entity 1: mux4x1 File: /home/leo/Desktop/DesComp/MIPS/mux4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file miniULA.vhd
-    Info (12022): Found design unit 1: miniULA-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 19
-    Info (12023): Found entity 1: miniULA File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/miniULA.vhd Line: 5
+    Info (12022): Found design unit 1: miniULA-comportamento File: /home/leo/Desktop/DesComp/MIPS/miniULA.vhd Line: 19
+    Info (12023): Found entity 1: miniULA File: /home/leo/Desktop/DesComp/MIPS/miniULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x1Bit.vhd
-    Info (12022): Found design unit 1: mux4x1Bit-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1Bit.vhd Line: 14
-    Info (12023): Found entity 1: mux4x1Bit File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/mux4x1Bit.vhd Line: 4
+    Info (12022): Found design unit 1: mux4x1Bit-comportamento File: /home/leo/Desktop/DesComp/MIPS/mux4x1Bit.vhd Line: 14
+    Info (12023): Found entity 1: mux4x1Bit File: /home/leo/Desktop/DesComp/MIPS/mux4x1Bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file unidadeControleULA.vhd
-    Info (12022): Found design unit 1: unidadeControleULA-uwu File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControleULA.vhd Line: 24
-    Info (12023): Found entity 1: unidadeControleULA File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/unidadeControleULA.vhd Line: 7
+    Info (12022): Found design unit 1: unidadeControleULA-uwu File: /home/leo/Desktop/DesComp/MIPS/unidadeControleULA.vhd Line: 24
+    Info (12023): Found entity 1: unidadeControleULA File: /home/leo/Desktop/DesComp/MIPS/unidadeControleULA.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file conversorHex7Seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/conversorHex7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/leo/Desktop/DesComp/MIPS/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: /home/leo/Desktop/DesComp/MIPS/conversorHex7Seg.vhd Line: 4
 Info (12127): Elaborating entity "topLevel" for the top level hierarchy
-Error (10344): VHDL expression error at topLevel.vhd(66): expression has 34 elements, but must have 28 elements File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 66
-Error (10344): VHDL expression error at topLevel.vhd(66): expression has 32 elements, but must have 28 elements File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 66
-Error (10346): VHDL error at topLevel.vhd(65): formal port or parameter "inShift" must have actual or default value File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 65
-Error (10344): VHDL expression error at topLevel.vhd(66): expression has 28 elements, but must have 32 elements File: /home/emanuelle/Desktop/INSPER/DesComp/MIPS/topLevel.vhd Line: 66
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 0 warnings
-    Error: Peak virtual memory: 990 megabytes
-    Error: Processing ended: Mon Dec  7 16:53:06 2020
-    Error: Elapsed time: 00:01:07
-    Error: Total CPU time (on all processors): 00:00:31
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 59
+Warning (10541): VHDL Signal Declaration warning at memoriaROM.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/leo/Desktop/DesComp/MIPS/memoriaROM.vhd Line: 19
+Info (12128): Elaborating entity "registrador" for hierarchy "registrador:ProgConter" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 62
+Info (12128): Elaborating entity "somadorConstante" for hierarchy "somadorConstante:SOMADOR_C" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 66
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxRsPC" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 69
+Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 77
+Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeControleULA:UCula" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 80
+Info (12128): Elaborating entity "mux4x1" for hierarchy "mux4x1:muxEndREG3" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 83
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BR" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 86
+Info (12128): Elaborating entity "estendeSinal" for hierarchy "estendeSinal:EXT" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 89
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULAa" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 95
+Info (12128): Elaborating entity "miniULA" for hierarchy "ULA:ULAa|miniULA:ULA0" File: /home/leo/Desktop/DesComp/MIPS/ULA.vhd Line: 42
+Info (12128): Elaborating entity "somadorULA" for hierarchy "ULA:ULAa|miniULA:ULA0|somadorULA:somador" File: /home/leo/Desktop/DesComp/MIPS/miniULA.vhd Line: 30
+Info (12128): Elaborating entity "mux4x1Bit" for hierarchy "ULA:ULAa|miniULA:ULA0|mux4x1Bit:mux" File: /home/leo/Desktop/DesComp/MIPS/miniULA.vhd Line: 33
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 98
+Info (12128): Elaborating entity "mux4x1" for hierarchy "mux4x1:muxEscREG3" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 101
+Info (12128): Elaborating entity "shifter" for hierarchy "shifter:SHIFTER_BEQ" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 104
+Info (12128): Elaborating entity "somador" for hierarchy "somador:SOMADOR" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 107
+Info (12128): Elaborating entity "shifter" for hierarchy "shifter:SHIFTER_16" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 114
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:HEX_0" File: /home/leo/Desktop/DesComp/MIPS/topLevel.vhd Line: 121
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276007): RAM logic "memoriaRAM:RAM|memRAM" is uninferred due to asynchronous read logic File: /home/leo/Desktop/DesComp/MIPS/memoriaRAM.vhd Line: 21
+    Info (276007): RAM logic "bancoRegistradores:BR|registrador" is uninferred due to asynchronous read logic File: /home/leo/Desktop/DesComp/MIPS/bancoRegistradores.vhd Line: 63
+    Info (276004): RAM logic "memoriaROM:ROM|memROM" is uninferred due to inappropriate RAM size File: /home/leo/Desktop/DesComp/MIPS/memoriaROM.vhd Line: 19
+Warning (113028): 46 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 3 warnings found, and 3 warnings are reported. File: /home/leo/Desktop/DesComp/MIPS/ROMcontent.mif Line: 1
+    Warning (113026): Memory Initialization File Address 16 is not initialized File: /home/leo/Desktop/DesComp/MIPS/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 18 to 30 are not initialized File: /home/leo/Desktop/DesComp/MIPS/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 32 to 63 are not initialized File: /home/leo/Desktop/DesComp/MIPS/ROMcontent.mif Line: 1
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 4892 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 4847 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1055 megabytes
+    Info: Processing ended: Mon Dec  7 17:20:10 2020
+    Info: Elapsed time: 00:01:14
+    Info: Total CPU time (on all processors): 00:00:34
 
 
