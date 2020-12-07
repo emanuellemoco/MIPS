@@ -8,8 +8,8 @@ entity somadorConstante is
         constante : natural := 4
     );
     port (
-        entrada : in STD_LOGIC_VECTOR((larguraDados - 1) downto 0);
-        saida : out STD_LOGIC_VECTOR((larguraDados - 1) downto 0)
+        entrada : in std_logic_vector((larguraDados - 1) downto 0);
+        saida : out std_logic_vector((larguraDados - 1) downto 0)
     );
 end entity;
 
