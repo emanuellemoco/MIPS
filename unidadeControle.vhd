@@ -76,7 +76,7 @@ begin
     "01";
 
   -- Instrução R, lw, lui, addi, andi, ori, slti
-  habEscritaReg <= '1' when (opcode = instR and funct /= jrw) or opcode = lw or opcode = lui or opcode = addi or opcode = andi or opcode = ori or opcode = slti else 
+  habEscritaReg <= '1' when (opcode = instR and funct /= jrw) or opcode = lw or opcode = lui or opcode = addi or opcode = andi or opcode = ori or opcode = slti or opcode = jal else 
     '0';
   
   -- sw

@@ -1,5 +1,5 @@
 Archive Project report for MIPS
-Fri Nov 20 20:48:25 2020
+Sun Dec  6 19:03:40 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Nov 20 20:48:25 2020 ;
+; Archive Project Status ; Successful - Sun Dec  6 19:03:40 2020 ;
 ; Revision Name          ; MIPS                                  ;
 ; Top-level Entity Name  ; topLevel                              ;
 ; Family                 ; Cyclone V                             ;
@@ -53,15 +53,15 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory /home/emanuelle/Desktop/INSPER/DesComp/MIPS/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive '/home/emanuelle/Desktop/INSPER/DesComp/MIPS/MIPS_entrega4.qar'
+Info: Generated archive '/home/emanuelle/Desktop/INSPER/DesComp/MIPS/MIPS_entregaF2.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'MIPS.archive.rpt'
 Info (23030): Evaluation of Tcl script /opt/altera/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 1035 megabytes
-    Info: Processing ended: Fri Nov 20 20:48:25 2020
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sun Dec  6 19:03:40 2020
+    Info: Elapsed time: 00:00:55
     Info: Total CPU time (on all processors): 00:00:01
 
 
@@ -73,12 +73,15 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; /opt/altera/18.1/quartus/linux64/assignment_defaults.qdf ;
 ; bancoRegistradores.vhd                                   ;
 ; constantes.vhd                                           ;
+; conversorHex7Seg.vhd                                     ;
+; db/MIPS.cmp.rdb                                          ;
 ; estendeSinal.vhd                                         ;
 ; memoriaRAM.vhd                                           ;
 ; memoriaROM.vhd                                           ;
 ; miniULA.vhd                                              ;
 ; MIPS.qpf                                                 ;
 ; MIPS.qsf                                                 ;
+; MIPS.sdc                                                 ;
 ; mux2x1.vhd                                               ;
 ; mux4x1.vhd                                               ;
 ; mux4x1Bit.vhd                                            ;
